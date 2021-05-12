@@ -1,4 +1,4 @@
-#Disease Drivers Ontology 
+Disease Drivers Ontology 
 
 Developed to be an import for the [Human Disease Ontology project] (https://github.com/DiseaseOntology/HumanDiseaseOntology). 
 
