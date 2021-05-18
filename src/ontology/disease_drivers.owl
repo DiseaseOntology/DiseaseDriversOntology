@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/main/src/ontology/imports/disease_drivers.owl/"
-     xml:base="https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/main/src/ontology/imports/disease_drivers.owl/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/disdriv.owl/"
+     xml:base="http://purl.obolibrary.org/obo/disdriv.owl/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,10 +10,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/main/src/ontology/imports/disease_drivers.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/disdriv.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/disdriv/releases/2021-05-18/disdriv.owl"/>
+        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dc:title>Disease Drivers</dc:title>
         <dc:description>Drivers of human diseases including environmental, maternal and social exposures.</dc:description>
-        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0"/>
     </owl:Ontology>
     
 
