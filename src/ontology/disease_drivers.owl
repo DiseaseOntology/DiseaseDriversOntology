@@ -153,6 +153,41 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:label>part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdfs:label>has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
+        <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -165,14 +200,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_134063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79314"/>
-        <obo:IAO_0000115>A flame retardant that is hexabromocyclododecane (HBCD), an additive primarily used in polystyrene foam building materials.</obo:IAO_0000115>
+        <obo:IAO_0000115>A bromoalkane consisting of cyclododecane bearing six bromo substituents at positions 1, 2, 5, 6, 9 and 10.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>hexabromocyclododecane</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHEBI:134063</oboInOwl:id>
-        <rdfs:label>hexabromocyclododecane</rdfs:label>
+        <rdfs:label>1,2,5,6,9,10-hexabromocyclododecane</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_134063"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A flame retardant that is hexabromocyclododecane (HBCD), an additive primarily used in polystyrene foam building materials.</owl:annotatedTarget>
+        <owl:annotatedTarget>A bromoalkane consisting of cyclododecane bearing six bromo substituents at positions 1, 2, 5, 6, 9 and 10.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Hexabromocyclododecane</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/flame_retardants/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -181,15 +218,26 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_138015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_138015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is endocrine disruptor, chemicals that may mimic or interfere with the body’s hormones. Any compound that can disrupt the functions of the endocrine (hormone) system</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138015"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any compound that can disrupt the functions of the endocrine (hormone) system.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:138015</oboInOwl:id>
         <rdfs:label>endochrine disruptor</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138015"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is endocrine disruptor, chemicals that may mimic or interfere with the body’s hormones. Any compound that can disrupt the functions of the endocrine (hormone) system</owl:annotatedTarget>
+        <owl:annotatedTarget>Any compound that can disrupt the functions of the endocrine (hormone) system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -199,13 +247,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15956">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>A vitamin deficiency that is biotin deficiency, a B-complex vitamin, affecting the activity of biotin-dependent carboxylases.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins.</obo:IAO_0000115>
         <rdfs:label>biotin deficiency</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15956"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is biotin deficiency, a B-complex vitamin, affecting the activity of biotin-dependent carboxylases.</owl:annotatedTarget>
+        <owl:annotatedTarget>An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Biotin</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK547751/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -215,14 +264,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_164200">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138015"/>
-        <obo:IAO_0000115>An endocrine disruptor that is triclosan, that may be found in some anti-microbial and personal care products, like liquid body wash.</obo:IAO_0000115>
+        <obo:IAO_0000115>An aromatic ether that is phenol which is substituted at C-5 by a chloro group and at C-2 by a 2,4-dichlorophenoxy group. It is widely used as a preservative and antimicrobial agent in personal care products such as soaps, skin creams, toothpaste and deodorants as well as in household items such as plastic chopping boards, sports equipment and shoes.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:164200</oboInOwl:id>
         <rdfs:label>triclosan</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_164200"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An endocrine disruptor that is triclosan, that may be found in some anti-microbial and personal care products, like liquid body wash.</owl:annotatedTarget>
+        <owl:annotatedTarget>An aromatic ether that is phenol which is substituted at C-5 by a chloro group and at C-2 by a 2,4-dichlorophenoxy group. It is widely used as a preservative and antimicrobial agent in personal care products such as soaps, skin creams, toothpaste and deodorants as well as in household items such as plastic chopping boards, sports equipment and shoes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Triclosan</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -231,7 +281,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_16716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16716">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45790"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A solvent that is benzene.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:16716</oboInOwl:id>
         <rdfs:label>benzene</rdfs:label>
@@ -248,15 +303,21 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_16842 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16842">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is formaldehyde, a colorless, flammable, strong-smelling chemical widely used to make home building products and commonly used as a preservative in medical laboratories, mortuaries, and consumer products, including some hair smoothing and straightening products.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An aldehyde resulting from the formal oxidation of methanol.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:16842</oboInOwl:id>
         <rdfs:label>formaldehyde</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16842"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is formaldehyde, a colorless, flammable, strong-smelling chemical widely used to make home building products and commonly used as a preservative in medical laboratories, mortuaries, and consumer products, including some hair smoothing and straightening products.</owl:annotatedTarget>
+        <owl:annotatedTarget>An aldehyde resulting from the formal oxidation of methanol.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Formaldehyde</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/formaldehyde/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -282,15 +343,21 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_172390 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_172390">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is glycol ether.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A hydroxyether which contains both an ether and alcohol functional groups. It is one of the most versatile classes of organic solvents which are commonly used in paints, cleaners, adhesives, pharmaceuticals and cosmetics.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:172390</oboInOwl:id>
         <rdfs:label>glycol ether</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_172390"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is glycol ether.</owl:annotatedTarget>
+        <owl:annotatedTarget>A hydroxyether which contains both an ether and alcohol functional groups. It is one of the most versatile classes of organic solvents which are commonly used in paints, cleaners, adhesives, pharmaceuticals and cosmetics.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Glycol_ethers</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.cdc.gov/niosh/docs/83-112/default.html</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.epa.gov/sites/production/files/2016-09/documents/glycol-ethers.pdf</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -369,7 +436,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_17578 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17578">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45790"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45790"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A solvent that is toluene.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:17578</oboInOwl:id>
         <rdfs:label>toluene</rdfs:label>
@@ -454,10 +526,10 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_25708 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25708">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79314"/>
         <obo:IAO_0000115>A flame retardant that is organophosphate flame retardant (OPFR).</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:25708</oboInOwl:id>
-        <rdfs:label>organophosphate flame retardant</rdfs:label>
+        <rdfs:label>obsolete organophosphate flame retardant</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25708"/>
@@ -506,15 +578,27 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_27026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
-        <obo:IAO_0000115>A biological agent that is a biological toxin. Poisonous substance produced by a biological organism such as a microbe, animal or plant.</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27026"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Poisonous substance produced by a biological organism such as a microbe, animal or plant.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:27026</oboInOwl:id>
         <rdfs:label>toxin</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27026"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A biological agent that is a biological toxin. Poisonous substance produced by a biological organism such as a microbe, animal or plant.</owl:annotatedTarget>
+        <owl:annotatedTarget>Poisonous substance produced by a biological organism such as a microbe, animal or plant.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Toxin</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6429496/</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.osha.gov/biological-agents</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -559,8 +643,13 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_2861 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_2861">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is acrylamide, a chemical widely used during the manufacturing of paper, dye, and other industrial products. It can also be formed when certain foods are cooked at high temperatures. Food and cigarette smoke are the major sources of acrylamide exposure. A colorless, odorless, crystalline amide that polymerizes rapidly and can form as a byproduct during the heating of starch-rich foods to high temperatures. A member of the class of acrylamides that results from the formal condensation of acrylic acid with ammonia.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A member of the class of acrylamides that results from the formal condensation of acrylic acid with ammonia.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>DRON:00723948</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C44329</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>OMIT:0020033</oboInOwl:hasDbXref>
@@ -570,7 +659,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2861"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is acrylamide, a chemical widely used during the manufacturing of paper, dye, and other industrial products. It can also be formed when certain foods are cooked at high temperatures. Food and cigarette smoke are the major sources of acrylamide exposure. A colorless, odorless, crystalline amide that polymerizes rapidly and can form as a byproduct during the heating of starch-rich foods to high temperatures. A member of the class of acrylamides that results from the formal condensation of acrylic acid with ammonia.</owl:annotatedTarget>
+        <owl:annotatedTarget>A member of the class of acrylamides that results from the formal condensation of acrylic acid with ammonia.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/acrylamide/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -614,8 +703,13 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_30879 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30879">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is alcohol.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A compound in which a hydroxy group, ‒OH, is attached to a saturated carbon atom.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C2190</oboInOwl:hasDbXref>
         <oboInOwl:id>CHEBI:30879</oboInOwl:id>
         <rdfs:label>alcohol</rdfs:label>
@@ -623,7 +717,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30879"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is alcohol.</owl:annotatedTarget>
+        <owl:annotatedTarget>A compound in which a hydroxy group, ‒OH, is attached to a saturated carbon atom.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niaaa.nih.gov/alcohol-health/overview-alcohol-consumption/moderate-binge-drinking</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/fetal-alcohol-exposure</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -651,14 +745,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33216">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138015"/>
-        <obo:IAO_0000115>An endocrine disruptor that is bisphenol A (BPA), a chemical produced in large quantities for use primarily in the production of polycarbonate plastics and epoxy resins. A bisphenol that is 4,4&apos;-methanediyldiphenol in which the methylene hydrogens are replaced by two methyl groups.</obo:IAO_0000115>
+        <obo:IAO_0000115>A bisphenol that is 4,4&apos;-methanediyldiphenol in which the methylene hydrogens are replaced by two methyl groups.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:33216</oboInOwl:id>
         <rdfs:label>bisphenol A</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33216"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An endocrine disruptor that is bisphenol A (BPA), a chemical produced in large quantities for use primarily in the production of polycarbonate plastics and epoxy resins. A bisphenol that is 4,4&apos;-methanediyldiphenol in which the methylene hydrogens are replaced by two methyl groups.</owl:annotatedTarget>
+        <owl:annotatedTarget>A bisphenol that is 4,4&apos;-methanediyldiphenol in which the methylene hydrogens are replaced by two methyl groups.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Bisphenol_A</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/sya-bpa/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -668,14 +763,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33217">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79314"/>
-        <obo:IAO_0000115>A flame retardant that is tetrabromobisphenol A (TBBPA), widely used to make computer circuit boards and electronics. Also used in some textiles and paper, or as an additive in other flame retardants.</obo:IAO_0000115>
+        <obo:IAO_0000115>A bromobisphenol that is 4,4&apos;-methanediyldiphenol in which the methylene hydrogens are replaced by two methyl groups and the phenyl rings are substituted by bromo groups at positions 2, 2&apos;, 6 and 6&apos;. It is a brominated flame retardant.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>tetrabromobisphenol A</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHEBI:33217</oboInOwl:id>
-        <rdfs:label>tetrabromobisphenol A</rdfs:label>
+        <rdfs:label>3,3&apos;,5,5&apos;-tetrabromobisphenol A</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33217"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A flame retardant that is tetrabromobisphenol A (TBBPA), widely used to make computer circuit boards and electronics. Also used in some textiles and paper, or as an additive in other flame retardants.</owl:annotatedTarget>
+        <owl:annotatedTarget>A bromobisphenol that is 4,4&apos;-methanediyldiphenol in which the methylene hydrogens are replaced by two methyl groups and the phenyl rings are substituted by bromo groups at positions 2, 2&apos;, 6 and 6&apos;. It is a brominated flame retardant.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/flame_retardants/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -685,14 +781,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35446">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138015"/>
-        <obo:IAO_0000115>An endocrine disruptor that is polychlorinated biphenyl (PCB), used to make electrical equipment like transformers, and in hydraulic fluids, heat transfer fluids, lubricants, and plasticizers.</obo:IAO_0000115>
+        <obo:IAO_0000115>A chloroarene that consists of a biphenyl skeleton substituted by one or more chloro groups.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:35446</oboInOwl:id>
-        <rdfs:label>polychlorinated biphenyl</rdfs:label>
+        <rdfs:label>chlorobiphenyl</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35446"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An endocrine disruptor that is polychlorinated biphenyl (PCB), used to make electrical equipment like transformers, and in hydraulic fluids, heat transfer fluids, lubricants, and plasticizers.</owl:annotatedTarget>
+        <owl:annotatedTarget>A chloroarene that consists of a biphenyl skeleton substituted by one or more chloro groups.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -701,15 +797,21 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_41922 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_41922">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is diethylstilbestrol (DES), a synthetic form of estrogen. An olefinic compound that is trans-hex-3-ene in which the hydrogens at positions 3 and 4 have been replaced by p-hydroxyphenyl groups.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An olefinic compound that is trans-hex-3-ene in which the hydrogens at positions 3 and 4 have been replaced by p-hydroxyphenyl groups.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:41922</oboInOwl:id>
         <rdfs:label>diethylstilbestrol</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_41922"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is diethylstilbestrol (DES), a synthetic form of estrogen. An olefinic compound that is trans-hex-3-ene in which the hydrogens at positions 3 and 4 have been replaced by p-hydroxyphenyl groups.</owl:annotatedTarget>
+        <owl:annotatedTarget>An olefinic compound that is trans-hex-3-ene in which the hydrogens at positions 3 and 4 have been replaced by p-hydroxyphenyl groups.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Diethylstilbestrol</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.cdc.gov/des/consumers/about/index.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -718,8 +820,13 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_46661 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46661">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is asbestos, a group of minerals with long, thin fibers. Fibrous incombustible mineral composed of magnesium and calcium silicates with or without other elements. One of a number of fibrous magnesium and calcium silicate minerals processed for thermal insulation and fireproofing.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Fibrous incombustible mineral composed of magnesium and calcium silicates with or without other elements.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C284</oboInOwl:hasDbXref>
         <oboInOwl:id>CHEBI:46661</oboInOwl:id>
         <rdfs:label>asbestos</rdfs:label>
@@ -727,7 +834,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46661"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is asbestos, a group of minerals with long, thin fibers. Fibrous incombustible mineral composed of magnesium and calcium silicates with or without other elements. One of a number of fibrous magnesium and calcium silicate minerals processed for thermal insulation and fireproofing.</owl:annotatedTarget>
+        <owl:annotatedTarget>Fibrous incombustible mineral composed of magnesium and calcium silicates with or without other elements.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://medlineplus.gov/asbestos.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -737,14 +844,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49706">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138015"/>
-        <obo:IAO_0000115>An endocrine disruptor that is perchlorate, a by-product of aerospace, weapon, and pharmaceutical industries found in drinking water and fireworks.</obo:IAO_0000115>
+        <obo:IAO_0000115>A monovalent inorganic anion obtained by deprotonation of perchloric acid.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:49706</oboInOwl:id>
         <rdfs:label>percholrate</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49706"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An endocrine disruptor that is perchlorate, a by-product of aerospace, weapon, and pharmaceutical industries found in drinking water and fireworks.</owl:annotatedTarget>
+        <owl:annotatedTarget>A monovalent inorganic anion obtained by deprotonation of perchloric acid.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -753,15 +860,26 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_50904 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50904">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
-        <obo:IAO_0000115>A biological agent that is an allergen, a substance that causes an allergic reaction. A chemical compound, or part thereof, which causes the onset of an allergic reaction by interacting with any of the molecular pathways involved in an allergy.</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A chemical compound, or part thereof, which causes the onset of an allergic reaction by interacting with any of the molecular pathways involved in an allergy.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:50904</oboInOwl:id>
         <rdfs:label>allergen</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A biological agent that is an allergen, a substance that causes an allergic reaction. A chemical compound, or part thereof, which causes the onset of an allergic reaction by interacting with any of the molecular pathways involved in an allergy.</owl:annotatedTarget>
+        <owl:annotatedTarget>A chemical compound, or part thereof, which causes the onset of an allergic reaction by interacting with any of the molecular pathways involved in an allergy.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/allergens/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -788,15 +906,21 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_64909 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_64909">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is poison, any substance that is harmful to your body.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any substance that causes disturbance to organisms by chemical reaction or other activity on the molecular scale, when a sufficient quantity is absorbed by the organism.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:64909</oboInOwl:id>
         <rdfs:label>poison</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is poison, any substance that is harmful to your body.</owl:annotatedTarget>
+        <owl:annotatedTarget>Any substance that causes disturbance to organisms by chemical reaction or other activity on the molecular scale, when a sufficient quantity is absorbed by the organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Poison</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://medlineplus.gov/poisoning.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -806,14 +930,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_76989">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138015"/>
-        <obo:IAO_0000115>An endocrine disruptor that is phytoestrogen, naturally occurring substances in plants that have hormone-like activity, such as genistein and daidzein that are in soy products, like tofu or soy milk.</obo:IAO_0000115>
+        <obo:IAO_0000115>Any compound produced by a plant that happens to have estrogenic activity.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:76989</oboInOwl:id>
         <rdfs:label>phytoestrogen</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_76989"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An endocrine disruptor that is phytoestrogen, naturally occurring substances in plants that have hormone-like activity, such as genistein and daidzein that are in soy products, like tofu or soy milk.</owl:annotatedTarget>
+        <owl:annotatedTarget>Any compound produced by a plant that happens to have estrogenic activity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Phytoestrogen</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -822,15 +947,26 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_79314 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_79314">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is a flame retardant, chemicals that are applied to materials to prevent the start or slow the growth of fire.</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79314"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any compound that is added to manufactured materials to inhibit, suppress, or delay the production of flames and so prevent the spread of fire.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:79314</oboInOwl:id>
         <rdfs:label>flame retardant</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79314"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is a flame retardant, chemicals that are applied to materials to prevent the start or slow the growth of fire.</owl:annotatedTarget>
+        <owl:annotatedTarget>Any compound that is added to manufactured materials to inhibit, suppress, or delay the production of flames and so prevent the spread of fire.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/flame_retardants/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -839,7 +975,12 @@
     <!-- http://purl.obolibrary.org/obo/DRON_00020118 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DRON_00020118">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An allergen that is a dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.</obo:IAO_0000115>
         <oboInOwl:id>DRON:00020118</oboInOwl:id>
         <rdfs:label>dust mite</rdfs:label>
@@ -856,16 +997,27 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
-        <obo:IAO_0000115>An allergen that is fecal material.  An excreta material which is composed primarily of feces, an excreta consisting of waste products expelled from an animal&apos;s digestive tract during defecation.</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002003"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An excreta material which is composed primarily of feces, an excreta consisting of waste products expelled from an animal&apos;s digestive tract through the anus (or cloaca) during defecation.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:00002003</oboInOwl:id>
         <rdfs:label>fecal material</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An allergen that is fecal material.  An excreta material which is composed primarily of feces, an excreta consisting of waste products expelled from an animal&apos;s digestive tract during defecation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:http://purl.obolibrary.org/obo/ENVO_00002003</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>An excreta material which is composed primarily of feces, an excreta consisting of waste products expelled from an animal&apos;s digestive tract through the anus (or cloaca) during defecation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Feces</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -873,7 +1025,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000677 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000677">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An ecological pertubation that is an earthquake.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01000677</oboInOwl:id>
         <rdfs:label>earthquake</rdfs:label>
@@ -890,7 +1047,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000689 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000689">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An ecological pertubation that is a tsunami.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01000689</oboInOwl:id>
         <rdfs:label>tsunami</rdfs:label>
@@ -908,7 +1070,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000786 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000786">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An ecological pertubation that is fire.</obo:IAO_0000115>
         <obo:IAO_0000115>url:https://www.fs.fed.us/rm/pubs_int/int_gtr336.pdf</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01000786</oboInOwl:id>
@@ -920,7 +1087,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000878 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000878">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An ecological pertubation that is a thunder storm. An atmospheric storm which occurs in cumulonimbus clouds and during which lightning and thunder occur.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01000878</oboInOwl:id>
         <rdfs:label>thunderstorm</rdfs:label>
@@ -938,7 +1110,18 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A physical agent that is radiation. A process during which energy is emitted or transmitted in the form of waves or particles through space or a material medium.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NPO:1731</oboInOwl:hasDbXref>
         <oboInOwl:id>ENVO:01001023</oboInOwl:id>
@@ -956,7 +1139,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001297 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001297">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An ecological pertubation that is a cyclone.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01001297</oboInOwl:id>
         <rdfs:label>cyclone</rdfs:label>
@@ -973,7 +1161,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001482 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001482">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An ecological pertubation that is a tornado.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01001482</oboInOwl:id>
         <rdfs:label>tornado</rdfs:label>
@@ -990,8 +1183,13 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_2000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_2000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is algal bloom. A harmful algal bloom (HAB) occurs when toxin-producing algae grow excessively in a body of water. Algae are microscopic organisms that live in aquatic environments and use photosynthesis to produce energy from sunlight, just like plants. The excessive algal growth, or algal bloom, becomes visible to the naked eye and can be green, blue-green, red, or brown, depending on the type of algae.  Arises from a rapid increase or accumulation in the population of algae (typically microscopic) in an aquatic system.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A feature that arises from a rapid increase or accumulation in the population of algae (typically microscopic) in an aquatic system.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>ENVO:02500018</oboInOwl:hasDbXref>
         <oboInOwl:id>ENVO:2000004</oboInOwl:id>
         <rdfs:label>algal bloom</rdfs:label>
@@ -999,7 +1197,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_2000004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is algal bloom. A harmful algal bloom (HAB) occurs when toxin-producing algae grow excessively in a body of water. Algae are microscopic organisms that live in aquatic environments and use photosynthesis to produce energy from sunlight, just like plants. The excessive algal growth, or algal bloom, becomes visible to the naked eye and can be green, blue-green, red, or brown, depending on the type of algae.  Arises from a rapid increase or accumulation in the population of algae (typically microscopic) in an aquatic system.</owl:annotatedTarget>
+        <owl:annotatedTarget>A feature that arises from a rapid increase or accumulation in the population of algae (typically microscopic) in an aquatic system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Algal_bloom</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/algal-blooms/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1024,6 +1223,12 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000005">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000000"/>
         <obo:IAO_0000115>An agent of biological origin.</obo:IAO_0000115>
         <oboInOwl:id>ExO:0000005</oboInOwl:id>
@@ -1041,6 +1246,12 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000006">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000000"/>
         <obo:IAO_0000115>An agent of chemical origin.</obo:IAO_0000115>
         <oboInOwl:id>ExO:0000006</oboInOwl:id>
@@ -1058,6 +1269,12 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000007">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000000"/>
         <obo:IAO_0000115>An exposure stressor that is a change in the distributions, abundance and relations of organisms and their interactions with the environment.</obo:IAO_0000115>
         <oboInOwl:id>ExO:0000007</oboInOwl:id>
@@ -1075,6 +1292,12 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000008">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000000"/>
         <obo:IAO_0000115>An agent as a source of energy that may cause injury or disease (e.g., noise, vibration, radiation, temperature extremes).</obo:IAO_0000115>
         <oboInOwl:id>ExO:0000008</oboInOwl:id>
@@ -1092,6 +1315,12 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000009">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000000"/>
         <obo:IAO_0000115>An agent that interferes with one&apos;s psychological development in and interaction with a social environment.</obo:IAO_0000115>
         <oboInOwl:id>ExO:0000009</oboInOwl:id>
@@ -1109,7 +1338,12 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An ecological perturbation that is acidic water, usually pH 2.5 to 4.5, which poisons the ecosystem and adversely affects plants, fishes, and mammals. It is caused by industrial pollutants, mainly sulfur oxides and nitrogen oxides, emitted into the atmosphere and returning to earth in the form of acidic rain water.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>ENVO:03000127</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>OMIT:0016047</oboInOwl:hasDbXref>
@@ -1129,7 +1363,12 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An ecological pertubation that is any significant change in measures of climate (such as temperature, precipitation, or wind) lasting for an extended period (decades or longer). It may result from natural factors such as changes in the sun&apos;s intensity, natural processes within the climate system such as changes in ocean circulation, or human activities.</obo:IAO_0000115>
         <oboInOwl:id>ExO:0000014</oboInOwl:id>
         <rdfs:label>climate change</rdfs:label>
@@ -1146,7 +1385,12 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A psychosocial agent that is a situation in which the level of living of an individual, family, or group is below the standard of the community. It is often related to a specific income level.</obo:IAO_0000115>
         <oboInOwl:id>ExO:0000015</oboInOwl:id>
         <rdfs:label>poverty</rdfs:label>
@@ -1165,7 +1409,12 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_03420279 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420279">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An allergen that is pollen, a fine to coarse powdery substance, is created by certain plants as part of their reproduction process. It can appear from trees in the spring, grasses in the summer, and weeds in the fall. The structure into which a haploid microspore develops; contains a halpoid tube nucleus and two haploid sperm nuclei at maturity.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BTO:0001097</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C79660</oboInOwl:hasDbXref>
@@ -1186,7 +1435,12 @@
     <!-- http://purl.obolibrary.org/obo/GSSO_001616 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GSSO_001616">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A psychosocial agent that is healthcare disparitiy (access to healthcare), the timely use of personal health services to achieve the best health outcomes.</obo:IAO_0000115>
         <oboInOwl:id>GSSO:001616</oboInOwl:id>
         <rdfs:label>healthcare disparity</rdfs:label>
@@ -1204,14 +1458,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0011967">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
-        <obo:IAO_0000115>A nutrient deficiency that is copper deficiency.</obo:IAO_0000115>
+        <obo:IAO_0000115>A reduced concentration of copper in the blood.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>copper deficiency</oboInOwl:hasExactSynonym>
         <oboInOwl:id>HP:0011967</oboInOwl:id>
-        <rdfs:label>copper deficiency</rdfs:label>
+        <rdfs:label>Decreased circulating copper concentration</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0011967"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A nutrient deficiency that is copper deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>A reduced concentration of copper in the blood.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637704/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1254,7 +1509,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C125231 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C125231">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79314"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A flame retardant that is polybrominated diphenyl ethers(PBDE), an endocrine disruptor, PBDEs do not chemically bind with the products to which they are added (furniture, electronics, etc.) so they easily release from these products and enter air and dust. PBDEs can lower birth weight/length of children, and impair neurological development.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C125231</oboInOwl:id>
         <rdfs:label>polybrominated diphenyl ether</rdfs:label>
@@ -1305,7 +1565,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C14329 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14329">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A biological agent that is a microorganism, including bacteria, viruses, or fungi. A microscopic organism. The term microorganism may refer to a prokaryote or eukaryote, and may be a unicellular or multicellular organism. All taxonomic kingdoms contain microorganisms.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C14329</oboInOwl:id>
         <rdfs:label>microorganism</rdfs:label>
@@ -1322,7 +1587,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C15222 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15222">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A psychosocial agent that is diet.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C15222</oboInOwl:id>
         <rdfs:label>diet</rdfs:label>
@@ -1339,7 +1609,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C154329 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C154329">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0008624"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIT_0008624"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An irritant that is tobacco smoke. Smoke that is emitted from burning tobacco, including cigarette, pipe and cigar, and from tobacco smoke exhaled by smokers.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>environmental tobacco smoke</oboInOwl:hasExactSynonym>
         <oboInOwl:id>NCIT:C154329</oboInOwl:id>
@@ -1376,7 +1651,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C157938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C157938">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A deficiency of a necessary nutrient.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C157938</oboInOwl:id>
         <rdfs:label>nutrient deficiency</rdfs:label>
@@ -1410,7 +1690,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C16795 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16795">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A psychosocial agent that is lifestyle.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C16795</oboInOwl:id>
         <rdfs:label>lifestyle</rdfs:label>
@@ -1427,7 +1712,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C1698 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C1698">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A radiation that is p32, a radioactive isotope of phosphorus.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C1698</oboInOwl:id>
         <rdfs:label>p32</rdfs:label>
@@ -1444,7 +1734,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C26415 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C26415">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A fecal material that is mouse feces.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C26415</oboInOwl:id>
         <rdfs:label>mouse feces</rdfs:label>
@@ -1461,7 +1756,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C26696 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C26696">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A psychosocial agent that is emothional anxiety,  characterized by feelings of tension, worried thoughts and physical changes like increased blood pressure.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C26696</oboInOwl:id>
         <rdfs:label>emotional anxiety</rdfs:label>
@@ -1478,7 +1778,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C28266 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C28266">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An allergen that is mold. A very large group of microscopic fungi that live on plant or animal matter. Most are filamentous organisms and produce spores that can be air-, water-, or insect-borne.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C28266</oboInOwl:id>
         <rdfs:label>mold</rdfs:label>
@@ -1529,7 +1834,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C35041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C35041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A psychosocial agent that is stress,  a feeling of emotional or physical tension.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C35041</oboInOwl:id>
         <rdfs:label>stress</rdfs:label>
@@ -1546,7 +1856,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C38452 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38452">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A psychosocial agent that is peer pressure.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C38452</oboInOwl:id>
         <rdfs:label>peer pressure</rdfs:label>
@@ -1563,7 +1878,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C39773 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C39773">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A physical agent that is strenuous physical exercise.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C16567</oboInOwl:id>
         <rdfs:label>strenuous physical exercise</rdfs:label>
@@ -1580,7 +1900,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C44357 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C44357">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is chromium  hexavalent compound, a form of the metallic element chromium, is widely used in electroplating, stainless steel production, leather tanning, textile manufacturing, and wood preservation.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C44357</oboInOwl:id>
         <rdfs:label>chromium hexavalent compound</rdfs:label>
@@ -1597,7 +1922,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C45783 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C45783">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A physical agent that is noise.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C45783</oboInOwl:id>
         <rdfs:label>noise</rdfs:label>
@@ -1614,7 +1944,18 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C45790 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C45790">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45790"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is solvent.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C45790</oboInOwl:id>
         <rdfs:label>solvent</rdfs:label>
@@ -1631,7 +1972,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C800 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C800">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A radiation that is radon, a colorless, odorless radioactive gas.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C800</oboInOwl:id>
         <rdfs:label>radon</rdfs:label>
@@ -1648,7 +1994,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C809 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C809">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A biological toxin that is ricin toxin, a plant toxin produced from castor beans. A phytotoxin and lectin comprised of a homodimer of ricin toxin A and B chains derived from the seeds of Ricinus communis, the castor oil plant, with protein synthesis inhibitory activity and extremely high cytotoxicity.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>OMIT:0013190</oboInOwl:hasDbXref>
         <oboInOwl:id>NCIT:C809</oboInOwl:id>
@@ -1666,7 +2017,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C81304 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C81304">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A biological agent that is blood transfusion products.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C81304</oboInOwl:id>
         <rdfs:label>blood product</rdfs:label>
@@ -1735,7 +2091,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C93214 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C93214">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A psychosocial agent that is violence.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C93214</oboInOwl:id>
         <rdfs:label>violence</rdfs:label>
@@ -1769,7 +2130,12 @@
     <!-- http://purl.obolibrary.org/obo/OMIT_0001823 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001823">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is air pollution, that is composed of a mixture of chemical and particulate matter pollutants in outdoor air, including but not limited to carbon monoxide, ozone, sulfur dixoide, nitrogen dioxide, lead, and fine partiuculate matter. Vehicle emissions, fuel oils and natural gas to heat homes, by-products of manufacturing and power generation, particularly coal-fueled power plants, and fumes from chemical production are the primary sources of human-made air pollution. A pollution process during which particulates or other contaminants are released into a portion of air.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>ENVO:02500037</oboInOwl:hasDbXref>
         <oboInOwl:id>OMIT:0001823</oboInOwl:id>
@@ -1822,7 +2188,12 @@
     <!-- http://purl.obolibrary.org/obo/OMIT_0005411 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0005411">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An endocrine disruptor that is dioxin, are mainly byproducts of industrial practices. They are produced through a variety of incineration processes, including improper municipal waste incineration and burning of trash, and can be released into the air during natural processes, such as forest fires and volcanoes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C442</oboInOwl:hasDbXref>
         <oboInOwl:id>OMIT:0005411</oboInOwl:id>
@@ -1868,7 +2239,18 @@
     <!-- http://purl.obolibrary.org/obo/OMIT_0008624 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0008624">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIT_0008624"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is an irritant, substances that can trigger allergy- and asthma-like reactions upon exposure.</obo:IAO_0000115>
         <oboInOwl:id>OMIT:0008624</oboInOwl:id>
         <rdfs:label>irritant</rdfs:label>
@@ -1887,8 +2269,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0013171">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
         <obo:IAO_0000115>A vitamin deficiency that is vitamin B2 (riboflavin) deficiency.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>vitamin B2 deficiency</oboInOwl:hasExactSynonym>
         <oboInOwl:id>OMIT:0013171</oboInOwl:id>
-        <rdfs:label>vitamin B2 deficiency</rdfs:label>
+        <rdfs:label>riboflavin deficiency</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMIT_0013171"/>
@@ -1902,7 +2285,12 @@
     <!-- http://purl.obolibrary.org/obo/OMIT_0026343 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0026343">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is volatile organic compound (VOC).</obo:IAO_0000115>
         <oboInOwl:id>OMIT:0026343</oboInOwl:id>
         <rdfs:label>volatile organic compound</rdfs:label>
@@ -1919,7 +2307,12 @@
     <!-- http://purl.obolibrary.org/obo/OMIT_0026512 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0026512">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A physical agent that is extreme heat. Temperatures that hover 10 degrees or more above the average high temperature for the region and last for several weeks.</obo:IAO_0000115>
         <oboInOwl:id>OMIT:0026512</oboInOwl:id>
         <rdfs:label>extreme heat</rdfs:label>
@@ -1937,7 +2330,12 @@
     <!-- http://purl.obolibrary.org/obo/OMIT_0028282 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0028282">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An allergen that is dog dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets. Dog allergens are also present in dander, as well as saliva, urine, and blood. Although allergen levels can differ among breeds, all breeds, even hairless dogs, can trigger allergies.</obo:IAO_0000115>
         <oboInOwl:id>OMIT:0028282</oboInOwl:id>
         <rdfs:label>dog dander</rdfs:label>
@@ -1954,7 +2352,12 @@
     <!-- http://purl.obolibrary.org/obo/ZECO_0000214 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000214">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A physical agent that is ultraviolet light.</obo:IAO_0000115>
         <oboInOwl:id>ZECO:0000214</oboInOwl:id>
         <rdfs:label>ultraviolet light</rdfs:label>
@@ -1971,15 +2374,21 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_10033/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10033/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is warfarin.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A racemate comprising equal amounts of (R)- and (S)-warfarin. Extensively used as both an anticoagulant drug and as a pesticide against rats and mice.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:10033</oboInOwl:id>
         <rdfs:label>warfarin</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10033/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is warfarin.</owl:annotatedTarget>
+        <owl:annotatedTarget>A racemate comprising equal amounts of (R)- and (S)-warfarin. Extensively used as both an anticoagulant drug and as a pesticide against rats and mice.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Warfarin</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.cdc.gov/niosh/npg/npgd0665.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1988,15 +2397,21 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_22271/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22271/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is aflatoxin,  produced by the mold Aspergillus flavus that can grow on corn, peanuts, and other grains. Any of a group of related and highly toxic secondary metabolites (mycotoxins) whose main structural feature is a fused coumarin-bis(dihydrofuran) ring system and which are produced by strains of the moulds Aspergillus flavus or A. parasiticus, together with further metabolites of these mycotoxins.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any of a group of related and highly toxic secondary metabolites (mycotoxins) whose main structural feature is a fused coumarin-bis(dihydrofuran) ring system and which are produced by strains of the moulds Aspergillus flavus or A. parasiticus, together with further metabolites of these mycotoxins.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:22271</oboInOwl:id>
         <rdfs:label>aflatoxin</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22271/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is aflatoxin,  produced by the mold Aspergillus flavus that can grow on corn, peanuts, and other grains. Any of a group of related and highly toxic secondary metabolites (mycotoxins) whose main structural feature is a fused coumarin-bis(dihydrofuran) ring system and which are produced by strains of the moulds Aspergillus flavus or A. parasiticus, together with further metabolites of these mycotoxins.</owl:annotatedTarget>
+        <owl:annotatedTarget>Any of a group of related and highly toxic secondary metabolites (mycotoxins) whose main structural feature is a fused coumarin-bis(dihydrofuran) ring system and which are produced by strains of the moulds Aspergillus flavus or A. parasiticus, together with further metabolites of these mycotoxins.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Aflatoxin</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.cancer.gov/about-cancer/causes-prevention/risk/substances/aflatoxins</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.fda.gov/animal-veterinary/animal-health-literacy/aflatoxin-poisoning-pets</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2006,7 +2421,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_27452/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27452/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemcial agent that is styrene, a colorless, flammable liquid, which has a sweet odor and is highly volatile. Styrene is widely used to make plastics and rubber, which are used to manufacture a variety of products, such as insulation, pipes, automobile parts, printing cartridges, food containers, and carpet backing.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:27452</oboInOwl:id>
         <rdfs:label>styrene</rdfs:label>
@@ -2023,15 +2443,21 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_3387/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3387/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is carbamazepine, a drug resulting in fetal teratogenic effects. A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:3387</oboInOwl:id>
         <rdfs:label>carbamazepine</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3387/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is carbamazepine, a drug resulting in fetal teratogenic effects. A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.</owl:annotatedTarget>
+        <owl:annotatedTarget>A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Carbamazepine</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/26329145/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2040,7 +2466,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_77853/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_77853/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is persistent organic pollutant (POP).</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:77853</oboInOwl:id>
         <rdfs:label>persistent organic pollutant</rdfs:label>
@@ -2057,8 +2488,13 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_8107/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_8107/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
-        <obo:IAO_0000115>A chemical agent that is phenytoin, a drug resulting in birth defects when used maternally during pregnancy. A imidazolidine-2,4-dione that consists of hydantoin bearing two phenyl substituents at position 5.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A imidazolidine-2,4-dione that consists of hydantoin bearing two phenyl substituents at position 5.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>dilantin</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHEBI:8107</oboInOwl:id>
         <rdfs:label>phenytoin</rdfs:label>
@@ -2066,7 +2502,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8107/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is phenytoin, a drug resulting in birth defects when used maternally during pregnancy. A imidazolidine-2,4-dione that consists of hydantoin bearing two phenyl substituents at position 5.</owl:annotatedTarget>
+        <owl:annotatedTarget>A imidazolidine-2,4-dione that consists of hydantoin bearing two phenyl substituents at position 5.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://medlineplus.gov/druginfo/meds/a682022.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2075,7 +2511,12 @@
     <!-- http://purl.obolibrary.org/obo/FOBI_0001/food -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOBI_0001/food">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A biological agent that is foods, specifically contaminated food or beverages.</obo:IAO_0000115>
         <oboInOwl:id>FOBI:0001</oboInOwl:id>
         <rdfs:label>food</rdfs:label>
@@ -2109,7 +2550,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C163032/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C163032/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A biological toxin that is botulinum toxin, caused by a toxin made by a bacterium called Clostridium botulinum.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FBbi:00000465</oboInOwl:hasDbXref>
         <oboInOwl:id>NCIT:C163032</oboInOwl:id>
@@ -2127,7 +2573,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C2834/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C2834/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is vitamin E acetate.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C2834</oboInOwl:id>
         <rdfs:label>vitamin E acetate</rdfs:label>
@@ -2144,7 +2595,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C55826/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C55826/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is a plasticizer.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C55826</oboInOwl:id>
         <rdfs:label>plasticizer</rdfs:label>
@@ -2162,7 +2618,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C603/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C603/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is accutane (retinoic acid), a medication primarily used to treat severe acne.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Isotretinoin</oboInOwl:hasExactSynonym>
         <oboInOwl:id>NCIT:C603</oboInOwl:id>
@@ -2180,7 +2641,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C84494/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C84494/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An allergen that is cat dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets. Cat allergens are found in cat saliva, which sticks to fur when cats lick themselves. They are also released by glands in the skin and shed as dander or secreted in the urine of male cats. The allergens are buoyant, which means they easily remain airborne.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>DRON:00019407</oboInOwl:hasDbXref>
         <oboInOwl:id>NCIT:C84494</oboInOwl:id>
@@ -2198,7 +2664,12 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C870/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C870/">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chemical agent that is thalidomide.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C870</oboInOwl:id>
         <rdfs:label>thalidomide</rdfs:label>
@@ -2218,14 +2689,14 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005878">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
-        <obo:IAO_0000115>A chemical agent that is vitamin deficiency.</obo:IAO_0000115>
+        <obo:IAO_0000115>A disorder that is caused by the deficiency of a vitamin. The deficiency may result from either suboptimal vitamin intake or conditions that prevent the vitamin&apos;s use or absorption in the body. Representative examples include beriberi caused by thiamine deficiency, scurvy caused by vitamin C deficiency, and rickets caused by vitamin D deficiency.</obo:IAO_0000115>
         <oboInOwl:id>EFO:0005878</oboInOwl:id>
         <rdfs:label>vitamin deficiency</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is vitamin deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>A disorder that is caused by the deficiency of a vitamin. The deficiency may result from either suboptimal vitamin intake or conditions that prevent the vitamin&apos;s use or absorption in the body. Representative examples include beriberi caused by thiamine deficiency, scurvy caused by vitamin C deficiency, and rickets caused by vitamin D deficiency.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Vitamin_deficiency</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
