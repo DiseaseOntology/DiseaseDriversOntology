@@ -11,7 +11,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/disdriv.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/disdriv/releases/2021-05-18/disdriv.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/disdriv/releases/2021-06-04/disdriv.owl"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dc:title>Disease Drivers</dc:title>
         <dc:description>Drivers of human diseases including environmental, maternal and social exposures.</dc:description>
