@@ -246,14 +246,20 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_15956 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15956">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins.</obo:IAO_0000115>
-        <rdfs:label>biotin deficiency</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:15956</oboInOwl:id>
+        <rdfs:label>biotin</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15956"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins.</owl:annotatedTarget>
+        <owl:annotatedTarget>An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Biotin</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK547751/</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -287,14 +293,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A solvent that is benzene.</obo:IAO_0000115>
+        <obo:IAO_0000115>A six-carbon aromatic annulene in which each carbon atom donates one of its two 2p electrons into a delocalised pi system. A toxic, flammable liquid byproduct of coal distillation, it is used as an industrial solvent. Benzene is a carcinogen that also damages bone marrow and the central nervous system.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C302</oboInOwl:hasDbXref>
         <oboInOwl:id>CHEBI:16716</oboInOwl:id>
         <rdfs:label>benzene</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16716"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A solvent that is benzene.</owl:annotatedTarget>
+        <owl:annotatedTarget>A six-carbon aromatic annulene in which each carbon atom donates one of its two 2p electrons into a delocalised pi system. A toxic, flammable liquid byproduct of coal distillation, it is used as an industrial solvent. Benzene is a carcinogen that also damages bone marrow and the central nervous system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3271273/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -401,15 +408,20 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_17245 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17245">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
-        <obo:IAO_0000115>A poison that is carbon monoxide (CO), a gas that has no odor or color, can cause sudden illness and death. CO is found in combustion fumes, such as those made by cars and trucks, lanterns, stoves, gas ranges and heating systems. CO from these fumes can build up in places that don&apos;t have a good flow of fresh air. You can be poisoned by breathing them in.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A one-carbon compound in which the carbon is joined only to a single oxygen. It is a colourless, odourless, tasteless, toxic gas.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:17245</oboInOwl:id>
         <rdfs:label>carbon monoxide</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17245"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A poison that is carbon monoxide (CO), a gas that has no odor or color, can cause sudden illness and death. CO is found in combustion fumes, such as those made by cars and trucks, lanterns, stoves, gas ranges and heating systems. CO from these fumes can build up in places that don&apos;t have a good flow of fresh air. You can be poisoned by breathing them in.</owl:annotatedTarget>
+        <owl:annotatedTarget>A one-carbon compound in which the carbon is joined only to a single oxygen. It is a colourless, odourless, tasteless, toxic gas.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://medlineplus.gov/carbonmonoxidepoisoning.html</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.cdc.gov/co/faqs.htm</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -419,15 +431,20 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_17514 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17514">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
-        <obo:IAO_0000115>A poison that is cyanide.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A pseudohalide anion that is the conjugate base of hydrogen cyanide.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:17514</oboInOwl:id>
         <rdfs:label>cyanide</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17514"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A poison that is cyanide.</owl:annotatedTarget>
+        <owl:annotatedTarget>A pseudohalide anion that is the conjugate base of hydrogen cyanide.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://emergency.cdc.gov/agent/cyanide/basics/facts.asp</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -442,14 +459,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45790"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A solvent that is toluene.</obo:IAO_0000115>
+        <obo:IAO_0000115>The simplest member of the class toluenes consisting of a benzene core which bears a single methyl substituent.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:17578</oboInOwl:id>
         <rdfs:label>toluene</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17578"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A solvent that is toluene.</owl:annotatedTarget>
+        <owl:annotatedTarget>The simplest member of the class toluenes consisting of a benzene core which bears a single methyl substituent.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4539858/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -475,15 +492,20 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_24527 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24527">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
-        <obo:IAO_0000115>A poison that is herbicide.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A substance used to destroy plant pests.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:24527</oboInOwl:id>
         <rdfs:label>herbicide</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24527"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A poison that is herbicide.</owl:annotatedTarget>
+        <owl:annotatedTarget>A substance used to destroy plant pests.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://medlineplus.gov/ency/article/002838.htm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -543,15 +565,20 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_25944 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25944">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
-        <obo:IAO_0000115>A poison that is pesticide, any substance used to kill, repel, or control certain forms of plant or animal life that are considered to be pests. Pesticides include herbicides for destroying weeds and other unwanted vegetation, insecticides for controlling a wide variety of insects, fungicides used to prevent the growth of molds and mildew, disinfectants for preventing the spread of bacteria, and compounds used to control mice and rats.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Strictly, a substance intended to kill pests. In common usage, any substance used for controlling, preventing, or destroying animal, microbiological or plant pests.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:25944</oboInOwl:id>
         <rdfs:label>pesticide</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25944"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A poison that is pesticide, any substance used to kill, repel, or control certain forms of plant or animal life that are considered to be pests. Pesticides include herbicides for destroying weeds and other unwanted vegetation, insecticides for controlling a wide variety of insects, fungicides used to prevent the growth of molds and mildew, disinfectants for preventing the spread of bacteria, and compounds used to control mice and rats.</owl:annotatedTarget>
+        <owl:annotatedTarget>Strictly, a substance intended to kill pests. In common usage, any substance used for controlling, preventing, or destroying animal, microbiological or plant pests.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/pesticides/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -669,14 +696,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30440">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5631"/>
-        <obo:IAO_0000115>A heavy metal that is  thalium, a metallic element first identified and named from the brilliant green line in its flame spectrum.</obo:IAO_0000115>
+        <obo:IAO_0000115>A metallic element first identified and named from the brilliant green line in its flame spectrum (from Greek thetaalphalambdalambdaomicronsigma, a green shoot).</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:30440</oboInOwl:id>
         <rdfs:label>thallium</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30440"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A heavy metal that is  thalium, a metallic element first identified and named from the brilliant green line in its flame spectrum.</owl:annotatedTarget>
+        <owl:annotatedTarget>A metallic element first identified and named from the brilliant green line in its flame spectrum (from Greek thetaalphalambdalambdaomicronsigma, a green shoot).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Thallium</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.cdc.gov/niosh/ershdb/emergencyresponsecard_29750026.html</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -686,7 +713,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_30785 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30785">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A poison that is methylmercury.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:30785</oboInOwl:id>
         <rdfs:label>methylmercury</rdfs:label>
@@ -728,14 +760,20 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32588">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
-        <obo:IAO_0000115>A poison that is potassium chloride (KCl).</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A metal chloride salt with a K(+) counterion.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:32588</oboInOwl:id>
         <rdfs:label>potassium chloride</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32588"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A poison that is potassium chloride (KCl).</owl:annotatedTarget>
+        <owl:annotatedTarget>A metal chloride salt with a K(+) counterion.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://pubchem.ncbi.nlm.nih.gov/compound/Potassium-chloride</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -773,6 +811,29 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A bromobisphenol that is 4,4&apos;-methanediyldiphenol in which the methylene hydrogens are replaced by two methyl groups and the phenyl rings are substituted by bromo groups at positions 2, 2&apos;, 6 and 6&apos;. It is a brominated flame retardant.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/flame_retardants/index.cfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33229">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
+        <obo:IAO_0000115>A biochemical role played by any micronutrient that is an organic compound. Vitamins are present in foods in small amounts and are essential to normal metabolism and biochemical functions, usually as coenzymes.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:33229</oboInOwl:id>
+        <rdfs:label>vitamin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A biochemical role played by any micronutrient that is an organic compound. Vitamins are present in foods in small amounts and are essential to normal metabolism and biochemical functions, usually as coenzymes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Vitamin</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -888,8 +949,13 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_5631 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_5631">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
-        <obo:IAO_0000115>A poison that is a heavy metal, any metallic chemical element that has a relatively high density and is toxic or poisonous at low concentrations.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any metal that is characterized by its rather high atomic mass and density. Although typically occurring in low concentrations, they can be found all throughout the Earth&apos;s crust (Commonly, a density of at least 5 g cm(3) is used to define a heavy metal and to differentiate it from other, &apos;&apos;light&apos;&apos; metals).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>OMIT:0019292</oboInOwl:hasDbXref>
         <oboInOwl:id>CHEBI:5631</oboInOwl:id>
         <rdfs:label>heavy metal</rdfs:label>
@@ -897,7 +963,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5631"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A poison that is a heavy metal, any metallic chemical element that has a relatively high density and is toxic or poisonous at low concentrations.</owl:annotatedTarget>
+        <owl:annotatedTarget>Any metal that is characterized by its rather high atomic mass and density. Although typically occurring in low concentrations, they can be found all throughout the Earth&apos;s crust (Commonly, a density of at least 5 g cm(3) is used to define a heavy metal and to differentiate it from other, &apos;&apos;light&apos;&apos; metals).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Heavy_metals</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.lenntech.com/processes/heavy/heavy-metals/heavy-metals.htm#ixzz6s7SaXlej</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -906,6 +973,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_64909 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_64909">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64909"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
@@ -981,14 +1054,16 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An allergen that is a dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.</obo:IAO_0000115>
-        <oboInOwl:id>DRON:00020118</oboInOwl:id>
-        <rdfs:label>dust mite</rdfs:label>
+        <obo:IAO_0000115>An allergen that is an American house dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>OMIT:0022964</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Dermatophagoides farinae</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>NCBITaxon:6954</oboInOwl:id>
+        <rdfs:label>American house dust mite</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DRON_00020118"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An allergen that is a dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.</owl:annotatedTarget>
+        <owl:annotatedTarget>An allergen that is an American house dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/allergens/dustmites/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1053,14 +1128,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An ecological pertubation that is a tsunami.</obo:IAO_0000115>
+        <obo:IAO_0000115>A tsunami is a process during which a series of waves is generated in a water body, typically an ocean or large lake, by the displacement of a large volume of water. Earthquakes, volcanic eruptions and other underwater explosions (including detonations of underwater nuclear devices), landslides, glacier calvings, meteorite impacts and other disturbances above or below water all have the potential to generate a tsunami.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01000689</oboInOwl:id>
         <rdfs:label>tsunami</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000689"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An ecological pertubation that is a tsunami.</owl:annotatedTarget>
+        <owl:annotatedTarget>A tsunami is a process during which a series of waves is generated in a water body, typically an ocean or large lake, by the displacement of a large volume of water. Earthquakes, volcanic eruptions and other underwater explosions (including detonations of underwater nuclear devices), landslides, glacier calvings, meteorite impacts and other disturbances above or below water all have the potential to generate a tsunami.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Tsunami</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://oceanservice.noaa.gov/facts/tsunami.html</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1093,14 +1168,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An ecological pertubation that is a thunder storm. An atmospheric storm which occurs in cumulonimbus clouds and during which lightning and thunder occur.</obo:IAO_0000115>
+        <obo:IAO_0000115>An atmospheric storm which occurs in cumulonimbus clouds and during which lightning and thunder occur.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01000878</oboInOwl:id>
         <rdfs:label>thunderstorm</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000878"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An ecological pertubation that is a thunder storm. An atmospheric storm which occurs in cumulonimbus clouds and during which lightning and thunder occur.</owl:annotatedTarget>
+        <owl:annotatedTarget>An atmospheric storm which occurs in cumulonimbus clouds and during which lightning and thunder occur.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://scienceline.ucsb.edu/getkey.php?key=781</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.ready.gov/thunderstorms-lightning</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1122,7 +1197,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A physical agent that is radiation. A process during which energy is emitted or transmitted in the form of waves or particles through space or a material medium.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process during which energy is emitted or transmitted in the form of waves or particles through space or a material medium.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NPO:1731</oboInOwl:hasDbXref>
         <oboInOwl:id>ENVO:01001023</oboInOwl:id>
         <rdfs:label>radiation</rdfs:label>
@@ -1130,7 +1205,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A physical agent that is radiation. A process during which energy is emitted or transmitted in the form of waves or particles through space or a material medium.</owl:annotatedTarget>
+        <owl:annotatedTarget>A process during which energy is emitted or transmitted in the form of waves or particles through space or a material medium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Radiation</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://medlineplus.gov/radiationexposure.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1167,14 +1243,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An ecological pertubation that is a tornado.</obo:IAO_0000115>
+        <obo:IAO_0000115>A tornado is an aeroform consisting of at least one rapidly rotating column of air that is in contact with both the surface of an astronomical body and pendant from within or beneath a cumulonimbus or cumulus cloud.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01001482</oboInOwl:id>
         <rdfs:label>tornado</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001482"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An ecological pertubation that is a tornado.</owl:annotatedTarget>
+        <owl:annotatedTarget>A tornado is an aeroform consisting of at least one rapidly rotating column of air that is in contact with both the surface of an astronomical body and pendant from within or beneath a cumulonimbus or cumulus cloud.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Tornado</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.nssl.noaa.gov/education/svrwx101/tornadoes/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1415,18 +1492,18 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An allergen that is pollen, a fine to coarse powdery substance, is created by certain plants as part of their reproduction process. It can appear from trees in the spring, grasses in the summer, and weeds in the fall. The structure into which a haploid microspore develops; contains a halpoid tube nucleus and two haploid sperm nuclei at maturity.</obo:IAO_0000115>
+        <obo:IAO_0000115>The male genetic material of a seed plant contained in the anther, usually appearing as fine grains or dust.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BTO:0001097</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C79660</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>OMIT:0012028</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO:0025281</oboInOwl:hasDbXref>
-        <oboInOwl:id>FOODON:03420279</oboInOwl:id>
+        <oboInOwl:id>NCIT:C79660</oboInOwl:id>
         <rdfs:label>pollen</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420279"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An allergen that is pollen, a fine to coarse powdery substance, is created by certain plants as part of their reproduction process. It can appear from trees in the spring, grasses in the summer, and weeds in the fall. The structure into which a haploid microspore develops; contains a halpoid tube nucleus and two haploid sperm nuclei at maturity.</owl:annotatedTarget>
+        <owl:annotatedTarget>The male genetic material of a seed plant contained in the anther, usually appearing as fine grains or dust.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/allergens/pollen/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1458,15 +1535,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0011967">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
-        <obo:IAO_0000115>A reduced concentration of copper in the blood.</obo:IAO_0000115>
+        <obo:IAO_0000115>An element with atomic symbol Cu, atomic number 29, and atomic weight 63.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>copper deficiency</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>HP:0011967</oboInOwl:id>
-        <rdfs:label>Decreased circulating copper concentration</rdfs:label>
+        <oboInOwl:id>NCIT:C391</oboInOwl:id>
+        <rdfs:label>copper</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0011967"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A reduced concentration of copper in the blood.</owl:annotatedTarget>
+        <owl:annotatedTarget>An element with atomic symbol Cu, atomic number 29, and atomic weight 63.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637704/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1475,15 +1552,21 @@
     <!-- http://purl.obolibrary.org/obo/HP_0100497 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0100497">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>A vitamin deficiency that is vitamin B3 (niacin) deficiency.</obo:IAO_0000115>
-        <oboInOwl:id>HP:0100497</oboInOwl:id>
-        <rdfs:label>vitamin B3 deficiency</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A water-soluble vitamin belonging to the vitamin B family, which occurs in many animal and plant tissues, with antihyperlipidemic activity. Niacin is converted to its active form niacinamide, which is a component of the coenzymes nicotinamide adenine dinucleotide (NAD) and its phosphate form, NADP. These coenzymes play an important role in tissue respiration and in glycogen, lipid, amino acid, protein, and purine metabolism. Although the exact mechanism of action by which niacin lowers cholesterol is not fully understood, it may act by inhibiting the synthesis of very low density lipoproteins (VLDL), inhibiting the release of free fatty acids from adipose tissue, increasing lipoprotein lipase activity, and reducing the hepatic synthesis of VLDL-C and LDL-C.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>vitamin B3</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>NCIT:C689</oboInOwl:id>
+        <rdfs:label>niacin</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0100497"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is vitamin B3 (niacin) deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>A water-soluble vitamin belonging to the vitamin B family, which occurs in many animal and plant tissues, with antihyperlipidemic activity. Niacin is converted to its active form niacinamide, which is a component of the coenzymes nicotinamide adenine dinucleotide (NAD) and its phosphate form, NADP. These coenzymes play an important role in tissue respiration and in glycogen, lipid, amino acid, protein, and purine metabolism. Although the exact mechanism of action by which niacin lowers cholesterol is not fully understood, it may act by inhibiting the synthesis of very low density lipoproteins (VLDL), inhibiting the release of free fatty acids from adipose tissue, increasing lipoprotein lipase activity, and reducing the hepatic synthesis of VLDL-C and LDL-C.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK557728/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1492,16 +1575,44 @@
     <!-- http://purl.obolibrary.org/obo/HP_0200118 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0200118">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>A vitamin deficiency that is malabsorption of vitamin B12.</obo:IAO_0000115>
-        <oboInOwl:id>HP:0200118</oboInOwl:id>
-        <rdfs:label>vitamin B12 malabsorption</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An essential nutrient and natural water-soluble vitamin of the B-complex family that must combine with an intrinsic factor for absorption by the intestine, Vitamin B12 (cyanocobalamin) is necessary for hematopoiesis, neural metabolism, DNA and RNA production, and carbohydrate, fat, and protein metabolism. B12 improves iron functions in the metabolic cycle and assists folic acid in choline synthesis. B12 metabolism is interconnected with that of folic acid. Vitamin B12 deficiency causes pernicious anemia, megaloblastic anemia, and neurologic lesions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C939</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03413761</oboInOwl:id>
+        <rdfs:label>vitamin B12</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0200118"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is malabsorption of vitamin B12.</owl:annotatedTarget>
+        <owl:annotatedTarget>An essential nutrient and natural water-soluble vitamin of the B-complex family that must combine with an intrinsic factor for absorption by the intestine, Vitamin B12 (cyanocobalamin) is necessary for hematopoiesis, neural metabolism, DNA and RNA production, and carbohydrate, fat, and protein metabolism. B12 improves iron functions in the metabolic cycle and assists folic acid in choline synthesis. B12 metabolism is interconnected with that of folic acid. Vitamin B12 deficiency causes pernicious anemia, megaloblastic anemia, and neurologic lesions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.merckmanuals.com/home/disorders-of-nutrition/vitamins/vitamin-b12-deficiency</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6956 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6956">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An allergen that is an European house dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.</obo:IAO_0000115>
+        <oboInOwl:id>NCBITaxon:6956</oboInOwl:id>
+        <rdfs:label>European house dust mite</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6956"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An allergen that is an European house dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/allergens/dustmites/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1515,14 +1626,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79314"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A flame retardant that is polybrominated diphenyl ethers(PBDE), an endocrine disruptor, PBDEs do not chemically bind with the products to which they are added (furniture, electronics, etc.) so they easily release from these products and enter air and dust. PBDEs can lower birth weight/length of children, and impair neurological development.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mixture of synthetic solids, containing aromatic rings connected by an ether bond and containing one or more bromine atoms, that is virtually insoluble in water but is soluble in fat and various organic solvents and have been used in industrial applications as flame retardants. These compounds are being phased out of industrial use because of their environmental persistence and potential hormone-disrupting effects in humans. The primary routes of potential human exposure to polybrominated diphenyl ethers (PBDEs) are ingestion, inhalation, and dermal contact either for personnel associated with the manufacture or recycling of PDBEs or for people exposed to domestic products containing these chemicals.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C125231</oboInOwl:id>
         <rdfs:label>polybrominated diphenyl ether</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C125231"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A flame retardant that is polybrominated diphenyl ethers(PBDE), an endocrine disruptor, PBDEs do not chemically bind with the products to which they are added (furniture, electronics, etc.) so they easily release from these products and enter air and dust. PBDEs can lower birth weight/length of children, and impair neurological development.</owl:annotatedTarget>
+        <owl:annotatedTarget>A mixture of synthetic solids, containing aromatic rings connected by an ether bond and containing one or more bromine atoms, that is virtually insoluble in water but is soluble in fat and various organic solvents and have been used in industrial applications as flame retardants. These compounds are being phased out of industrial use because of their environmental persistence and potential hormone-disrupting effects in humans. The primary routes of potential human exposure to polybrominated diphenyl ethers (PBDEs) are ingestion, inhalation, and dermal contact either for personnel associated with the manufacture or recycling of PDBEs or for people exposed to domestic products containing these chemicals.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/flame_retardants/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1532,15 +1643,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C133278">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C81304"/>
-        <obo:IAO_0000115>url:A blood product that is platelets (thrombocyte) product.</obo:IAO_0000115>
+        <obo:IAO_0000115>Platelets collected from a single donor and suspended in a specified volume of original plasma.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C133278</oboInOwl:id>
         <rdfs:label>platelets product</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C133278"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>url:A blood product that is platelets (thrombocyte) product.</owl:annotatedTarget>
-        <rdfs:comment>https://www.ncbi.nlm.nih.gov/books/NBK539826/</rdfs:comment>
+        <owl:annotatedTarget>Platelets collected from a single donor and suspended in a specified volume of original plasma.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK539826/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1549,14 +1660,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C133280">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C81304"/>
-        <obo:IAO_0000115>A blood product that is red blood cells (RBC) product.</obo:IAO_0000115>
+        <obo:IAO_0000115>Red blood cells remaining after separating plasma from human blood, or collected by apheresis.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C133280</oboInOwl:id>
         <rdfs:label>red blood cells product</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C133280"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A blood product that is red blood cells (RBC) product.</owl:annotatedTarget>
+        <owl:annotatedTarget>Red blood cells remaining after separating plasma from human blood, or collected by apheresis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK539826/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1615,15 +1726,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIT_0008624"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An irritant that is tobacco smoke. Smoke that is emitted from burning tobacco, including cigarette, pipe and cigar, and from tobacco smoke exhaled by smokers.</obo:IAO_0000115>
+        <obo:IAO_0000115>Smoke from burning tobacco (cigarettes, cigars, or pipes) and exhaled by a smoker. Tobacco smoke contains nicotine, a stimulant, and other biologically active chemicals having carcinogenic properties.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>environmental tobacco smoke</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>NCIT:C154329</oboInOwl:id>
+        <oboInOwl:id>NCIT:C829</oboInOwl:id>
         <rdfs:label>tobacco smoke</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154329"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An irritant that is tobacco smoke. Smoke that is emitted from burning tobacco, including cigarette, pipe and cigar, and from tobacco smoke exhaled by smokers.</owl:annotatedTarget>
+        <owl:annotatedTarget>Smoke from burning tobacco (cigarettes, cigars, or pipes) and exhaled by a smoker. Tobacco smoke contains nicotine, a stimulant, and other biologically active chemicals having carcinogenic properties.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/effects_cig_smoking/index.htm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pubmed/26043318</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/allergens/smoke/index.cfm</oboInOwl:hasDbXref>
@@ -1635,14 +1746,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C157895">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
-        <obo:IAO_0000115>A nutrient deficiency that is iodine deficiency.</obo:IAO_0000115>
-        <oboInOwl:id>NCIT:C157895</oboInOwl:id>
-        <rdfs:label>iodine deficiency</rdfs:label>
+        <obo:IAO_0000115>An element that is necessary for the body to make thyroid hormone. It is found in shellfish and iodized salt.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHEBI:24859</oboInOwl:hasDbXref>
+        <oboInOwl:id>NCIT:C594</oboInOwl:id>
+        <rdfs:label>iodine</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157895"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A nutrient deficiency that is iodine deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>An element that is necessary for the body to make thyroid hormone. It is found in shellfish and iodized salt.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1651,20 +1763,27 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C157938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C157938">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A deficiency of a necessary nutrient.</obo:IAO_0000115>
-        <oboInOwl:id>NCIT:C157938</oboInOwl:id>
-        <rdfs:label>nutrient deficiency</rdfs:label>
+        <obo:IAO_0000115>A nutrient is a food component that an organism uses to survive and grow.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C157938</oboInOwl:hasDbXref>
+        <oboInOwl:id>CHEBI:33284</oboInOwl:id>
+        <rdfs:label>nutrient</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A deficiency of a necessary nutrient.</owl:annotatedTarget>
+        <owl:annotatedTarget>A nutrient is a food component that an organism uses to survive and grow.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.who.int/health-topics/micronutrients</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1674,14 +1793,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C158814">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
-        <obo:IAO_0000115>A nutrient deficiency that is iron deficiency.</obo:IAO_0000115>
-        <oboInOwl:id>NCIT:C158814</oboInOwl:id>
-        <rdfs:label>iron deficiency</rdfs:label>
+        <obo:IAO_0000115>An important mineral the body needs to make hemoglobin, a substance in the blood that carries oxygen from the lungs to tissues throughout the body. Iron is also an important part of many other proteins and enzymes needed by the body for normal growth and development. It is found in red meat, fish, poultry, lentils, beans, and foods with iron added, such as cereal.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHEBI:18248</oboInOwl:hasDbXref>
+        <oboInOwl:id>NCIT:C598</oboInOwl:id>
+        <rdfs:label>iron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C158814"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A nutrient deficiency that is iron deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>An important mineral the body needs to make hemoglobin, a substance in the blood that carries oxygen from the lungs to tissues throughout the body. Iron is also an important part of many other proteins and enzymes needed by the body for normal growth and development. It is found in red meat, fish, poultry, lentils, beans, and foods with iron added, such as cereal.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/iron-deficiency-adults</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1740,14 +1860,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A fecal material that is mouse feces.</obo:IAO_0000115>
-        <oboInOwl:id>NCIT:C26415</oboInOwl:id>
-        <rdfs:label>mouse feces</rdfs:label>
+        <obo:IAO_0000115>The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.</obo:IAO_0000115>
+        <oboInOwl:id>NCIT:C13234</oboInOwl:id>
+        <rdfs:label>feces</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26415"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A fecal material that is mouse feces.</owl:annotatedTarget>
+        <owl:annotatedTarget>The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://nchh.org/information-and-evidence/learn-about-healthy-housing/health-hazards-prevention-and-solutions/rodents/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1784,14 +1904,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An allergen that is mold. A very large group of microscopic fungi that live on plant or animal matter. Most are filamentous organisms and produce spores that can be air-, water-, or insect-borne.</obo:IAO_0000115>
+        <obo:IAO_0000115>A very large group of microscopic fungi that live on plant or animal matter. Most are filamentous organisms and produce spores that can be air-, water-, or insect-borne.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C28266</oboInOwl:id>
         <rdfs:label>mold</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28266"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An allergen that is mold. A very large group of microscopic fungi that live on plant or animal matter. Most are filamentous organisms and produce spores that can be air-, water-, or insect-borne.</owl:annotatedTarget>
+        <owl:annotatedTarget>A very large group of microscopic fungi that live on plant or animal matter. Most are filamentous organisms and produce spores that can be air-, water-, or insect-borne.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/mold/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1800,15 +1920,22 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C34418 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C34418">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>A vitamin deficiency that is vitamin B1 deficiency, low levels of thiamine (vitamin B1).</obo:IAO_0000115>
-        <oboInOwl:id>NCIT:C34418</oboInOwl:id>
-        <rdfs:label>vitamin B1 deficiency</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A heat-labile and water-soluble essential vitamin, belonging to the vitamin B family, with antioxidant, erythropoietic, mood modulating, and glucose-regulating activities. Thiamine reacts with adenosine triphosphate (ATP) to form an active coenzyme, thiamine pyrophosphate. Thiamine pyrophosphate is necessary for the actions of pyruvate dehydrogenase and alpha-ketoglutarate in carbohydrate metabolism and for the actions of transketolase, an enzyme that plays an important role in the pentose phosphate pathway. Thiamine plays a key role in intracellular glucose metabolism and may inhibit the action of glucose and insulin on arterial smooth muscle cell proliferation. Thiamine may also protect against lead toxicity by inhibiting lead-induced lipid peroxidation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C874</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>vitamin B1</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHEBI:26948</oboInOwl:id>
+        <rdfs:label>thiamine</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C34418"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is vitamin B1 deficiency, low levels of thiamine (vitamin B1).</owl:annotatedTarget>
+        <owl:annotatedTarget>A heat-labile and water-soluble essential vitamin, belonging to the vitamin B family, with antioxidant, erythropoietic, mood modulating, and glucose-regulating activities. Thiamine reacts with adenosine triphosphate (ATP) to form an active coenzyme, thiamine pyrophosphate. Thiamine pyrophosphate is necessary for the actions of pyruvate dehydrogenase and alpha-ketoglutarate in carbohydrate metabolism and for the actions of transketolase, an enzyme that plays an important role in the pentose phosphate pathway. Thiamine plays a key role in intracellular glucose metabolism and may inhibit the action of glucose and insulin on arterial smooth muscle cell proliferation. Thiamine may also protect against lead toxicity by inhibiting lead-induced lipid peroxidation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK537204/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1817,15 +1944,21 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C35010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C35010">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>A vitamin deficiency that is vitamin C (ascorbic acid) deficiency.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Class of water-soluble antioxidant vitamins which are cofactors in the biosynthesis of collagen, carnitine, and neurotransmitters, and can quench a variety of reactive oxygen and nitrogen species. A nutrient that the body needs in small amounts to function and stay healthy. Vitamin C helps fight infections, heal wounds, and keep tissues healthy. It is an antioxidant that helps prevent cell damage caused by free radicals (highly reactive chemicals). Vitamin C is found in all fruits and vegetables, especially citrus fruits, strawberries, cantaloupe, green peppers, tomatoes, broccoli, leafy greens, and potatoes. It is water-soluble (can dissolve in water) and must be taken in every day. Vitamin C is being studied in the prevention and treatment of some types of cancer.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHEBI:21241</oboInOwl:hasDbXref>
         <oboInOwl:id>NCIT:C35010</oboInOwl:id>
-        <rdfs:label>vitamin C deficiency</rdfs:label>
+        <rdfs:label>vitamin C</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35010"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is vitamin C (ascorbic acid) deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>Class of water-soluble antioxidant vitamins which are cofactors in the biosynthesis of collagen, carnitine, and neurotransmitters, and can quench a variety of reactive oxygen and nitrogen species. A nutrient that the body needs in small amounts to function and stay healthy. Vitamin C helps fight infections, heal wounds, and keep tissues healthy. It is an antioxidant that helps prevent cell damage caused by free radicals (highly reactive chemicals). Vitamin C is found in all fruits and vegetables, especially citrus fruits, strawberries, cantaloupe, green peppers, tomatoes, broccoli, leafy greens, and potatoes. It is water-soluble (can dissolve in water) and must be taken in every day. Vitamin C is being studied in the prevention and treatment of some types of cancer.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK493187/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1840,14 +1973,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A psychosocial agent that is stress,  a feeling of emotional or physical tension.</obo:IAO_0000115>
+        <obo:IAO_0000115>The negative mental, emotional, and physical reactions that occur when environmental stressors are perceived as exceeding the individual&apos;s adaptive capacities.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C35041</oboInOwl:id>
         <rdfs:label>stress</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35041"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A psychosocial agent that is stress,  a feeling of emotional or physical tension.</owl:annotatedTarget>
+        <owl:annotatedTarget>The negative mental, emotional, and physical reactions that occur when environmental stressors are perceived as exceeding the individual&apos;s adaptive capacities.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://medlineplus.gov/ency/article/003211.htm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1884,14 +2017,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A physical agent that is strenuous physical exercise.</obo:IAO_0000115>
-        <oboInOwl:id>NCIT:C16567</oboInOwl:id>
-        <rdfs:label>strenuous physical exercise</rdfs:label>
+        <obo:IAO_0000115>20-60 minutes of exercise which elevates your heart rate to 80-90% of your maximum heart rate performed at least 3-4 times per week.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>strenuous physical exercise</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>NCIT:C39773</oboInOwl:id>
+        <rdfs:label>strenuous exercise</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C39773"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A physical agent that is strenuous physical exercise.</owl:annotatedTarget>
+        <owl:annotatedTarget>20-60 minutes of exercise which elevates your heart rate to 80-90% of your maximum heart rate performed at least 3-4 times per week.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.cdc.gov/nccdphp/dnpa/physical/pdf/pa_intensity_table_2_1.pdf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1906,14 +2040,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A chemical agent that is chromium  hexavalent compound, a form of the metallic element chromium, is widely used in electroplating, stainless steel production, leather tanning, textile manufacturing, and wood preservation.</obo:IAO_0000115>
+        <obo:IAO_0000115>A highly corrosive, inorganic substance that contains the metallic element chromium in its positive-6 valence state. Chromium hexavalent compounds are used in stainless steel production, in chrome plating, in the manufacture of dyes and pigments, in leather tanning, in wood preservation and are used as corrosion inhibitors. Inhalation exposure of these compounds mainly affects the respiratory tract causing shortness of breath, nasal itching, asthma, coughing, bronchitis and pneumonia, but can also affect the liver, kidneys, gastrointestinal tract and the immune system. Chromium hexavalent compounds are carcinogenic in humans and are associated with an increased risk of developing lung cancer and cancer of the sinonasal cavity.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C44357</oboInOwl:id>
         <rdfs:label>chromium hexavalent compound</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C44357"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is chromium  hexavalent compound, a form of the metallic element chromium, is widely used in electroplating, stainless steel production, leather tanning, textile manufacturing, and wood preservation.</owl:annotatedTarget>
+        <owl:annotatedTarget>A highly corrosive, inorganic substance that contains the metallic element chromium in its positive-6 valence state. Chromium hexavalent compounds are used in stainless steel production, in chrome plating, in the manufacture of dyes and pigments, in leather tanning, in wood preservation and are used as corrosion inhibitors. Inhalation exposure of these compounds mainly affects the respiratory tract causing shortness of breath, nasal itching, asthma, coughing, bronchitis and pneumonia, but can also affect the liver, kidneys, gastrointestinal tract and the immune system. Chromium hexavalent compounds are carcinogenic in humans and are associated with an increased risk of developing lung cancer and cancer of the sinonasal cavity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/hex-chromium/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1956,14 +2090,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A chemical agent that is solvent.</obo:IAO_0000115>
+        <obo:IAO_0000115>A liquid that dissolves or that is capable of dissolving; the component of a solution that is present in greater amount.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C45790</oboInOwl:id>
         <rdfs:label>solvent</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45790"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is solvent.</owl:annotatedTarget>
+        <owl:annotatedTarget>A liquid that dissolves or that is capable of dissolving; the component of a solution that is present in greater amount.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.chemicalsafetyfacts.org/solvents/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1978,14 +2112,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A radiation that is radon, a colorless, odorless radioactive gas.</obo:IAO_0000115>
+        <obo:IAO_0000115>An element with atomic symbol Rn, atomic number 86, and 222.0.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C800</oboInOwl:id>
         <rdfs:label>radon</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C800"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A radiation that is radon, a colorless, odorless radioactive gas.</owl:annotatedTarget>
+        <owl:annotatedTarget>An element with atomic symbol Rn, atomic number 86, and 222.0.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/radon/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2000,7 +2134,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A biological toxin that is ricin toxin, a plant toxin produced from castor beans. A phytotoxin and lectin comprised of a homodimer of ricin toxin A and B chains derived from the seeds of Ricinus communis, the castor oil plant, with protein synthesis inhibitory activity and extremely high cytotoxicity.</obo:IAO_0000115>
+        <obo:IAO_0000115>A phytotoxin and lectin comprised of a homodimer of ricin toxin A and B chains derived from the seeds of Ricinus communis, the castor oil plant, with protein synthesis inhibitory activity and extremely high cytotoxicity. Following ingestion, inhalation or injection of ricin, the B chain binds to complex carbohydrates containing either terminal N-acetylgalactosamine or beta-1,4-linked galactose residues on the surface of cells. Subsequently, the ricin A/B heterodimer is internalized and undergoes retrograde transport to the endoplasmic reticulum (ER). In the ER, the A chain, which has enzymatic activity that is sterically hindered by the B chain, is proteolytically released from the heterodimer by protein disulfide isomerase. In the ER, the free A chain has N-glycosidase activity that cleaves 28S rRNA. This enzymatic cleavage disrupts the ribosome, halts protein synthesis, and can lead to cell death. The extreme cytotoxicity of ricin makes it an attractive candidate for artificial fusion with binding proteins to create cell-type-specific toxins.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>OMIT:0013190</oboInOwl:hasDbXref>
         <oboInOwl:id>NCIT:C809</oboInOwl:id>
         <rdfs:label>ricin toxin</rdfs:label>
@@ -2008,7 +2142,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C809"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A biological toxin that is ricin toxin, a plant toxin produced from castor beans. A phytotoxin and lectin comprised of a homodimer of ricin toxin A and B chains derived from the seeds of Ricinus communis, the castor oil plant, with protein synthesis inhibitory activity and extremely high cytotoxicity.</owl:annotatedTarget>
+        <owl:annotatedTarget>A phytotoxin and lectin comprised of a homodimer of ricin toxin A and B chains derived from the seeds of Ricinus communis, the castor oil plant, with protein synthesis inhibitory activity and extremely high cytotoxicity. Following ingestion, inhalation or injection of ricin, the B chain binds to complex carbohydrates containing either terminal N-acetylgalactosamine or beta-1,4-linked galactose residues on the surface of cells. Subsequently, the ricin A/B heterodimer is internalized and undergoes retrograde transport to the endoplasmic reticulum (ER). In the ER, the A chain, which has enzymatic activity that is sterically hindered by the B chain, is proteolytically released from the heterodimer by protein disulfide isomerase. In the ER, the free A chain has N-glycosidase activity that cleaves 28S rRNA. This enzymatic cleavage disrupts the ribosome, halts protein synthesis, and can lead to cell death. The extreme cytotoxicity of ricin makes it an attractive candidate for artificial fusion with binding proteins to create cell-type-specific toxins.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.osha.gov/ricin</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2023,14 +2157,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A biological agent that is blood transfusion products.</obo:IAO_0000115>
+        <obo:IAO_0000115>Any natural or synthetic composition that replicates the structure or function of a native component of blood.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C81304</oboInOwl:id>
         <rdfs:label>blood product</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C81304"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A biological agent that is blood transfusion products.</owl:annotatedTarget>
+        <owl:annotatedTarget>Any natural or synthetic composition that replicates the structure or function of a native component of blood.</owl:annotatedTarget>
         <rdfs:comment>url:https://www.ncbi.nlm.nih.gov/books/NBK539826/</rdfs:comment>
     </owl:Axiom>
     
@@ -2040,14 +2174,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C825">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
-        <obo:IAO_0000115>A nutrient deficiency that is selenium deficiency, a trace mineral.</obo:IAO_0000115>
+        <obo:IAO_0000115>A nonmetallic chemical element found in trace amounts in human body. Selenium primarily occurs in vivo as selenocompounds, mostly selenoproteins such as glutathione peroxidase and thioredoxin reductase (enzymes responsible for detoxification). Alone or in combination with Vitamin E, selenocompounds act as antioxidants. These agents scavenge free radicals; prevent blood clots by inhibiting platelet aggregation; strengthen the immune system; and have been shown, in some instances, to inhibit chromosomal damage and mutations. Exhibiting chemopreventive activity, selenocompounds also inhibit the induction of protein kinase C.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHEBI:27568</oboInOwl:hasDbXref>
         <oboInOwl:id>NCIT:C825</oboInOwl:id>
-        <rdfs:label>selenium deficiency</rdfs:label>
+        <rdfs:label>selenium</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C825"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A nutrient deficiency that is selenium deficiency, a trace mineral.</owl:annotatedTarget>
+        <owl:annotatedTarget>A nonmetallic chemical element found in trace amounts in human body. Selenium primarily occurs in vivo as selenocompounds, mostly selenoproteins such as glutathione peroxidase and thioredoxin reductase (enzymes responsible for detoxification). Alone or in combination with Vitamin E, selenocompounds act as antioxidants. These agents scavenge free radicals; prevent blood clots by inhibiting platelet aggregation; strengthen the immune system; and have been shown, in some instances, to inhibit chromosomal damage and mutations. Exhibiting chemopreventive activity, selenocompounds also inhibit the induction of protein kinase C.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK482260/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2056,15 +2191,20 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C85220 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C85220">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>A vitamin deficiency that is serum retinol levels of below 28 μg/dL.</obo:IAO_0000115>
-        <oboInOwl:id>NCIT:C85220</oboInOwl:id>
-        <rdfs:label>vitamin A deficiency</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A group of fat-soluble retinoids produced via metabolism of provitamin A carotenoids. Vitamin A is involved in immune function, vision, reproduction, and cellular communication.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:12777</oboInOwl:id>
+        <rdfs:label>vitamin A</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C85220"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is serum retinol levels of below 28 μg/dL.</owl:annotatedTarget>
+        <owl:annotatedTarget>A group of fat-soluble retinoids produced via metabolism of provitamin A carotenoids. Vitamin A is involved in immune function, vision, reproduction, and cellular communication.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://dermnetnz.org/topics/vitamin-a-deficiency/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2073,16 +2213,23 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C85221 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C85221">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115></obo:IAO_0000115>
-        <obo:IAO_0000115>A vitamin deficiency that is vitamin B6 (pyridoxine) deficiency.</obo:IAO_0000115>
+        <obo:IAO_0000115>A group of water-soluble vitamins essential for metabolism and normal physiological functions. B6 vitamins, including pyridoxine, pyridoxal, and pyridoxamine, are converted in vivo to pyridoxal phosphate, a cofactor necessary for the synthesis of amino acids, neurotransmitters, and sphingolipids. More than 100 enzymes involved in protein metabolism require vitamin B6 as a cofactor. Vitamin B6 is essential to red blood cell, nervous system, and immune systems functions and helps maintain normal blood glucose levels. Vitamin B6 is found in a wide variety of foods including cereals, beans, meat, poultry, fish, and some fruits and vegetables.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHEBI:27306</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>pyridoxine deficiency</oboInOwl:hasExactSynonym>
         <oboInOwl:id>NCIT:C85221</oboInOwl:id>
-        <rdfs:label>vitamin B6 deficiency</rdfs:label>
+        <rdfs:label>vitamin B6</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C85221"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is vitamin B6 (pyridoxine) deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>A group of water-soluble vitamins essential for metabolism and normal physiological functions. B6 vitamins, including pyridoxine, pyridoxal, and pyridoxamine, are converted in vivo to pyridoxal phosphate, a cofactor necessary for the synthesis of amino acids, neurotransmitters, and sphingolipids. More than 100 enzymes involved in protein metabolism require vitamin B6 as a cofactor. Vitamin B6 is essential to red blood cell, nervous system, and immune systems functions and helps maintain normal blood glucose levels. Vitamin B6 is found in a wide variety of foods including cereals, beans, meat, poultry, fish, and some fruits and vegetables.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK557436/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2097,14 +2244,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A psychosocial agent that is violence.</obo:IAO_0000115>
+        <obo:IAO_0000115>An act of aggression between individuals.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C93214</oboInOwl:id>
         <rdfs:label>violence</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C93214"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A psychosocial agent that is violence.</owl:annotatedTarget>
+        <owl:annotatedTarget>An act of aggression between individuals.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.apa.org/topics/violence</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2113,15 +2260,21 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C99108 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C99108">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>A vitamin deficiency that is vitamin K deficiency.</obo:IAO_0000115>
-        <oboInOwl:id>NCIT:C99108</oboInOwl:id>
-        <rdfs:label>vitamin K deficiency</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The term &quot;vitamin K&quot; refers to a group of chemically similar fat-soluble compounds called naphthoquinones: vitamin K1 (phytonadione) is found in plants and is the primary source of vitamin K for humans through dietary consumption, vitamin K2 compounds (menaquinones) are made by bacteria in the human gut, and vitamin K3 (menadione) is a water-soluble preparation available for adults only. Vitamin K is necessary for the liver to produce the coagulation factors II, VII, IX, and X, as well as the clotting factors protein C, protein S, and protein Z; vitamin K deficiency can result in deficiencies of these coagulation factors and excess bleeding. An injection of vitamin K is routinely given to newborn infants to prevent vitamin K deficiency bleeding, also known as hemorrhagic disease of the newborn. Vitamin K deficiency is rare in adults but may result from chronic malnutrition or an inability to absorb dietary vitamins.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHEBI:28384</oboInOwl:hasDbXref>
+        <oboInOwl:id>NCIT:C943</oboInOwl:id>
+        <rdfs:label>vitamin K</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C99108"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is vitamin K deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>The term &quot;vitamin K&quot; refers to a group of chemically similar fat-soluble compounds called naphthoquinones: vitamin K1 (phytonadione) is found in plants and is the primary source of vitamin K for humans through dietary consumption, vitamin K2 compounds (menaquinones) are made by bacteria in the human gut, and vitamin K3 (menadione) is a water-soluble preparation available for adults only. Vitamin K is necessary for the liver to produce the coagulation factors II, VII, IX, and X, as well as the clotting factors protein C, protein S, and protein Z; vitamin K deficiency can result in deficiencies of these coagulation factors and excess bleeding. An injection of vitamin K is routinely given to newborn infants to prevent vitamin K deficiency bleeding, also known as hemorrhagic disease of the newborn. Vitamin K deficiency is rare in adults but may result from chronic malnutrition or an inability to absorb dietary vitamins.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK536983/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2155,13 +2308,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0004116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
-        <obo:IAO_0000115>A nutrient deficiency that is choline deficiency, an essential nutrient needed to synthesize phosphatidylcholine and sphingomyelin, two major phospholipids vital for cell membranes.</obo:IAO_0000115>
-        <rdfs:label>choline deficiency</rdfs:label>
+        <obo:IAO_0000115>A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:15354</oboInOwl:id>
+        <rdfs:label>choline</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMIT_0004116"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A nutrient deficiency that is choline deficiency, an essential nutrient needed to synthesize phosphatidylcholine and sphingomyelin, two major phospholipids vital for cell membranes.</owl:annotatedTarget>
+        <owl:annotatedTarget>A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2170,7 +2324,12 @@
     <!-- http://purl.obolibrary.org/obo/OMIT_0004368 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0004368">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An allergen that is a cockroach, a source of indoor allergens.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCBITaxon:85823</oboInOwl:hasDbXref>
         <oboInOwl:id>OMIT:0004368</oboInOwl:id>
@@ -2211,15 +2370,20 @@
     <!-- http://purl.obolibrary.org/obo/OMIT_0006701 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0006701">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>A vitamin deficiency that is folic acid deficiency.</obo:IAO_0000115>
-        <oboInOwl:id>OMIT:0006701</oboInOwl:id>
-        <rdfs:label>folic acid deficiency</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An N-acyl-amino acid that is a form of the water-soluble vitamin B9. Its biologically active forms (tetrahydrofolate and others) are essential for nucleotide biosynthesis and homocysteine remethylation.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:27470</oboInOwl:id>
+        <rdfs:label>folic acid</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMIT_0006701"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is folic acid deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>An N-acyl-amino acid that is a form of the water-soluble vitamin B9. Its biologically active forms (tetrahydrofolate and others) are essential for nucleotide biosynthesis and homocysteine remethylation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK535377/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2267,16 +2431,21 @@
     <!-- http://purl.obolibrary.org/obo/OMIT_0013171 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0013171">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
-        <obo:IAO_0000115>A vitamin deficiency that is vitamin B2 (riboflavin) deficiency.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>vitamin B2 deficiency</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>OMIT:0013171</oboInOwl:id>
-        <rdfs:label>riboflavin deficiency</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>D-Ribitol in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[g]pteridin-10(2H)-yl moiety. It is a nutritional factor found in milk, eggs, malted barley, liver, kidney, heart, and leafy vegetables, but the richest natural source is yeast. The free form occurs only in the retina of the eye, in whey, and in urine; its principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine dinucleotide.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>vitamin B2</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHEBI:17015</oboInOwl:id>
+        <rdfs:label>riboflavin</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMIT_0013171"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A vitamin deficiency that is vitamin B2 (riboflavin) deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>D-Ribitol in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[g]pteridin-10(2H)-yl moiety. It is a nutritional factor found in milk, eggs, malted barley, liver, kidney, heart, and leafy vegetables, but the richest natural source is yeast. The free form occurs only in the retina of the eye, in whey, and in urine; its principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine dinucleotide.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK525977/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2336,14 +2505,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An allergen that is dog dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets. Dog allergens are also present in dander, as well as saliva, urine, and blood. Although allergen levels can differ among breeds, all breeds, even hairless dogs, can trigger allergies.</obo:IAO_0000115>
+        <obo:IAO_0000115>An allergen that is dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets.</obo:IAO_0000115>
         <oboInOwl:id>OMIT:0028282</oboInOwl:id>
-        <rdfs:label>dog dander</rdfs:label>
+        <rdfs:label>dander</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMIT_0028282"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An allergen that is dog dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets. Dog allergens are also present in dander, as well as saliva, urine, and blood. Although allergen levels can differ among breeds, all breeds, even hairless dogs, can trigger allergies.</owl:annotatedTarget>
+        <owl:annotatedTarget>An allergen that is dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/allergens/pets/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2358,14 +2527,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A physical agent that is ultraviolet light.</obo:IAO_0000115>
+        <obo:IAO_0000115>Electromagnetic radiation with a wavelength from 10 nm to 400nm. Long-wavelength ultraviolet radiation can cause chemical reactions and causes many substances to glow or fluoresce.</obo:IAO_0000115>
         <oboInOwl:id>ZECO:0000214</oboInOwl:id>
         <rdfs:label>ultraviolet light</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000214"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A physical agent that is ultraviolet light.</owl:annotatedTarget>
+        <owl:annotatedTarget>Electromagnetic radiation with a wavelength from 10 nm to 400nm. Long-wavelength ultraviolet radiation can cause chemical reactions and causes many substances to glow or fluoresce.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Ultraviolet</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.cancer.org/cancer/cancer-causes/radiation-exposure/uv-radiation.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2400,6 +2570,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2427,14 +2603,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A chemcial agent that is styrene, a colorless, flammable liquid, which has a sweet odor and is highly volatile. Styrene is widely used to make plastics and rubber, which are used to manufacture a variety of products, such as insulation, pipes, automobile parts, printing cartridges, food containers, and carpet backing.</obo:IAO_0000115>
+        <obo:IAO_0000115>A vinylarene that is benzene carrying a vinyl group. It has been isolated from the benzoin resin produced by Styrax species.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:27452</oboInOwl:id>
         <rdfs:label>styrene</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27452/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemcial agent that is styrene, a colorless, flammable liquid, which has a sweet odor and is highly volatile. Styrene is widely used to make plastics and rubber, which are used to manufacture a variety of products, such as insulation, pipes, automobile parts, printing cartridges, food containers, and carpet backing.</owl:annotatedTarget>
+        <owl:annotatedTarget>A vinylarene that is benzene carrying a vinyl group. It has been isolated from the benzoin resin produced by Styrax species.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/styrene/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2472,14 +2648,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A chemical agent that is persistent organic pollutant (POP).</obo:IAO_0000115>
+        <obo:IAO_0000115>Any environmental contaminant that is resistant to environmental degradation through photolytic, biological or chemical processes. Such substances can have significant impact on health and the environment, as they persist in the environment, bioaccumulate in animal tissue and so biomagnify in food chains.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:77853</oboInOwl:id>
         <rdfs:label>persistent organic pollutant</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_77853/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is persistent organic pollutant (POP).</owl:annotatedTarget>
+        <owl:annotatedTarget>Any environmental contaminant that is resistant to environmental degradation through photolytic, biological or chemical processes. Such substances can have significant impact on health and the environment, as they persist in the environment, bioaccumulate in animal tissue and so biomagnify in food chains.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.epa.gov/international-cooperation/persistent-organic-pollutants-global-issue-global-response</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2534,14 +2710,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C133266/">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C81304"/>
-        <obo:IAO_0000115>A blood product that is blood plasma.</obo:IAO_0000115>
+        <obo:IAO_0000115>The fluid (noncellular) portion of the circulating blood, as distinguished from the serum that is the fluid portion of the blood.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C133266</oboInOwl:id>
         <rdfs:label>plasma product</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C133266/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A blood product that is blood plasma.</owl:annotatedTarget>
+        <owl:annotatedTarget>The fluid (noncellular) portion of the circulating blood, as distinguished from the serum that is the fluid portion of the blood.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK539826/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2579,14 +2755,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A chemical agent that is vitamin E acetate.</obo:IAO_0000115>
+        <obo:IAO_0000115>The acetate ester of a fat-soluble vitamin with potent antioxidant properties. Considered essential for the stabilization of biological membranes (especially those with high amounts of polyunsaturated fatty acid), vitamin E is a generic name for a group of compounds known as tocopherols and tocotrienols (tocols). This agent is a potent peroxyl radical scavenger and inhibits noncompetitively cyclooxygenase activity in many tissues, resulting in a decrease in prostaglandin production. Vitamin E also inhibits angiogenesis and tumor dormancy through suppressing vascular endothelial growth factor (VEGF) gene transcription.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C2834</oboInOwl:id>
         <rdfs:label>vitamin E acetate</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2834/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is vitamin E acetate.</owl:annotatedTarget>
+        <owl:annotatedTarget>The acetate ester of a fat-soluble vitamin with potent antioxidant properties. Considered essential for the stabilization of biological membranes (especially those with high amounts of polyunsaturated fatty acid), vitamin E is a generic name for a group of compounds known as tocopherols and tocotrienols (tocols). This agent is a potent peroxyl radical scavenger and inhibits noncompetitively cyclooxygenase activity in many tissues, resulting in a decrease in prostaglandin production. Vitamin E also inhibits angiogenesis and tumor dormancy through suppressing vascular endothelial growth factor (VEGF) gene transcription.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.nejm.org/doi/full/10.1056/NEJMoa1916433</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2601,14 +2777,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A chemical agent that is a plasticizer.</obo:IAO_0000115>
+        <obo:IAO_0000115>A substance added to plastics or other materials to make or keep them soft or pliable.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C55826</oboInOwl:id>
         <rdfs:label>plasticizer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C55826/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is a plasticizer.</owl:annotatedTarget>
+        <owl:annotatedTarget>A substance added to plastics or other materials to make or keep them soft or pliable.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Plasticizer</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://polymer-additives.specialchem.com/selection-guide/plasticizers</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2638,29 +2814,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C84494/ -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C84494/">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>An allergen that is cat dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets. Cat allergens are found in cat saliva, which sticks to fur when cats lick themselves. They are also released by glands in the skin and shed as dander or secreted in the urine of male cats. The allergens are buoyant, which means they easily remain airborne.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>DRON:00019407</oboInOwl:hasDbXref>
-        <oboInOwl:id>NCIT:C84494</oboInOwl:id>
-        <rdfs:label>cat dander</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C84494/"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An allergen that is cat dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets. Cat allergens are found in cat saliva, which sticks to fur when cats lick themselves. They are also released by glands in the skin and shed as dander or secreted in the urine of male cats. The allergens are buoyant, which means they easily remain airborne.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/allergens/pets/index.cfm</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C870/ -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C870/">
@@ -2670,14 +2823,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A chemical agent that is thalidomide.</obo:IAO_0000115>
+        <obo:IAO_0000115>A synthetic derivative of glutamic acid (alpha-phthalimido-glutarimide) with teratogenic, immunomodulatory, anti-inflammatory and anti-angiogenic properties. Thalidomide acts primarily by inhibiting both the production of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes and the activities of interleukins and interferons. This agent also inhibits polymorphonuclear chemotaxis and monocyte phagocytosis. In addition, thalidomide inhibits pro-angiogenic factors such as vascular endothelial growth factor (VEGF) and basic fibroblast growth factor (bFGF), thereby inhibiting angiogenesis.</obo:IAO_0000115>
         <oboInOwl:id>NCIT:C870</oboInOwl:id>
         <rdfs:label>thalidomide</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C870/"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chemical agent that is thalidomide.</owl:annotatedTarget>
+        <owl:annotatedTarget>A synthetic derivative of glutamic acid (alpha-phthalimido-glutarimide) with teratogenic, immunomodulatory, anti-inflammatory and anti-angiogenic properties. Thalidomide acts primarily by inhibiting both the production of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes and the activities of interleukins and interferons. This agent also inhibits polymorphonuclear chemotaxis and monocyte phagocytosis. In addition, thalidomide inhibits pro-angiogenic factors such as vascular endothelial growth factor (VEGF) and basic fibroblast growth factor (bFGF), thereby inhibiting angiogenesis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Thalidomide</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://medlineplus.gov/druginfo/meds/a699032.html</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/21507989/</oboInOwl:hasDbXref>
@@ -2688,15 +2841,26 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0005878 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005878">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157938"/>
-        <obo:IAO_0000115>A disorder that is caused by the deficiency of a vitamin. The deficiency may result from either suboptimal vitamin intake or conditions that prevent the vitamin&apos;s use or absorption in the body. Representative examples include beriberi caused by thiamine deficiency, scurvy caused by vitamin C deficiency, and rickets caused by vitamin D deficiency.</obo:IAO_0000115>
-        <oboInOwl:id>EFO:0005878</oboInOwl:id>
-        <rdfs:label>vitamin deficiency</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>In medicine, a shortage of a substance (such as a vitamin or mineral) needed by the body.</obo:IAO_0000115>
+        <oboInOwl:id>NCIT:C94372</oboInOwl:id>
+        <rdfs:label>deficiency</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005878"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A disorder that is caused by the deficiency of a vitamin. The deficiency may result from either suboptimal vitamin intake or conditions that prevent the vitamin&apos;s use or absorption in the body. Representative examples include beriberi caused by thiamine deficiency, scurvy caused by vitamin C deficiency, and rickets caused by vitamin D deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget>In medicine, a shortage of a substance (such as a vitamin or mineral) needed by the body.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Vitamin_deficiency</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
