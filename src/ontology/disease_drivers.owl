@@ -1106,14 +1106,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An ecological pertubation that is an earthquake.</obo:IAO_0000115>
+        <obo:IAO_0000115>An earthquake is a process during which energy is released in an astronomical body&apos;s crust, causing the displacement of crustal parts and the generation of seismic waves.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01000677</oboInOwl:id>
         <rdfs:label>earthquake</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000677"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An ecological pertubation that is an earthquake.</owl:annotatedTarget>
+        <owl:annotatedTarget>An earthquake is a process during which energy is released in an astronomical body&apos;s crust, causing the displacement of crustal parts and the generation of seismic waves.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Earthquake</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.usgs.gov/natural-hazards/earthquake-hazards/earthquakes</oboInOwl:hasDbXref>
     </owl:Axiom>
     
