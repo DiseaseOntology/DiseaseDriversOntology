@@ -1152,11 +1152,18 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An ecological pertubation that is fire.</obo:IAO_0000115>
+        <obo:IAO_0000115>A fire is a process whereby rapid and exothermic oxidation of a material through a combustion process releases heat, light, and other products.</obo:IAO_0000115>
         <obo:IAO_0000115>url:https://www.fs.fed.us/rm/pubs_int/int_gtr336.pdf</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01000786</oboInOwl:id>
         <rdfs:label>fire</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000786"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>url:https://www.fs.fed.us/rm/pubs_int/int_gtr336.pdf</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.eionet.europa.eu/gemet/en/concept/3212</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Fire</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1222,14 +1229,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An ecological pertubation that is a cyclone.</obo:IAO_0000115>
+        <obo:IAO_0000115>An atmospheric storm during which a large mass of atmospheric gas rotates around a centre of low atmospheric pressure, generating high winds which spiral towards that centre.</obo:IAO_0000115>
         <oboInOwl:id>ENVO:01001297</oboInOwl:id>
         <rdfs:label>cyclone</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001297"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An ecological pertubation that is a cyclone.</owl:annotatedTarget>
+        <owl:annotatedTarget>An atmospheric storm during which a large mass of atmospheric gas rotates around a centre of low atmospheric pressure, generating high winds which spiral towards that centre.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Cyclone</oboInOwl:hasDbXref>
     </owl:Axiom>
     
