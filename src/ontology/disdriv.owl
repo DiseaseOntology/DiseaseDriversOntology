@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/doid/imports/disdriv_import.owl/"
-     xml:base="http://purl.obolibrary.org/obo/doid/imports/disdriv_import.owl/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/doid/imports/disdriv_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/doid/imports/disdriv_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/doid/imports/disdriv_import.owl">
-        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <dc:title>Disease Drivers</dc:title>
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/disdriv.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/disdriv/releases/2023-11-23/disdriv.owl"/>
         <dc:description>Drivers of human diseases including environmental, maternal and social exposures.</dc:description>
+        <dc:title>Disease Drivers</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
     </owl:Ontology>
     
 
@@ -32,13 +33,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The official definition.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <obo:IAO_0000115>The official definition.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The official definition.</owl:annotatedTarget>
+        <owl:annotatedTarget>The official definition.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://purl.obolibrary.org/obo/iao.owl</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -47,13 +47,13 @@
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the ontology.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+        <obo:IAO_0000115>Description of the ontology.</obo:IAO_0000115>
+        <rdfs:label>description</rdfs:label>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/dc/elements/1.1/description"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the ontology.</owl:annotatedTarget>
+        <owl:annotatedTarget>Description of the ontology.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://purl.org/dc/elements/1.1/description</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -62,13 +62,13 @@
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Title of the ontology.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</rdfs:label>
+        <obo:IAO_0000115>Title of the ontology.</obo:IAO_0000115>
+        <rdfs:label>title</rdfs:label>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/dc/elements/1.1/title"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Title of the ontology.</owl:annotatedTarget>
+        <owl:annotatedTarget>Title of the ontology.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://purl.org/dc/elements/1.1/title</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -77,13 +77,13 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">License of the ontology.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">license</rdfs:label>
+        <obo:IAO_0000115>License of the ontology.</obo:IAO_0000115>
+        <rdfs:label>license</rdfs:label>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/dc/terms/license"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">License of the ontology.</owl:annotatedTarget>
+        <owl:annotatedTarget>License of the ontology.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://purl.org/dc/terms/license</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -92,13 +92,13 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference database or publication source.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <obo:IAO_0000115>Reference database or publication source.</obo:IAO_0000115>
+        <rdfs:label>database_cross_reference</rdfs:label>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference database or publication source.</owl:annotatedTarget>
+        <owl:annotatedTarget>Reference database or publication source.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://www.geneontology.org/formats/oboInOwl#hasDbXref</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -107,28 +107,21 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym of the term.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
+        <rdfs:label>has exact synonym</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym of the term.</owl:annotatedTarget>
-        <rdfs:comment>url:http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</rdfs:comment>
-    </owl:Axiom>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier for an individual entity.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</rdfs:label>
+        <obo:IAO_0000115>An identifier for an individual entity.</obo:IAO_0000115>
+        <rdfs:label>id</rdfs:label>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#id"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier for an individual entity.</owl:annotatedTarget>
+        <owl:annotatedTarget>An identifier for an individual entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://purl.obolibrary.org/obo/IAO_0020000</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -137,13 +130,13 @@
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human readable name for this class.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
+        <obo:IAO_0000115>A human readable name for this class.</obo:IAO_0000115>
+        <rdfs:label>label</rdfs:label>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human readable name for this class.</owl:annotatedTarget>
+        <owl:annotatedTarget>A human readable name for this class.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://www.w3.org/2000/01/rdf-schema#label</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -184,16 +177,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0003303 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003303">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between an entity (e.g. a genotype, genetic variation, chemical, or environmental exposure) and a condition (a phenotype or disease), where the entity has some causal role for the condition.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0003303</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">causes condition</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -205,62 +188,36 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_15354 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15354">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:15354</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">choline</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15354"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_15956 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15956">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:15956</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biotin</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15956"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Biotin-Consumer/</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
-        <oboInOwl:id>CHEBI:24431</oboInOwl:id>
-        <rdfs:label>chemical entity</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_30879 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30879">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A compound in which a hydroxy group, -OH, is attached to a saturated carbon atom.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30879</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001579"/>
+        <obo:IAO_0000115>A compound in which a hydroxy group, -OH, is attached to a saturated carbon atom.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:30879</oboInOwl:id>
+        <rdfs:label>alcohol</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30879"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A compound in which a hydroxy group, -OH, is attached to a saturated carbon atom.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://medlineplus.gov/alcohol.html</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A compound in which a hydroxy group, -OH, is attached to a saturated carbon atom.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://medlineplus.gov/alcohol.html</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50904 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50904">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000003"/>
+        <obo:IAO_0000115>A chemical compound, or part thereof, which causes the onset of an allergic reaction by interacting with any of the molecular pathways involved in an allergy.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:50904</oboInOwl:id>
+        <rdfs:label>allergen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50904"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A chemical compound, or part thereof, which causes the onset of an allergic reaction by interacting with any of the molecular pathways involved in an allergy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/allergens/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -268,15 +225,15 @@
     <!-- http://purl.obolibrary.org/obo/DISDRIV_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000000">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental or genetic mechanisms driving the occurrance of complex diseases.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DISDRIV:0000000</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease driver</rdfs:label>
+        <obo:IAO_0000115>Environmental or genetic mechanisms driving the occurrance of complex diseases.</obo:IAO_0000115>
+        <oboInOwl:id>DISDRIV:0000000</oboInOwl:id>
+        <rdfs:label>disease driver</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental or genetic mechanisms driving the occurrance of complex diseases.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC4517741/</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Environmental or genetic mechanisms driving the occurrance of complex diseases.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC4517741/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -285,15 +242,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease driver that is comprised of a shortage of a nutrient.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DISDRIV:0000001</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutrient deficiency</rdfs:label>
+        <obo:IAO_0000115>A disease driver that is comprised of a shortage of a nutrient.</obo:IAO_0000115>
+        <oboInOwl:id>DISDRIV:0000001</oboInOwl:id>
+        <rdfs:label>nutrient deficiency</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease driver that is comprised of a shortage of a nutrient.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.who.int/health-topics/micronutrients</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A disease driver that is comprised of a shortage of a nutrient.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.who.int/health-topics/micronutrients</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -302,8 +259,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socioeconomic driver</rdfs:label>
+        <obo:IAO_0000115>A disease driver that is related to or concerning the interaction of social and economic factors.</obo:IAO_0000115>
+        <oboInOwl:id>DISDRIV:0000002</oboInOwl:id>
+        <rdfs:label>socioeconomic driver</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disease driver that is related to or concerning the interaction of social and economic factors.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/29709281/</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -311,34 +276,32 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weather driver</rdfs:label>
+        <obo:IAO_0000115>A disease driver that is of biological origin.</obo:IAO_0000115>
+        <oboInOwl:id>DISDRIV:0000003</oboInOwl:id>
+        <rdfs:label>biological driver</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disease driver that is of biological origin.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK45737/</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/DISDRIV_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000004">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0003303"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15956"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nutrient deficiency of vitamin B7 (biotin) foods like eggs, milk, and bananas.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deficiency of biotin</rdfs:label>
+        <obo:IAO_0000115>A nutrient deficiency of vitamin B7 (biotin) foods like eggs, milk, and bananas.</obo:IAO_0000115>
+        <oboInOwl:id>DISDRIV:0000004</oboInOwl:id>
+        <rdfs:label>deficiency of biotin</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nutrient deficiency of vitamin B7 (biotin) foods like eggs, milk, and bananas.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://ods.od.nih.gov/factsheets/Biotin-Consumer/</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A nutrient deficiency of vitamin B7 (biotin) foods like eggs, milk, and bananas.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Biotin-Consumer/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -346,27 +309,17 @@
     <!-- http://purl.obolibrary.org/obo/DISDRIV_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000005">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0003303"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15354"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nutrient deficiency.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deficiency of choline</rdfs:label>
+        <obo:IAO_0000115>A nutrient deficiency.</obo:IAO_0000115>
+        <oboInOwl:id>DISDRIV:0000005</oboInOwl:id>
+        <rdfs:label>deficiency of choline</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nutrient deficiency.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://ods.od.nih.gov/factsheets/Choline-Consumer/</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A nutrient deficiency.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Choline-Consumer/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -375,108 +328,136 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
+        <obo:IAO_0000115>A disease driver that is a chemical.</obo:IAO_0000115>
         <oboInOwl:id>DISDRIV:0000006</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical driver</rdfs:label>
+        <rdfs:label>chemical driver</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disease driver that is a chemical.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/29351546/</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/DISDRIV_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000007">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000006"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0003303"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30879"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
         <oboInOwl:id>DISDRIV:0000007</oboInOwl:id>
-        <rdfs:label xml:lang="en">alcohol driver</rdfs:label>
+        <rdfs:label xml:lang="en">deficiency of vitamin C</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DISDRIV_0000008 -->
+    <!-- http://purl.obolibrary.org/obo/ExO_0000007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000008">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DISDRIV:0000008</oboInOwl:id>
-        <rdfs:label xml:lang="en">ecological driver</rdfs:label>
+        <obo:IAO_0000115>An exposure stressor that is a change in the distributions, abundance and relations of organisms and their interactions with the environment.</obo:IAO_0000115>
+        <oboInOwl:id>ExO:0000007</oboInOwl:id>
+        <rdfs:label>ecological perturbations</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An exposure stressor that is a change in the distributions, abundance and relations of organisms and their interactions with the environment.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/29351546/</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DISDRIV_0000009 -->
+    <!-- http://purl.obolibrary.org/obo/ExO_0000013 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000009">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000008"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0003303"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000127/acid_rainfall"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000008"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DISDRIV:0000009</oboInOwl:id>
-        <rdfs:label xml:lang="en">acid rain driver</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <obo:IAO_0000115>An ecological perturbation that is acidic water, usually pH 2.5 to 4.5, which poisons the ecosystem and adversely affects plants, fishes, and mammals. It is caused by industrial pollutants, mainly sulfur oxides and nitrogen oxides, emitted into the atmosphere and returning to earth in the form of acidic rain water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ENVO:03000127</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIT:0016047</oboInOwl:hasDbXref>
+        <oboInOwl:id>ExO:0000013</oboInOwl:id>
+        <rdfs:label>acid rain</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_02500000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500000">
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:02500000</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental system process</rdfs:label>
-    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ExO_0000013"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An ecological perturbation that is acidic water, usually pH 2.5 to 4.5, which poisons the ecosystem and adversely affects plants, fishes, and mammals. It is caused by industrial pollutants, mainly sulfur oxides and nitrogen oxides, emitted into the atmosphere and returning to earth in the form of acidic rain water.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/29351546/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.epa.gov/acidrain/what-acid-rain</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ExO_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The long-term fluctuations in temperature, precipitation, wind, and all other aspects of the Earth&apos;s climate. External processes, such as solar-irradiance variations, variations of the Earth&apos;s orbital parameters (eccentricity, precession, and inclination), lithosphere motions, and volcanic activity, are factors in climatic variation. Internal variations of the climate system, e.g., changes in the abundance of greenhouse gases, also may produce fluctuations of sufficient magnitude and variability to explain observed climate change through the feedback processes interrelating the components of the climate system.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExO:0000014</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">climate change</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000007"/>
+        <obo:IAO_0000115>An ecological pertubation that is any significant change in measures of climate (such as temperature, precipitation, or wind) lasting for an extended period (decades or longer). It may result from natural factors such as changes in the sun&apos;s intensity, natural processes within the climate system such as changes in ocean circulation, or human activities.</obo:IAO_0000115>
+        <oboInOwl:id>ExO:0000014</oboInOwl:id>
+        <rdfs:label>climate change</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ExO_0000014"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The long-term fluctuations in temperature, precipitation, wind, and all other aspects of the Earth&apos;s climate. External processes, such as solar-irradiance variations, variations of the Earth&apos;s orbital parameters (eccentricity, precession, and inclination), lithosphere motions, and volcanic activity, are factors in climatic variation. Internal variations of the climate system, e.g., changes in the abundance of greenhouse gases, also may produce fluctuations of sufficient magnitude and variability to explain observed climate change through the feedback processes interrelating the components of the climate system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:http://www.eionet.europa.eu/gemet/concept/1471</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://pubmed.ncbi.nlm.nih.gov/29351546/</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>An ecological pertubation that is any significant change in measures of climate (such as temperature, precipitation, or wind) lasting for an extended period (decades or longer). It may result from natural factors such as changes in the sun&apos;s intensity, natural processes within the climate system such as changes in ocean circulation, or human activities.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/29351546/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_03000127/acid_rainfall -->
+    <!-- http://purl.obolibrary.org/obo/ExO_0000015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000127/acid_rainfall">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A water-based rainfall process during which water droplets with increased acidity fall towards a planetary surface.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:03000127</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acid rainfall</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000002"/>
+        <obo:IAO_0000115>A psychosocial agent that is a situation in which the level of living of an individual, family, or group is below the standard of the community. It is often related to a specific income level.</obo:IAO_0000115>
+        <oboInOwl:id>ExO:0000015</oboInOwl:id>
+        <rdfs:label>poverty</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000127/acid_rainfall"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ExO_0000015"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A water-based rainfall process during which water droplets with increased acidity fall towards a planetary surface.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Acid_rain</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A psychosocial agent that is a situation in which the level of living of an individual, family, or group is below the standard of the community. It is often related to a specific income level.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Poverty</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.un.org/en/global-issues/ending-poverty</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.worldbank.org/en/topic/poverty/overview</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001579 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000006"/>
+        <obo:IAO_0000115>An alcoholic drink (or alcoholic beverage) is a drink that contains ethanol, a type of alcohol produced by fermentation of grains, fruits, or other sources of sugar.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00001579</oboInOwl:id>
+        <rdfs:label>alcoholic beverage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001579"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An alcoholic drink (or alcoholic beverage) is a drink that contains ethanol, a type of alcohol produced by fermentation of grains, fruits, or other sources of sugar.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.m.wikipedia.org/wiki/Alcoholic_drink</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C163032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C163032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000003"/>
+        <obo:IAO_0000115>A biological driver that is botulinum toxin, caused by a toxin made by a bacterium called Clostridium botulinum.</obo:IAO_0000115>
+        <oboInOwl:id>NCIT:C163032</oboInOwl:id>
+        <rdfs:label>botulinum toxin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C163032"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A biological driver that is botulinum toxin, caused by a toxin made by a bacterium called Clostridium botulinum.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.osha.gov/botulism</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
