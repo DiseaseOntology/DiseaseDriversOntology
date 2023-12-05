@@ -1,0 +1,243 @@
+Prefix(:=<http://purl.obolibrary.org/obo/disdriv.owl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(terms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/disdriv.owl>
+<http://purl.obolibrary.org/obo/disdriv/releases/2023-11-23/disdriv.owl>
+Annotation(dc:description "Drivers of human diseases including environmental, maternal and social exposures.")
+Annotation(dc:title "Disease Drivers")
+Annotation(terms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
+
+Declaration(Class(obo:CHEBI_25016))
+Declaration(Class(obo:CHEBI_30879))
+Declaration(Class(obo:CHEBI_50904))
+Declaration(Class(obo:CHEBI_9513))
+Declaration(Class(obo:DISDRIV_0000000))
+Declaration(Class(obo:DISDRIV_0000001))
+Declaration(Class(obo:DISDRIV_0000002))
+Declaration(Class(obo:DISDRIV_0000003))
+Declaration(Class(obo:DISDRIV_0000004))
+Declaration(Class(obo:DISDRIV_0000005))
+Declaration(Class(obo:DISDRIV_0000006))
+Declaration(Class(obo:DISDRIV_0000007))
+Declaration(Class(obo:ExO_0000007))
+Declaration(Class(obo:ExO_0000013))
+Declaration(Class(obo:ExO_0000014))
+Declaration(Class(obo:ExO_0000015))
+Declaration(Class(obo:FOODON_00001579))
+Declaration(Class(obo:NCIT_C163032))
+Declaration(ObjectProperty(obo:BFO_0000050))
+Declaration(ObjectProperty(obo:BFO_0000051))
+Declaration(ObjectProperty(obo:RO_0000087))
+Declaration(ObjectProperty(obo:RO_0007000))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(dc:description))
+Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(terms:license))
+Declaration(AnnotationProperty(oboInOwl:hasDbXref))
+Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
+Declaration(AnnotationProperty(oboInOwl:id))
+Declaration(AnnotationProperty(rdfs:label))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: obo:IAO_0000115 (definition)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://purl.obolibrary.org/obo/iao.owl") obo:IAO_0000115 obo:IAO_0000115 "The official definition.")
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
+
+# Annotation Property: dc:description (description)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://purl.org/dc/elements/1.1/description") obo:IAO_0000115 dc:description "Description of the ontology.")
+AnnotationAssertion(rdfs:label dc:description "description")
+
+# Annotation Property: dc:title (title)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://purl.org/dc/elements/1.1/title") obo:IAO_0000115 dc:title "Title of the ontology.")
+AnnotationAssertion(rdfs:label dc:title "title")
+
+# Annotation Property: terms:license (license)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://purl.org/dc/terms/license") obo:IAO_0000115 terms:license "License of the ontology.")
+AnnotationAssertion(rdfs:label terms:license "license")
+
+# Annotation Property: oboInOwl:hasDbXref (database_cross_reference)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://www.geneontology.org/formats/oboInOwl#hasDbXref") obo:IAO_0000115 oboInOwl:hasDbXref "Reference database or publication source.")
+AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "database_cross_reference")
+
+# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
+
+AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has exact synonym")
+
+# Annotation Property: oboInOwl:id (id)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://purl.obolibrary.org/obo/IAO_0020000") obo:IAO_0000115 oboInOwl:id "An identifier for an individual entity.")
+AnnotationAssertion(rdfs:label oboInOwl:id "id")
+
+# Annotation Property: rdfs:label (label)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://www.w3.org/2000/01/rdf-schema#label") obo:IAO_0000115 rdfs:label "A human readable name for this class.")
+AnnotationAssertion(rdfs:label rdfs:label "label")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: obo:BFO_0000050 (part of)
+
+AnnotationAssertion(rdfs:label obo:BFO_0000050 "part of")
+
+# Object Property: obo:BFO_0000051 (has part)
+
+AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part")
+
+# Object Property: obo:RO_0000087 (has role)
+
+AnnotationAssertion(rdfs:label obo:RO_0000087 "has role")
+
+# Object Property: obo:RO_0007000 (has_driver)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://purl.obolibrary.org/obo/RO_0007000") obo:IAO_0000115 obo:RO_0007000 "A relation between two entities, in which one of the entities is any natural or human-influenced factor that directly or indirectly causes a change in the other entity.")
+AnnotationAssertion(rdfs:label obo:RO_0007000 "has_driver"@en)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: obo:CHEBI_25016 (lead)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_25016 "lead"@en)
+SubClassOf(obo:CHEBI_25016 obo:DISDRIV_0000006)
+
+# Class: obo:CHEBI_30879 (alcohol)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://medlineplus.gov/alcohol.html") obo:IAO_0000115 obo:CHEBI_30879 "A compound in which a hydroxy group, -OH, is attached to a saturated carbon atom.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_30879 "CHEBI:30879")
+AnnotationAssertion(rdfs:label obo:CHEBI_30879 "alcohol")
+SubClassOf(obo:CHEBI_30879 obo:FOODON_00001579)
+
+# Class: obo:CHEBI_50904 (allergen)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/") obo:IAO_0000115 obo:CHEBI_50904 "A chemical compound, or part thereof, which causes the onset of an allergic reaction by interacting with any of the molecular pathways involved in an allergy.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_50904 "CHEBI:50904")
+AnnotationAssertion(rdfs:label obo:CHEBI_50904 "allergen")
+SubClassOf(obo:CHEBI_50904 obo:DISDRIV_0000003)
+
+# Class: obo:CHEBI_9513 (thalidomide)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_9513 "thalidomide"@en)
+SubClassOf(obo:CHEBI_9513 obo:DISDRIV_0000006)
+
+# Class: obo:DISDRIV_0000000 (disease driver)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC4517741/") obo:IAO_0000115 obo:DISDRIV_0000000 "Environmental or genetic mechanisms driving the occurrance of complex diseases.")
+AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000000 "DISDRIV:0000000")
+AnnotationAssertion(rdfs:label obo:DISDRIV_0000000 "disease driver")
+
+# Class: obo:DISDRIV_0000001 (nutrient deficiency)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.who.int/health-topics/micronutrients") obo:IAO_0000115 obo:DISDRIV_0000001 "A disease driver that is comprised of a shortage of a nutrient.")
+AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000001 "DISDRIV:0000001")
+AnnotationAssertion(rdfs:label obo:DISDRIV_0000001 "nutrient deficiency")
+SubClassOf(obo:DISDRIV_0000001 obo:DISDRIV_0000000)
+
+# Class: obo:DISDRIV_0000002 (socioeconomic driver)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://pubmed.ncbi.nlm.nih.gov/29709281/") obo:IAO_0000115 obo:DISDRIV_0000002 "A disease driver that is related to or concerning the interaction of social and economic factors.")
+AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000002 "DISDRIV:0000002")
+AnnotationAssertion(rdfs:label obo:DISDRIV_0000002 "socioeconomic driver")
+SubClassOf(obo:DISDRIV_0000002 obo:DISDRIV_0000000)
+
+# Class: obo:DISDRIV_0000003 (biological driver)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/books/NBK45737/") obo:IAO_0000115 obo:DISDRIV_0000003 "A disease driver that is of biological origin.")
+AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000003 "DISDRIV:0000003")
+AnnotationAssertion(rdfs:label obo:DISDRIV_0000003 "biological driver")
+SubClassOf(obo:DISDRIV_0000003 obo:DISDRIV_0000000)
+
+# Class: obo:DISDRIV_0000004 (deficiency of biotin)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Biotin-Consumer/") obo:IAO_0000115 obo:DISDRIV_0000004 "A nutrient deficiency of vitamin B7 (biotin) foods like eggs, milk, and bananas.")
+AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000004 "DISDRIV:0000004")
+AnnotationAssertion(rdfs:label obo:DISDRIV_0000004 "deficiency of biotin")
+SubClassOf(obo:DISDRIV_0000004 obo:DISDRIV_0000001)
+
+# Class: obo:DISDRIV_0000005 (deficiency of choline)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Choline-Consumer/") Annotation(oboInOwl:hasDbXref "url:url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/") obo:IAO_0000115 obo:DISDRIV_0000005 "A nutrient deficiency.")
+AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000005 "DISDRIV:0000005")
+AnnotationAssertion(rdfs:label obo:DISDRIV_0000005 "deficiency of choline")
+SubClassOf(obo:DISDRIV_0000005 obo:DISDRIV_0000001)
+
+# Class: obo:DISDRIV_0000006 (chemical driver)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://pubmed.ncbi.nlm.nih.gov/29351546/") obo:IAO_0000115 obo:DISDRIV_0000006 "A disease driver that is a chemical.")
+AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000006 "DISDRIV:0000006")
+AnnotationAssertion(rdfs:label obo:DISDRIV_0000006 "chemical driver")
+SubClassOf(obo:DISDRIV_0000006 obo:DISDRIV_0000000)
+
+# Class: obo:DISDRIV_0000007 (deficiency of vitamin C)
+
+AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000007 "DISDRIV:0000007")
+AnnotationAssertion(rdfs:label obo:DISDRIV_0000007 "deficiency of vitamin C"@en)
+SubClassOf(obo:DISDRIV_0000007 obo:DISDRIV_0000001)
+
+# Class: obo:ExO_0000007 (ecological perturbations)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://pubmed.ncbi.nlm.nih.gov/29351546/") obo:IAO_0000115 obo:ExO_0000007 "An exposure stressor that is a change in the distributions, abundance and relations of organisms and their interactions with the environment.")
+AnnotationAssertion(oboInOwl:id obo:ExO_0000007 "ExO:0000007")
+AnnotationAssertion(rdfs:label obo:ExO_0000007 "ecological perturbations")
+SubClassOf(obo:ExO_0000007 obo:DISDRIV_0000000)
+
+# Class: obo:ExO_0000013 (acid rain)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://pubmed.ncbi.nlm.nih.gov/29351546/") Annotation(oboInOwl:hasDbXref "url:https://www.epa.gov/acidrain/what-acid-rain") obo:IAO_0000115 obo:ExO_0000013 "An ecological perturbation that is acidic water, usually pH 2.5 to 4.5, which poisons the ecosystem and adversely affects plants, fishes, and mammals. It is caused by industrial pollutants, mainly sulfur oxides and nitrogen oxides, emitted into the atmosphere and returning to earth in the form of acidic rain water.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:ExO_0000013 "ENVO:03000127")
+AnnotationAssertion(oboInOwl:hasDbXref obo:ExO_0000013 "OMIT:0016047")
+AnnotationAssertion(oboInOwl:id obo:ExO_0000013 "ExO:0000013")
+AnnotationAssertion(rdfs:label obo:ExO_0000013 "acid rain")
+SubClassOf(obo:ExO_0000013 obo:ExO_0000007)
+
+# Class: obo:ExO_0000014 (climate change)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://pubmed.ncbi.nlm.nih.gov/29351546/") obo:IAO_0000115 obo:ExO_0000014 "An ecological pertubation that is any significant change in measures of climate (such as temperature, precipitation, or wind) lasting for an extended period (decades or longer). It may result from natural factors such as changes in the sun's intensity, natural processes within the climate system such as changes in ocean circulation, or human activities.")
+AnnotationAssertion(oboInOwl:id obo:ExO_0000014 "ExO:0000014")
+AnnotationAssertion(rdfs:label obo:ExO_0000014 "climate change")
+SubClassOf(obo:ExO_0000014 obo:ExO_0000007)
+
+# Class: obo:ExO_0000015 (poverty)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Poverty") Annotation(oboInOwl:hasDbXref "url:https://www.un.org/en/global-issues/ending-poverty") Annotation(oboInOwl:hasDbXref "url:https://www.worldbank.org/en/topic/poverty/overview") obo:IAO_0000115 obo:ExO_0000015 "A psychosocial agent that is a situation in which the level of living of an individual, family, or group is below the standard of the community. It is often related to a specific income level.")
+AnnotationAssertion(oboInOwl:id obo:ExO_0000015 "ExO:0000015")
+AnnotationAssertion(rdfs:label obo:ExO_0000015 "poverty")
+SubClassOf(obo:ExO_0000015 obo:DISDRIV_0000002)
+
+# Class: obo:FOODON_00001579 (alcoholic beverage)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.m.wikipedia.org/wiki/Alcoholic_drink") obo:IAO_0000115 obo:FOODON_00001579 "An alcoholic drink (or alcoholic beverage) is a drink that contains ethanol, a type of alcohol produced by fermentation of grains, fruits, or other sources of sugar.")
+AnnotationAssertion(oboInOwl:id obo:FOODON_00001579 "FOODON:00001579")
+AnnotationAssertion(rdfs:label obo:FOODON_00001579 "alcoholic beverage")
+SubClassOf(obo:FOODON_00001579 obo:DISDRIV_0000006)
+
+# Class: obo:NCIT_C163032 (botulinum toxin)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/botulism") obo:IAO_0000115 obo:NCIT_C163032 "A biological driver that is botulinum toxin, caused by a toxin made by a bacterium called Clostridium botulinum.")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C163032 "NCIT:C163032")
+AnnotationAssertion(rdfs:label obo:NCIT_C163032 "botulinum toxin")
+SubClassOf(obo:NCIT_C163032 obo:DISDRIV_0000003)
+
+
+)
