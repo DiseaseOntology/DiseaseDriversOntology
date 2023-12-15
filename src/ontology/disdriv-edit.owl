@@ -11,7 +11,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/disdriv.owl>
-<http://purl.obolibrary.org/obo/disdriv/releases/2023-11-23/disdriv.owl>
+<http://purl.obolibrary.org/obo/disdriv/releases/2023-12-15/disdriv.owl>
 Annotation(dc:description "Drivers of human diseases including environmental, maternal and social exposures.")
 Annotation(dc:title "Disease Drivers")
 Annotation(terms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
