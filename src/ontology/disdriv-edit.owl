@@ -16,6 +16,7 @@ Annotation(dc:description "Drivers of human diseases including environmental, ma
 Annotation(dc:title "Disease Drivers")
 Annotation(terms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 
+Declaration(Class(obo:CHEBI_16236))
 Declaration(Class(obo:CHEBI_25016))
 Declaration(Class(obo:CHEBI_30879))
 Declaration(Class(obo:CHEBI_50904))
@@ -117,8 +118,17 @@ AnnotationAssertion(rdfs:label obo:RO_0007000 "has_driver"@en)
 #   Classes
 ############################
 
+# Class: obo:CHEBI_16236 (ethanol)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Ethanol") obo:IAO_0000115 obo:CHEBI_16236 "A primary alcohol that is ethane in which one of the hydrogens is substituted by a hydroxy group.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_16236 "CHEBI:16236")
+AnnotationAssertion(rdfs:label obo:CHEBI_16236 "ethanol")
+SubClassOf(obo:CHEBI_16236 obo:CHEBI_30879)
+
 # Class: obo:CHEBI_25016 (lead)
 
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/lead") obo:IAO_0000115 obo:CHEBI_25016 "A chemical driver that is composed of lead, which is found primarily in old paint, old paint dust, contaminated soil or contaminated drinking water.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_25016 "CHEBI:25016")
 AnnotationAssertion(rdfs:label obo:CHEBI_25016 "lead"@en)
 SubClassOf(obo:CHEBI_25016 obo:DISDRIV_0000006)
 
@@ -138,6 +148,9 @@ SubClassOf(obo:CHEBI_50904 obo:DISDRIV_0000003)
 
 # Class: obo:CHEBI_9513 (thalidomide)
 
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Thalidomide") obo:IAO_0000115 obo:CHEBI_9513 "A chemical driver that acts primarily by inhibiting both the production 
+of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes and the activities of interleukins and interferons and also inhibits polymorphonuclear chemotaxis and monocyte phagocytosis.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_9513 "CHEBI:9513")
 AnnotationAssertion(rdfs:label obo:CHEBI_9513 "thalidomide"@en)
 SubClassOf(obo:CHEBI_9513 obo:DISDRIV_0000006)
 
