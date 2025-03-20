@@ -39,9 +39,12 @@ Declaration(Class(obo:CHEBI_27563))
 Declaration(Class(obo:CHEBI_28073))
 Declaration(Class(obo:CHEBI_28619))
 Declaration(Class(obo:CHEBI_30440))
+Declaration(Class(obo:CHEBI_30785))
 Declaration(Class(obo:CHEBI_30879))
 Declaration(Class(obo:CHEBI_33216))
 Declaration(Class(obo:CHEBI_33217))
+Declaration(Class(obo:CHEBI_33229))
+Declaration(Class(obo:CHEBI_33284))
 Declaration(Class(obo:CHEBI_35446))
 Declaration(Class(obo:CHEBI_41922))
 Declaration(Class(obo:CHEBI_46661))
@@ -68,13 +71,25 @@ Declaration(Class(obo:ExO_0000013))
 Declaration(Class(obo:ExO_0000014))
 Declaration(Class(obo:ExO_0000015))
 Declaration(Class(obo:FOODON_00001579))
+Declaration(Class(obo:FOODON_03413761))
 Declaration(Class(obo:NCBITaxon_6954))
 Declaration(Class(obo:NCBITaxon_6956))
+Declaration(Class(obo:NCIT_C14329))
+Declaration(Class(obo:NCIT_C15354))
 Declaration(Class(obo:NCIT_C163032))
+Declaration(Class(obo:NCIT_C28266))
 Declaration(Class(obo:NCIT_C3387))
+Declaration(Class(obo:NCIT_C391))
 Declaration(Class(obo:NCIT_C44357))
+Declaration(Class(obo:NCIT_C594))
+Declaration(Class(obo:NCIT_C598))
 Declaration(Class(obo:NCIT_C603))
+Declaration(Class(obo:NCIT_C689))
+Declaration(Class(obo:NCIT_C79660))
+Declaration(Class(obo:NCIT_C809))
 Declaration(Class(obo:NCIT_C81304))
+Declaration(Class(obo:NCIT_C829))
+Declaration(Class(obo:NCIT_C943))
 Declaration(Class(obo:OMIT_0001823))
 Declaration(Class(obo:OMIT_0004368))
 Declaration(Class(obo:OMIT_0005411))
@@ -183,7 +198,7 @@ SubClassOf(obo:CHEBI_138015 obo:DISDRIV_0000006)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Biotin") Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/books/NBK547751/") obo:IAO_0000115 obo:CHEBI_15956 "An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_15956 "CHEBI:15956")
 AnnotationAssertion(rdfs:label obo:CHEBI_15956 "biotin")
-SubClassOf(obo:CHEBI_15956 obo:DISDRIV_0000001)
+SubClassOf(obo:CHEBI_15956 obo:CHEBI_33284)
 
 # Class: obo:CHEBI_16236 (ethanol)
 
@@ -296,7 +311,7 @@ SubClassOf(obo:CHEBI_27026 obo:DISDRIV_0000003)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/books/NBK535377/") obo:IAO_0000115 obo:CHEBI_27470 "An N-acyl-amino acid that is a form of the water-soluble vitamin B9. Its biologically active forms (tetrahydrofolate and others) are essential for nucleotide biosynthesis and homocysteine remethylation.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_27470 "CHEBI:27470")
 AnnotationAssertion(rdfs:label obo:CHEBI_27470 "folic acid")
-SubClassOf(obo:CHEBI_27470 obo:DISDRIV_0000001)
+SubClassOf(obo:CHEBI_27470 obo:CHEBI_33284)
 
 # Class: obo:CHEBI_27563 (arsenic)
 
@@ -330,6 +345,13 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_30440 "CHEBI:30440")
 AnnotationAssertion(rdfs:label obo:CHEBI_30440 "thalium")
 SubClassOf(obo:CHEBI_30440 obo:CHEBI_5631)
 
+# Class: obo:CHEBI_30785 (methylmercury)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.epa.gov/mercury/how-people-are-exposed-mercury#methylmercury") obo:IAO_0000115 obo:CHEBI_30785 "A poison that is methylmercury.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_30785 "CHEBI:30785")
+AnnotationAssertion(rdfs:label obo:CHEBI_30785 "methylmercury")
+SubClassOf(obo:CHEBI_30785 obo:CHEBI_64909)
+
 # Class: obo:CHEBI_30879 (alcohol)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://medlineplus.gov/alcohol.html") obo:IAO_0000115 obo:CHEBI_30879 "A compound in which a hydroxy group, -OH, is attached to a saturated carbon atom.")
@@ -351,6 +373,21 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHEBI_33217 "tetrabromobispheno
 AnnotationAssertion(oboInOwl:id obo:CHEBI_33217 "CHEBI:33217")
 AnnotationAssertion(rdfs:label obo:CHEBI_33217 "3,3',5,5'-tetrabromobisphenol A")
 SubClassOf(obo:CHEBI_33217 obo:CHEBI_79314)
+
+# Class: obo:CHEBI_33229 (vitamin)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Vitamin") obo:IAO_0000115 obo:CHEBI_33229 "A biochemical role played by any micronutrient that is an organic compound. Vitamins are present in foods in small amounts and are essential to normal metabolism and biochemical functions, usually as coenzymes.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_33229 "CHEBI:33229")
+AnnotationAssertion(rdfs:label obo:CHEBI_33229 "vitamin")
+SubClassOf(obo:CHEBI_33229 obo:CHEBI_33284)
+
+# Class: obo:CHEBI_33284 (nutrient)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.who.int/health-topics/micronutrients") obo:IAO_0000115 obo:CHEBI_33284 "A nutrient is a food component that an organism uses to survive and grow.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_33284 "NCIT:C157938")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_33284 "CHEBI:33284")
+AnnotationAssertion(rdfs:label obo:CHEBI_33284 "nutrient")
+SubClassOf(obo:CHEBI_33284 obo:DISDRIV_0000003)
 
 # Class: obo:CHEBI_35446 (chlorobiphenyl)
 
@@ -538,6 +575,14 @@ AnnotationAssertion(oboInOwl:id obo:FOODON_00001579 "FOODON:00001579")
 AnnotationAssertion(rdfs:label obo:FOODON_00001579 "alcoholic beverage")
 SubClassOf(obo:FOODON_00001579 obo:DISDRIV_0000006)
 
+# Class: obo:FOODON_03413761 (vitamin B12)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.merckmanuals.com/home/disorders-of-nutrition/vitamins/vitamin-b12-deficiency") obo:IAO_0000115 obo:FOODON_03413761 "An essential nutrient and natural water-soluble vitamin of the B-complex family that must combine with an intrinsic factor for absorption by the intestine, Vitamin B12 (cyanocobalamin) is necessary for hematopoiesis, neural metabolism, DNA and RNA production, and carbohydrate, fat, and protein metabolism. B12 improves iron functions in the metabolic cycle and assists folic acid in choline synthesis. B12 metabolism is interconnected with that of folic acid. Vitamin B12 deficiency causes pernicious anemia, megaloblastic anemia, and neurologic lesions.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413761 "NCIT:C939")
+AnnotationAssertion(oboInOwl:id obo:FOODON_03413761 "FOODON:03413761")
+AnnotationAssertion(rdfs:label obo:FOODON_03413761 "vitamin B12")
+SubClassOf(obo:FOODON_03413761 obo:CHEBI_33229)
+
 # Class: obo:NCBITaxon_6954 (American house dust mite)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/dustmites/index.cfm") obo:IAO_0000115 obo:NCBITaxon_6954 "An allergen that is an American house dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.")
@@ -554,6 +599,20 @@ AnnotationAssertion(oboInOwl:id obo:NCBITaxon_6956 "NCBITaxon:6956")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_6956 "European house dust mite")
 SubClassOf(obo:NCBITaxon_6956 obo:CHEBI_50904)
 
+# Class: obo:NCIT_C14329 (microorganism)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/biological-agents") obo:IAO_0000115 obo:NCIT_C14329 "A biological agent that is a microorganism, including bacteria, viruses, or fungi. A microscopic organism. The term microorganism may refer to a prokaryote or eukaryote, and may be a unicellular or multicellular organism. All taxonomic kingdoms contain microorganisms.")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C14329 "NCIT:C14329")
+AnnotationAssertion(rdfs:label obo:NCIT_C14329 "microorganism")
+SubClassOf(obo:NCIT_C14329 obo:DISDRIV_0000003)
+
+# Class: obo:NCIT_C15354 (choline)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/") obo:IAO_0000115 obo:NCIT_C15354 "A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C15354 "CHEBI:15354")
+AnnotationAssertion(rdfs:label obo:NCIT_C15354 "choline")
+SubClassOf(obo:NCIT_C15354 obo:CHEBI_33284)
+
 # Class: obo:NCIT_C163032 (botulinum toxin)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/botulism") obo:IAO_0000115 obo:NCIT_C163032 "A biological toxin that is botulinum toxin, caused by a toxin made by a bacterium called Clostridium botulinum.")
@@ -562,6 +621,13 @@ AnnotationAssertion(oboInOwl:id obo:NCIT_C163032 "NCIT:C163032")
 AnnotationAssertion(rdfs:label obo:NCIT_C163032 "botulinum toxin")
 SubClassOf(obo:NCIT_C163032 obo:CHEBI_27026)
 
+# Class: obo:NCIT_C28266 (mold)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/mold/index.cfm") obo:IAO_0000115 obo:NCIT_C28266 "A very large group of microscopic fungi that live on plant or animal matter. Most are filamentous organisms and produce spores that can be air-, water-, or insect-borne.")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C28266 "NCIT:C28266")
+AnnotationAssertion(rdfs:label obo:NCIT_C28266 "mold")
+SubClassOf(obo:NCIT_C28266 obo:NCIT_C14329)
+
 # Class: obo:NCIT_C3387 (carbamazepine)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Carbamazepine") Annotation(oboInOwl:hasDbXref "url:https://pubmed.ncbi.nlm.nih.gov/26329145/") obo:IAO_0000115 obo:NCIT_C3387 "A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.")
@@ -569,12 +635,35 @@ AnnotationAssertion(oboInOwl:id obo:NCIT_C3387 "CHEBI:3387")
 AnnotationAssertion(rdfs:label obo:NCIT_C3387 "carbamazepine")
 SubClassOf(obo:NCIT_C3387 obo:DISDRIV_0000006)
 
+# Class: obo:NCIT_C391 (copper)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637704/") obo:IAO_0000115 obo:NCIT_C391 "An element with atomic symbol Cu, atomic number 29, and atomic weight 63.")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C391 "NCIT:C391")
+AnnotationAssertion(rdfs:label obo:NCIT_C391 "copper")
+SubClassOf(obo:NCIT_C391 obo:CHEBI_33284)
+
 # Class: obo:NCIT_C44357 (chromium hexavalent compound)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/hex-chromium/index.cf") obo:IAO_0000115 obo:NCIT_C44357 "A highly corrosive, inorganic substance that contains the metallic element chromium in its positive-6 valence state. Chromium hexavalent compounds are used in stainless steel production, in chrome plating, in the manufacture of dyes and pigments, in leather tanning, in wood preservation and are used as corrosion inhibitors. Inhalation exposure of these compounds mainly affects the respiratory tract causing shortness of breath, nasal itching, asthma, coughing, bronchitis and pneumonia, but can also affect the liver, kidneys, gastrointestinal tract and the immune system. Chromium hexavalent compounds are carcinogenic in humans and are associated with an increased risk of developing lung cancer and cancer of the sinonasal cavity.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C44357 "NCIT:C44357")
 AnnotationAssertion(rdfs:label obo:NCIT_C44357 "chromium hexavalent compound")
 SubClassOf(obo:NCIT_C44357 obo:DISDRIV_0000006)
+
+# Class: obo:NCIT_C594 (iodine)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/") obo:IAO_0000115 obo:NCIT_C594 "An element that is necessary for the body to make thyroid hormone. It is found in shellfish and iodized salt.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C594 "CHEBI:24859")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C594 "NCIT:C594")
+AnnotationAssertion(rdfs:label obo:NCIT_C594 "iodine")
+SubClassOf(obo:NCIT_C594 obo:CHEBI_33284)
+
+# Class: obo:NCIT_C598 (iron)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/iron-deficiency-adults") obo:IAO_0000115 obo:NCIT_C598 "An important mineral the body needs to make hemoglobin, a substance in the blood that carries oxygen from the lungs to tissues throughout the body. Iron is also an important part of many other proteins and enzymes needed by the body for normal growth and development. It is found in red meat, fish, poultry, lentils, beans, and foods with iron added, such as cereal.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C598 "CHEBI:18248")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C598 "NCIT:C598")
+AnnotationAssertion(rdfs:label obo:NCIT_C598 "iron")
+SubClassOf(obo:NCIT_C598 obo:CHEBI_33284)
 
 # Class: obo:NCIT_C603 (accutane)
 
@@ -584,12 +673,51 @@ AnnotationAssertion(oboInOwl:id obo:NCIT_C603 "NCIT:C603")
 AnnotationAssertion(rdfs:label obo:NCIT_C603 "accutane")
 SubClassOf(obo:NCIT_C603 obo:DISDRIV_0000006)
 
+# Class: obo:NCIT_C689 (niacin)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/books/NBK557728/") obo:IAO_0000115 obo:NCIT_C689 "A water-soluble vitamin belonging to the vitamin B family, which occurs in many animal and plant tissues, with antihyperlipidemic activity. Niacin is converted to its active form niacinamide, which is a component of the coenzymes nicotinamide adenine dinucleotide (NAD) and its phosphate form, NADP. These coenzymes play an important role in tissue respiration and in glycogen, lipid, amino acid, protein, and purine metabolism. Although the exact mechanism of action by which niacin lowers cholesterol is not fully understood, it may act by inhibiting the synthesis of very low density lipoproteins (VLDL), inhibiting the release of free fatty acids from adipose tissue, increasing lipoprotein lipase activity, and reducing the hepatic synthesis of VLDL-C and LDL-C.")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C689 "NCIT:C689")
+AnnotationAssertion(rdfs:label obo:NCIT_C689 "niacin")
+SubClassOf(obo:NCIT_C689 obo:CHEBI_33229)
+
+# Class: obo:NCIT_C79660 (pollen)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/pollen/index.cfm") obo:IAO_0000115 obo:NCIT_C79660 "The male genetic material of a seed plant contained in the anther, usually appearing as fine grains or dust.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C79660 "BTO:0001097")
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C79660 "NCIT:C79660")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C79660 "NCIT:C79660")
+AnnotationAssertion(rdfs:label obo:NCIT_C79660 "pollen")
+SubClassOf(obo:NCIT_C79660 obo:CHEBI_50904)
+
+# Class: obo:NCIT_C809 (ricin toxin)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/ricin") obo:IAO_0000115 obo:NCIT_C809 "A phytotoxin and lectin comprised of a homodimer of ricin toxin A and B chains derived from the seeds of Ricinus communis, the castor oil plant, with protein synthesis inhibitory activity and extremely high cytotoxicity. Following ingestion, inhalation or injection of ricin, the B chain binds to complex carbohydrates containing either terminal N-acetylgalactosamine or beta-1,4-linked galactose residues on the surface of cells. Subsequently, the ricin A/B heterodimer is internalized and undergoes retrograde transport to the endoplasmic reticulum (ER). In the ER, the A chain, which has enzymatic activity that is sterically hindered by the B chain, is proteolytically released from the heterodimer by protein disulfide isomerase. In the ER, the free A chain has N-glycosidase activity that cleaves 28S rRNA. This enzymatic cleavage disrupts the ribosome, halts protein synthesis, and can lead to cell death. The extreme cytotoxicity of ricin makes it an attractive candidate for artificial fusion with binding proteins to create cell-type-specific toxins.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C809 "OMIT:0013190")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C809 "NCIT:C809")
+AnnotationAssertion(rdfs:label obo:NCIT_C809 "ricin toxin")
+SubClassOf(obo:NCIT_C809 obo:CHEBI_27026)
+
 # Class: obo:NCIT_C81304 (blood product)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/books/NBK539826/") obo:IAO_0000115 obo:NCIT_C81304 "Any natural or synthetic composition that replicates the structure or function of a native component of blood.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C81304 "NCIT:C81304")
 AnnotationAssertion(rdfs:label obo:NCIT_C81304 "blood product")
 SubClassOf(obo:NCIT_C81304 obo:DISDRIV_0000003)
+
+# Class: obo:NCIT_C829 (tobacco smoke)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/effects_cig_smoking/index.htm") Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/pubmed/26043318") Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/smoke/index.cfm") obo:IAO_0000115 obo:NCIT_C829 "Smoke from burning tobacco (cigarettes, cigars, or pipes) and exhaled by a smoker. Tobacco smoke contains nicotine, a stimulant, and other biologically active chemicals having carcinogenic properties.")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C829 "NCIT:C829")
+AnnotationAssertion(rdfs:label obo:NCIT_C829 "tobacco smoke")
+SubClassOf(obo:NCIT_C829 obo:DISDRIV_0000006)
+
+# Class: obo:NCIT_C943 (vitamin K)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/books/NBK536983/") obo:IAO_0000115 obo:NCIT_C943 "The term \"vitamin K\" refers to a group of chemically similar fat-soluble compounds called naphthoquinones: vitamin K1 (phytonadione) is found in plants and is the primary source of vitamin K for humans through dietary consumption, vitamin K2 compounds (menaquinones) are made by bacteria in the human gut, and vitamin K3 (menadione) is a water-soluble preparation available for adults only. Vitamin K is necessary for the liver to produce the coagulation factors II, VII, IX, and X, as well as the clotting factors protein C, protein S, and protein Z; vitamin K deficiency can result in deficiencies of these coagulation factors and excess bleeding. An injection of vitamin K is routinely given to newborn infants to prevent vitamin K deficiency bleeding, also known as hemorrhagic disease of the newborn. Vitamin K deficiency is rare in adults but may result from chronic malnutrition or an inability to absorb dietary vitamins.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C943 "CHEBI:28384")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C943 "NCIT:C943")
+AnnotationAssertion(rdfs:label obo:NCIT_C943 "vitamin K")
+SubClassOf(obo:NCIT_C943 obo:CHEBI_33229)
 
 # Class: obo:OMIT_0001823 (air pollution)
 
