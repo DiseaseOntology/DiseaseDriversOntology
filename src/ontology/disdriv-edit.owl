@@ -16,6 +16,7 @@ Annotation(dc:description "Drivers of human diseases including environmental, ma
 Annotation(dc:title "Disease Drivers")
 Annotation(terms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 
+Declaration(Class(obo:CHEBI_103210))
 Declaration(Class(obo:CHEBI_134063))
 Declaration(Class(obo:CHEBI_138015))
 Declaration(Class(obo:CHEBI_15956))
@@ -36,6 +37,7 @@ Declaration(Class(obo:CHEBI_26092))
 Declaration(Class(obo:CHEBI_27026))
 Declaration(Class(obo:CHEBI_27470))
 Declaration(Class(obo:CHEBI_27563))
+Declaration(Class(obo:CHEBI_27638))
 Declaration(Class(obo:CHEBI_28073))
 Declaration(Class(obo:CHEBI_28619))
 Declaration(Class(obo:CHEBI_30440))
@@ -50,6 +52,8 @@ Declaration(Class(obo:CHEBI_41922))
 Declaration(Class(obo:CHEBI_46661))
 Declaration(Class(obo:CHEBI_49706))
 Declaration(Class(obo:CHEBI_50904))
+Declaration(Class(obo:CHEBI_53212))
+Declaration(Class(obo:CHEBI_53218))
 Declaration(Class(obo:CHEBI_5631))
 Declaration(Class(obo:CHEBI_64909))
 Declaration(Class(obo:CHEBI_76989))
@@ -178,6 +182,13 @@ AnnotationAssertion(rdfs:label obo:RO_0007000 "has_driver"@en)
 #   Classes
 ############################
 
+# Class: obo:CHEBI_103210 (hexahydrophthalic anhydride)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://pubchem.ncbi.nlm.nih.gov/compound/Hexahydrophthalic-anhydride") obo:IAO_0000115 obo:CHEBI_103210 "A cyclic dicarboxylic anhydride that is the cyclic anhydride of hexahydrophthalic acid.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_103210 "CHEBI:103210")
+AnnotationAssertion(rdfs:label obo:CHEBI_103210 "hexahydrophthalic anhydride")
+SubClassOf(obo:CHEBI_103210 obo:DISDRIV_0000006)
+
 # Class: obo:CHEBI_134063 (1,2,5,6,9,10-hexabromocyclododecane)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Hexabromocyclododecane") Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/flame_retardants/index.cfm") obo:IAO_0000115 obo:CHEBI_134063 "A bromoalkane consisting of cyclododecane bearing six bromo substituents at positions 1, 2, 5, 6, 9 and 10.")
@@ -266,7 +277,7 @@ SubClassOf(obo:CHEBI_17514 obo:CHEBI_64909)
 
 # Class: obo:CHEBI_22271 (aflatoxin)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Aflatoxin") Annotation(oboInOwl:hasDbXref "url:https://www.cancer.gov/about-cancer/causes-prevention/risk/substances/aflatoxins") Annotation(oboInOwl:hasDbXref "url:https://www.fda.gov/animal-veterinary/animal-health-literacy/aflatoxin-poisoning-pets") obo:IAO_0000115 obo:CHEBI_22271 "Any of a group of related and highly toxic secondary metabolites (mycotoxins) whose main structural feature is a fused coumarin-bis(dihydrofuran) ring system and which are produced by strains of the moulds Aspergillus flavus or A. parasiticus, together with further metabolites of these mycotoxins.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Aflatoxin") Annotation(oboInOwl:hasDbXref "url:https://www.cancer.gov/about-cancer/causes-prevention/risk/substances/aflatoxins") Annotation(oboInOwl:hasDbXref "url:https://www.fda.gov/animal-veterinary/animal-health-literacy/aflatoxin-poisoning-pets") obo:IAO_0000115 obo:CHEBI_22271 "Any of a group of related and highly toxic secondary metabolites (mycotoxins) whose main structural feature is a fused coumarin-bis (dihydrofuran) ring system and which are produced by strains of the moulds Aspergillus flavus or A. parasiticus, together with further metabolites of these mycotoxins.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_22271 "CHEBI:22271")
 AnnotationAssertion(rdfs:label obo:CHEBI_22271 "aflatoxin")
 SubClassOf(obo:CHEBI_22271 obo:CHEBI_27026)
@@ -320,6 +331,13 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_27563 "NCIT:C28131")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_27563 "CHEBI:27563")
 AnnotationAssertion(rdfs:label obo:CHEBI_27563 "arsenic")
 SubClassOf(obo:CHEBI_27563 obo:CHEBI_5631)
+
+# Class: obo:CHEBI_27638 (cobalt atom)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Cobalt") obo:IAO_0000115 obo:CHEBI_27638 "A cobalt group element atom that has atomic number 27.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_27638 "CHEBI:27638")
+AnnotationAssertion(rdfs:label obo:CHEBI_27638 "cobalt atom")
+SubClassOf(obo:CHEBI_27638 obo:DISDRIV_0000006)
 
 # Class: obo:CHEBI_28073 (chromium)
 
@@ -424,6 +442,20 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov
 AnnotationAssertion(oboInOwl:id obo:CHEBI_50904 "CHEBI:50904")
 AnnotationAssertion(rdfs:label obo:CHEBI_50904 "allergen")
 SubClassOf(obo:CHEBI_50904 obo:DISDRIV_0000003)
+
+# Class: obo:CHEBI_53212 (isocyanates)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://www.osha.gov/isocyanates") obo:IAO_0000115 obo:CHEBI_53212 "Organonitrogen compounds that are derivatives of isocyanic acid; compounds containing the isocyanate functional group -N=C=O.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_53212 "CHEBI:53212")
+AnnotationAssertion(rdfs:label obo:CHEBI_53212 "isocyanates")
+SubClassOf(obo:CHEBI_53212 obo:DISDRIV_0000006)
+
+# Class: obo:CHEBI_53218 (diphenylmethane-4,4-diisocyanate)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Methylene_diphenyl_diisocyanate") obo:IAO_0000115 obo:CHEBI_53218 "A diisocyanate consisting of diphenylmethane with two isocyanate groups at the 4- and 4'-positions.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_53218 "CHEBI:53218")
+AnnotationAssertion(rdfs:label obo:CHEBI_53218 "diphenylmethane-4,4-diisocyanate")
+SubClassOf(obo:CHEBI_53218 obo:DISDRIV_0000006)
 
 # Class: obo:CHEBI_5631 (heavy metal)
 
