@@ -47,6 +47,7 @@ Declaration(Class(obo:CHEBI_33216))
 Declaration(Class(obo:CHEBI_33217))
 Declaration(Class(obo:CHEBI_33229))
 Declaration(Class(obo:CHEBI_33284))
+Declaration(Class(obo:CHEBI_3387))
 Declaration(Class(obo:CHEBI_35446))
 Declaration(Class(obo:CHEBI_41922))
 Declaration(Class(obo:CHEBI_46661))
@@ -82,7 +83,6 @@ Declaration(Class(obo:NCIT_C14329))
 Declaration(Class(obo:NCIT_C15354))
 Declaration(Class(obo:NCIT_C163032))
 Declaration(Class(obo:NCIT_C28266))
-Declaration(Class(obo:NCIT_C3387))
 Declaration(Class(obo:NCIT_C391))
 Declaration(Class(obo:NCIT_C44357))
 Declaration(Class(obo:NCIT_C594))
@@ -407,6 +407,13 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_33284 "CHEBI:33284")
 AnnotationAssertion(rdfs:label obo:CHEBI_33284 "nutrient")
 SubClassOf(obo:CHEBI_33284 obo:DISDRIV_0000003)
 
+# Class: obo:CHEBI_3387 (carbamazepine)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Carbamazepine") Annotation(oboInOwl:hasDbXref "url:https://pubmed.ncbi.nlm.nih.gov/26329145/") obo:IAO_0000115 obo:CHEBI_3387 "A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_3387 "CHEBI:3387")
+AnnotationAssertion(rdfs:label obo:CHEBI_3387 "carbamazepine")
+SubClassOf(obo:CHEBI_3387 obo:DISDRIV_0000006)
+
 # Class: obo:CHEBI_35446 (chlorobiphenyl)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cfm") obo:IAO_0000115 obo:CHEBI_35446 "A chloroarene that consists of a biphenyl skeleton substituted by one or more chloro groups.")
@@ -659,13 +666,6 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov
 AnnotationAssertion(oboInOwl:id obo:NCIT_C28266 "NCIT:C28266")
 AnnotationAssertion(rdfs:label obo:NCIT_C28266 "mold")
 SubClassOf(obo:NCIT_C28266 obo:NCIT_C14329)
-
-# Class: obo:NCIT_C3387 (carbamazepine)
-
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Carbamazepine") Annotation(oboInOwl:hasDbXref "url:https://pubmed.ncbi.nlm.nih.gov/26329145/") obo:IAO_0000115 obo:NCIT_C3387 "A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.")
-AnnotationAssertion(oboInOwl:id obo:NCIT_C3387 "CHEBI:3387")
-AnnotationAssertion(rdfs:label obo:NCIT_C3387 "carbamazepine")
-SubClassOf(obo:NCIT_C3387 obo:DISDRIV_0000006)
 
 # Class: obo:NCIT_C391 (copper)
 
