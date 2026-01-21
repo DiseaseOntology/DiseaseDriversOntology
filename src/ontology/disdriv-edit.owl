@@ -31,6 +31,7 @@ Declaration(Class(obo:CHEBI_17245))
 Declaration(Class(obo:CHEBI_17514))
 Declaration(Class(obo:CHEBI_22271))
 Declaration(Class(obo:CHEBI_22977))
+Declaration(Class(obo:CHEBI_23888))
 Declaration(Class(obo:CHEBI_25016))
 Declaration(Class(obo:CHEBI_25195))
 Declaration(Class(obo:CHEBI_26092))
@@ -77,6 +78,7 @@ Declaration(Class(obo:ExO_0000014))
 Declaration(Class(obo:ExO_0000015))
 Declaration(Class(obo:FOODON_00001579))
 Declaration(Class(obo:FOODON_03413761))
+Declaration(Class(obo:NCBITaxon_2))
 Declaration(Class(obo:NCBITaxon_6954))
 Declaration(Class(obo:NCBITaxon_6956))
 Declaration(Class(obo:NCIT_C14329))
@@ -288,6 +290,13 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/cadm
 AnnotationAssertion(oboInOwl:id obo:CHEBI_22977 "CHEBI:22977")
 AnnotationAssertion(rdfs:label obo:CHEBI_22977 "cadmium")
 SubClassOf(obo:CHEBI_22977 obo:CHEBI_5631)
+
+# Class: obo:CHEBI_23888 (drug)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Drug") obo:IAO_0000115 obo:CHEBI_23888 "Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_23888 "CHEBI:23888")
+AnnotationAssertion(rdfs:label obo:CHEBI_23888 "drug")
+SubClassOf(obo:CHEBI_23888 obo:DISDRIV_0000006)
 
 # Class: obo:CHEBI_25016 (lead)
 
@@ -621,6 +630,13 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413761 "NCIT:C939")
 AnnotationAssertion(oboInOwl:id obo:FOODON_03413761 "FOODON:03413761")
 AnnotationAssertion(rdfs:label obo:FOODON_03413761 "vitamin B12")
 SubClassOf(obo:FOODON_03413761 obo:CHEBI_33229)
+
+# Class: obo:NCBITaxon_2 (Bacteria)
+
+AnnotationAssertion(Annotation(obo:IAO_0000115 "url:https://www.merriam-webster.com/dictionary/bacteria") obo:IAO_0000115 obo:NCBITaxon_2 "A microorganism comprised of unicellular microorganisms which have cell walls but lack organelles and an organized nucleus.")
+AnnotationAssertion(oboInOwl:id obo:NCBITaxon_2 "NCBITaxon:2")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_2 "Bacteria")
+SubClassOf(obo:NCBITaxon_2 obo:NCIT_C14329)
 
 # Class: obo:NCBITaxon_6954 (American house dust mite)
 
