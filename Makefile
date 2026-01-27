@@ -221,10 +221,9 @@ build/reports/diff.tsv: build/$(ONT)-last.owl build/$(ONT)-new.owl | check_robot
 
 REL_DIR := src/ontology
 PRIMARY = $(REL_DIR)/$(ONT)
-BASE = $(REL_DIR)/$(ONT)-base
 
 .PHONY: products
-products: primary base
+products: primary
 
 # release vars
 TS = $(shell date +'%d:%m:%Y %H:%M')
@@ -235,7 +234,7 @@ RELEASE_PREFIX := $(OBO)$(ONT)/releases/$(DATE)/
 # RELEASE PRODUCTS
 # ----------------------------------------
 
-.PHONY: primary base
+.PHONY: primary
 primary: $(PRIMARY).owl
 
 $(PRIMARY).owl: build/$(ONT)-new.owl | check_robot
@@ -248,32 +247,14 @@ $(PRIMARY).owl: build/$(ONT)-new.owl | check_robot
 	@echo "Created $@"
 
 
-base: $(BASE).owl
-
-$(BASE).owl: $(PRIMARY).owl src/sparql/build/add_en_tag.ru | check_robot
-	@$(ROBOT) remove \
-	 --input $< \
-	 --select imports \
-	 --trim false \
-	annotate \
-	 --ontology-iri "$(OBO)$(ONT)/$(notdir $@)" \
-	 --version-iri "$(RELEASE_PREFIX)$(notdir $@)" \
-	 --annotation oboInOwl:date "$(TS)" \
-	 --annotation owl:versionInfo "$(DATE)" \
-	 --output $@
-	@echo "Created $@"
-
-
 ##########################################
 ## VERIFY build products
 ##########################################
 
 .PHONY: verify
-verify: $(PRIMARY).owl $(BASE).owl
-	@echo "" ; \
-	for f in $^; do \
-		$(ROBOT) reason -i $$f && echo -e "## $$f check passed!" ; \
-	done
+verify: $(PRIMARY).owl
+	@echo ""
+	@$(ROBOT) reason -i $< && echo -e "## $< check passed!"
 
 
 ##########################################
