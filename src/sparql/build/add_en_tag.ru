@@ -7,7 +7,7 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-# For DOID class annotations
+# For class annotations
 DELETE {
 	?iri ?pred ?no_lang .
 	?axiom owl:annotatedTarget ?no_lang .}
@@ -27,8 +27,8 @@ WHERE {
 	}
 
 	?iri a owl:Class ;
-		oboInOwl:hasOBONamespace "disease_ontology" ;
 		?pred ?no_lang .
+	FILTER(CONTAINS(STR(?iri), "DISDRIV_"))
 	OPTIONAL {
 		?axiom owl:annotatedSource ?iri ;
 			owl:annotatedProperty ?pred ;
@@ -39,7 +39,7 @@ WHERE {
 	BIND(STRLANG(?no_lang, "en") AS ?en)
 } ;
 
-# For DO ontology annotations
+# For ontology annotations
 DELETE {
 	?ontology ?ont_pred ?ont_no_lang .
 }

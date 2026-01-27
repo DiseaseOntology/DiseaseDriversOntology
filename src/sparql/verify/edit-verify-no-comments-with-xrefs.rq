@@ -6,13 +6,13 @@ PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 
 SELECT ?entity ?comment (GROUP_CONCAT(?comment_xref; SEPARATOR="|") AS ?comment_xrefs)
 WHERE {
-	?entity rdfs:comment ?comment .
+  ?entity rdfs:comment ?comment .
 
-	?blank owl:annotatedSource ?entity ;
-		owl:annotatedProperty rdfs:comment ;
-		owl:annotatedTarget ?comment ;
-		oboInOwl:hasDbXref ?comment_xref .
+  ?blank owl:annotatedSource ?entity ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedTarget ?comment ;
+    oboInOwl:hasDbXref ?comment_xref .
 
-	FILTER NOT EXISTS { ?entity owl:deprecated ?any }
+  FILTER NOT EXISTS { ?entity owl:deprecated true }
 }
 GROUP BY ?entity ?comment
