@@ -142,7 +142,7 @@ build/$(ONT)-last.version: FORCE | build
 	 fi
 
 build/$(ONT)-last.owl: build/$(ONT)-last.version
-	@echo "Downloading latest $(ONT).owl as $@..."
+	@echo "Downloading latest release to $@..."
 	@curl -sL http://purl.obolibrary.org/obo/$(ONT).owl -o $@
 
 build/$(ONT)-new.owl: build/$(ONT)-edit-reasoned.owl \
@@ -157,14 +157,14 @@ build/reports/diff.tsv: build/$(ONT)-last.owl build/$(ONT)-new.owl | check_robot
 	@$(ROBOT) export \
 	 --input $< \
 	 --header "ID|owl:deprecated|LABEL|SYNONYMS|IAO:0000115|SubClass Of [ID NAMED]|Equivalent Class|SubClass Of [ANON]|oboInOwl:hasDbXref|skos:exactMatch|skos:closeMatch|skos:broadMatch|skos:narrowMatch|skos:relatedMatch|oboInOwl:hasAlternativeId|oboInOwl:inSubset" \
-	 --export $(addprefix build/reports/temp/, $(addsuffix .tsv,$(basename $<)))
+	 --export build/reports/temp/$(notdir $(basename $<)).tsv
 	@$(ROBOT) export \
 	 --input $(word 2,$^) \
 	 --header "ID|owl:deprecated|LABEL|SYNONYMS|IAO:0000115|SubClass Of [ID NAMED]|Equivalent Class|SubClass Of [ANON]|oboInOwl:hasDbXref|skos:exactMatch|skos:closeMatch|skos:broadMatch|skos:narrowMatch|skos:relatedMatch|oboInOwl:hasAlternativeId|oboInOwl:inSubset" \
-	 --export $(addprefix build/reports/temp/, $(addsuffix .tsv,$(basename $(word 2,$^))))
+	 --export build/reports/temp/$(notdir $(basename $(word 2,$^))).tsv
 	@python3 src/util/diff-re.py \
-	 -1 $(addprefix build/reports/temp/, $(addsuffix .tsv,$(basename $<))) \
-	 -2 $(addprefix build/reports/temp/, $(addsuffix .tsv,$(basename $(word 2,$^)))) \
+	 -1 build/reports/temp/$(notdir $(basename $<)).tsv \
+	 -2 build/reports/temp/$(notdir $(basename $(word 2,$^))).tsv \
 	 -o $@
 	@echo "Generated diff report at $@"
 
