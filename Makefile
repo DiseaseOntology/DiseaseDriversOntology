@@ -70,52 +70,6 @@ check_robot:
 build/robot.jar: | build
 	@curl -L -o $@ https://github.com/ontodev/robot/releases/download/v$(ROBOT_VRS)/robot.jar
 
-# ----------------------------------------
-# FILE UTILITIES
-# ----------------------------------------
-
-# cleans csv files from a directory, optionally matching pattern(s)
-#  --> to prevent existing file inclusion in concat_csv
-# args = input-directory, pattern(s)-to-match-files (should end with .csv)
-define clean_existing_csv
-	@PATTERN=($(2)) ; \
-	if [ "$$PATTERN" ]; then \
-		TMP_FILES=$$(find $(1) -name "$(firstword $(2))" $(patsubst %,-o -name "%",$(wordlist 2,$(words $(2)),$(2)))) ; \
-	else \
-		TMP_FILES=$$(find $(1) -name "*.csv") ; \
-	fi ; \
-	if [ "$$TMP_FILES" ]; then \
-		rm -f $$TMP_FILES ; \
-	fi
-endef
-
-# concatenate multiple CSV files into one
-# args = file category ('TEST' to error, if output), output-file, input-directory, pattern(s)-to-match-files (should end with .csv)
-define concat_csv
-	@PATTERN=($(4)) ; \
-	if [ "$$PATTERN" ]; then \
-		TMP_FILES=$$(find $(3) -name "$(firstword $(4))" $(patsubst %,-o -name "%",$(wordlist 2,$(words $(4)),$(4)))) ; \
-	else \
-		TMP_FILES=$$(find $(3) -name "*.csv") ; \
-	fi ; \
-	if [ "$$TMP_FILES" ]; then \
-		awk 'BEGIN { OFS = FS = "," } ; { \
-			if (FNR == 1) { \
-				gsub(/^.*\/|\.csv/, "", FILENAME) ; \
-				if (NR != 1) { print "" } ; \
-				print "$(1): " FILENAME ; print $$0 \
-			} \
-			else { print $$0 } \
-		}' $$TMP_FILES > $(2) \
-        && rm -f $$TMP_FILES ; \
-		if [ "$(1)" = "TEST" ] ; then \
-			exit 1 ; \
-		fi ; \
-	elif [ "$(1)" = "TEST" ]; then \
-		echo "" > $(2) ; \
-	fi
-endef
-
 
 ##########################################
 ## CI TESTS & DIFF
@@ -158,13 +112,13 @@ EDIT_V_QUERIES := $(wildcard src/sparql/verify/edit-verify-*.rq src/sparql/verif
 .PRECIOUS: build/reports/edit-verify.csv
 verify-edit: build/reports/edit-verify.csv
 build/reports/edit-verify.csv: $(EDIT) | check_robot build/reports/temp
-	$(call clean_existing_csv,$(word 2,$|),edit-verify-*.csv verify-*.csv)
+	@python3 src/util/clean_existing_csv.py $(word 2,$|) edit-verify-*.csv verify-*.csv
 	@$(ROBOT) verify \
 	 --input $< \
 	 --queries $(EDIT_V_QUERIES) \
 	 --fail-on-violation false \
 	 --output-dir $(word 2,$|)
-	$(call concat_csv,TEST,$@,$(word 2,$|),edit-verify-*.csv verify-*.csv)
+	@python3 src/util/concat_csv.py TEST $@ $(word 2,$|) edit-verify-*.csv verify-*.csv
 
 # ----------------------------------------
 # DIFF
