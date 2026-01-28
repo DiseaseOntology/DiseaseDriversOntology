@@ -83,17 +83,6 @@ ci_test: reason report verify-edit
 
 test: ci_test diff
 
-# Report for general issues on *-edit
-report: build/reports/report-obo.tsv
-
-.PRECIOUS: build/reports/report-obo.tsv
-build/reports/report-obo.tsv: $(EDIT) | check_robot build/reports
-	@echo -e "\n## OBO dashboard QC report\nFull report at $@"
-	@$(ROBOT) report \
-	 --input $< \
-	 --labels true \
-	 --output $@
-
 # Simple reasoning test
 reason: build/$(ONT)-edit-reasoned.owl
 
@@ -105,6 +94,27 @@ build/$(ONT)-edit-reasoned.owl: $(EDIT) | check_robot build
 	 --exclude-duplicate-axioms true \
 	 --output $@
 	@echo -e "\n## Reasoning completed successfully!"
+
+# Report for general issues on *-edit
+report: build/reports/report-obo.tsv build/reports/report.tsv
+
+.PRECIOUS: build/reports/report-obo.tsv build/reports/report.tsv
+
+build/reports/report-obo.tsv: $(EDIT) | check_robot build/reports
+	@echo -e "\n## OBO dashboard QC report\nFull report at $@"
+	@$(ROBOT) report \
+	 --input $< \
+	 --labels true \
+	 --output $@
+
+build/reports/report.tsv: $(EDIT) src/sparql/report/report_profile.txt | \
+  check_robot build/reports
+	@echo -e "\n## $(ONT)-edit QC report\nFull report at $@"
+	@$(ROBOT) report \
+	 --input $< \
+	 --profile $(word 2,$^) \
+	 --labels true \
+	 --output $@
 
 # Verify *-edit.owl
 EDIT_V_QUERIES := $(wildcard src/sparql/verify/edit-verify-*.rq src/sparql/verify/verify-*.rq)

@@ -1,0 +1,10 @@
+# Identifies text that has an English language tag, including for deprecated
+# entities and regional tag variants to ensure file-wide consistency
+# (in *-edit files English text is the default and should be added without
+# language tags)
+
+SELECT DISTINCT ?entity ?property ?value
+WHERE {
+  ?entity ?property ?value .
+  FILTER(langMatches(lang(?value), "en"))
+}

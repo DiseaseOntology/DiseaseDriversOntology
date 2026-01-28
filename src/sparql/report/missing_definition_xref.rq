@@ -1,0 +1,19 @@
+# Identifies definitions that are missing oboInOwl:hasDbXrefs (i.e. sources)
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT DISTINCT ?entity ?property ?value
+WHERE {
+  VALUES ?property { oboInOwl:hasDbXref }
+  ?entity obo:IAO_0000115 ?definition .
+  FILTER NOT EXISTS { ?entity owl:deprecated true }
+
+  FILTER NOT EXISTS {
+    ?blank owl:annotatedSource ?entity ;
+      owl:annotatedProperty obo:IAO_0000115;
+      owl:annotatedTarget ?definition;
+      ?property ?value .
+  }
+}

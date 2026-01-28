@@ -1,0 +1,33 @@
+# Identifies OBO ID strings that:
+# 1) Do not match the class URI,
+# 2) Are missing, or
+# 3) Are not in the expected format (for DISDRIV classes only)
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT DISTINCT ?entity ?property ?value
+WHERE {
+  VALUES ?property { oboInOwl:id }
+  ?entity a owl:Class .
+  FILTER (!isBlank(?entity))
+  FILTER NOT EXISTS { ?entity owl:deprecated true }
+
+  OPTIONAL {
+    ?entity ?property ?value .
+
+    # capture & compare entity/id numbers
+    BIND(
+      REPLACE(
+        REPLACE(str(?entity), ".*[/#]", ""),
+        "_", ":"
+      ) AS ?iri_id
+    )
+  }
+
+  FILTER (
+    ?value != ?iri_id ||
+    NOT EXISTS { ?entity ?property ?value } ||
+    (CONTAINS(str(?entity), "DISDRIV_") && !REGEX(?value, "^DISDRIV:\\d{7}$"))
+  )
+}

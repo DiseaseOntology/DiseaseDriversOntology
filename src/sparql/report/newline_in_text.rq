@@ -1,0 +1,23 @@
+# Identifies text elements that have newline characters in them
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT DISTINCT ?entity ?property ?value
+WHERE {
+  VALUES ?property {
+    rdfs:label
+    obo:IAO_00001115
+    oboInOwl:hasExactSynonym
+    oboInOwl:hasBroadSynonym
+    oboInOwl:hasNarrowSynonym
+    oboInOwl:hasRelatedSynonym
+    rdfs:comment
+  }
+  ?entity ?property ?value .
+  FILTER NOT EXISTS { ?entity owl:deprecated true }
+
+  FILTER(REGEX(?value, "[\\r\\n]"))
+}
