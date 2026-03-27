@@ -11,12 +11,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/disdriv.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/disdriv/releases/2025-03-20/disdriv.owl"/>
-        <dc:description>Drivers of human diseases including environmental, maternal and social exposures.</dc:description>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/disdriv/releases/2026-03-27/disdriv.owl"/>
+        <dc:description xml:lang="en">Drivers of human diseases including environmental, maternal and social exposures.</dc:description>
         <dc:title>Disease Drivers</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <oboInOwl:date>20:03:2025 15:48</oboInOwl:date>
-        <owl:versionInfo>2025-03-20</owl:versionInfo>
+        <oboInOwl:date>27:03:2026 17:08</oboInOwl:date>
+        <owl:versionInfo>2026-03-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -190,7 +190,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0007000">
         <obo:IAO_0000115>A relation between two entities, in which one of the entities is any natural or human-influenced factor that directly or indirectly causes a change in the other entity.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">has_driver</rdfs:label>
+        <rdfs:label>has_driver</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0007000"/>
@@ -261,6 +261,23 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any compound that can disrupt the functions of the endocrine (hormone) system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cf</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_15354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15354">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33284"/>
+        <obo:IAO_0000115>A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:15354</oboInOwl:id>
+        <rdfs:label>choline</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15354"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -478,13 +495,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23888 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23888">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000006"/>
+        <obo:IAO_0000115>Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:23888</oboInOwl:id>
+        <rdfs:label>drug</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Drug</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_25016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5631"/>
         <obo:IAO_0000115>A chemical driver that is composed of lead, which is found primarily in old paint, old paint dust, contaminated soil or contaminated drinking water.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:25016</oboInOwl:id>
-        <rdfs:label xml:lang="en">lead</rdfs:label>
+        <rdfs:label>lead</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25016"/>
@@ -752,6 +786,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_3387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000006"/>
+        <obo:IAO_0000115>A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.</obo:IAO_0000115>
+        <oboInOwl:id>CHEBI:3387</oboInOwl:id>
+        <rdfs:label>carbamazepine</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3387"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Carbamazepine</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/26329145/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_35446 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35446">
@@ -952,7 +1004,7 @@
         <obo:IAO_0000115>A chemical driver that acts primarily by inhibiting both the production 
 of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes and the activities of interleukins and interferons and also inhibits polymorphonuclear chemotaxis and monocyte phagocytosis.</obo:IAO_0000115>
         <oboInOwl:id>CHEBI:9513</oboInOwl:id>
-        <rdfs:label xml:lang="en">thalidomide</rdfs:label>
+        <rdfs:label>thalidomide</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9513"/>
@@ -967,14 +1019,14 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
     <!-- http://purl.obolibrary.org/obo/DISDRIV_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000000">
-        <obo:IAO_0000115>Environmental or genetic mechanisms driving the occurrance of complex diseases.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Environmental or genetic mechanisms driving the occurrance of complex diseases.</obo:IAO_0000115>
         <oboInOwl:id>DISDRIV:0000000</oboInOwl:id>
-        <rdfs:label>disease driver</rdfs:label>
+        <rdfs:label xml:lang="en">disease driver</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Environmental or genetic mechanisms driving the occurrance of complex diseases.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Environmental or genetic mechanisms driving the occurrance of complex diseases.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC4517741/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -984,14 +1036,14 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
-        <obo:IAO_0000115>A disease driver that is comprised of a shortage of a nutrient.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A disease driver that is comprised of a shortage of a nutrient.</obo:IAO_0000115>
         <oboInOwl:id>DISDRIV:0000001</oboInOwl:id>
-        <rdfs:label>nutrient deficiency</rdfs:label>
+        <rdfs:label xml:lang="en">nutrient deficiency</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A disease driver that is comprised of a shortage of a nutrient.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A disease driver that is comprised of a shortage of a nutrient.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.who.int/health-topics/micronutrients</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1001,14 +1053,14 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
-        <obo:IAO_0000115>A disease driver that is related to or concerning the interaction of social and economic factors.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A disease driver that is related to or concerning the interaction of social and economic factors.</obo:IAO_0000115>
         <oboInOwl:id>DISDRIV:0000002</oboInOwl:id>
-        <rdfs:label>socioeconomic driver</rdfs:label>
+        <rdfs:label xml:lang="en">socioeconomic driver</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A disease driver that is related to or concerning the interaction of social and economic factors.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A disease driver that is related to or concerning the interaction of social and economic factors.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/29709281/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1018,14 +1070,14 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
-        <obo:IAO_0000115>A disease driver that is of biological origin.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A disease driver that is of biological origin.</obo:IAO_0000115>
         <oboInOwl:id>DISDRIV:0000003</oboInOwl:id>
-        <rdfs:label>biological driver</rdfs:label>
+        <rdfs:label xml:lang="en">biological driver</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A disease driver that is of biological origin.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A disease driver that is of biological origin.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK45737/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1035,14 +1087,14 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
-        <obo:IAO_0000115>A nutrient deficiency of vitamin B7 (biotin) foods like eggs, milk, and bananas.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A nutrient deficiency of vitamin B7 (biotin) foods like eggs, milk, and bananas.</obo:IAO_0000115>
         <oboInOwl:id>DISDRIV:0000004</oboInOwl:id>
-        <rdfs:label>deficiency of biotin</rdfs:label>
+        <rdfs:label xml:lang="en">deficiency of biotin</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A nutrient deficiency of vitamin B7 (biotin) foods like eggs, milk, and bananas.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A nutrient deficiency of vitamin B7 (biotin) foods like eggs, milk, and bananas.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Biotin-Consumer/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1052,14 +1104,14 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
-        <obo:IAO_0000115>A nutrient deficiency.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A nutrient deficiency of choline.</obo:IAO_0000115>
         <oboInOwl:id>DISDRIV:0000005</oboInOwl:id>
-        <rdfs:label>deficiency of choline</rdfs:label>
+        <rdfs:label xml:lang="en">deficiency of choline</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A nutrient deficiency.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A nutrient deficiency of choline.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Choline-Consumer/</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1070,14 +1122,14 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000000"/>
-        <obo:IAO_0000115>A disease driver that is a chemical.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A disease driver that is a chemical.</obo:IAO_0000115>
         <oboInOwl:id>DISDRIV:0000006</oboInOwl:id>
-        <rdfs:label>chemical driver</rdfs:label>
+        <rdfs:label xml:lang="en">chemical driver</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A disease driver that is a chemical.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A disease driver that is a chemical.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/29351546/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1087,9 +1139,16 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISDRIV_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">A nutrient deficiency of vitamin C.</obo:IAO_0000115>
         <oboInOwl:id>DISDRIV:0000007</oboInOwl:id>
         <rdfs:label xml:lang="en">deficiency of vitamin C</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A nutrient deficiency of vitamin C.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.merckmanuals.com/home/disorders-of-nutrition/vitamins/vitamin-c-deficiency</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1290,6 +1349,23 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C13234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C13234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002003"/>
+        <obo:IAO_0000115>The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.</obo:IAO_0000115>
+        <oboInOwl:id>NCIT:C13234</oboInOwl:id>
+        <rdfs:label>feces</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13234"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://nchh.org/information-and-evidence/learn-about-healthy-housing/health-hazards-prevention-and-solutions/rodents/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C14329 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14329">
@@ -1303,23 +1379,6 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A biological agent that is a microorganism, including bacteria, viruses, or fungi. A microscopic organism. The term microorganism may refer to a prokaryote or eukaryote, and may be a unicellular or multicellular organism. All taxonomic kingdoms contain microorganisms.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.osha.gov/biological-agents</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C15354 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15354">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33284"/>
-        <obo:IAO_0000115>A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.</obo:IAO_0000115>
-        <oboInOwl:id>CHEBI:15354</oboInOwl:id>
-        <rdfs:label>choline</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C15354"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1355,24 +1414,6 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A very large group of microscopic fungi that live on plant or animal matter. Most are filamentous organisms and produce spores that can be air-, water-, or insect-borne.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/mold/index.cfm</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C3387 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3387">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISDRIV_0000006"/>
-        <obo:IAO_0000115>A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.</obo:IAO_0000115>
-        <oboInOwl:id>CHEBI:3387</oboInOwl:id>
-        <rdfs:label>carbamazepine</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3387"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A dibenzoazepine that is 5H-dibenzo[b,f]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Carbamazepine</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/26329145/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1642,26 +1683,9 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
         <owl:annotatedTarget>An allergen that is dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.niehs.nih.gov/health/topics/agents/allergens/pets/index.cfm</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT:C13234 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT:C13234">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002003"/>
-        <obo:IAO_0000115>The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.</obo:IAO_0000115>
-        <oboInOwl:id>NCIT:C13234</oboInOwl:id>
-        <rdfs:label>feces</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT:C13234"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:https://nchh.org/information-and-evidence/learn-about-healthy-housing/health-hazards-prevention-and-solutions/rodents/</oboInOwl:hasDbXref>
-    </owl:Axiom>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 
