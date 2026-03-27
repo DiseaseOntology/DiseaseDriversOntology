@@ -18,6 +18,7 @@ Annotation(terms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Declaration(Class(obo:CHEBI_103210))
 Declaration(Class(obo:CHEBI_134063))
 Declaration(Class(obo:CHEBI_138015))
+Declaration(Class(obo:CHEBI_15354))
 Declaration(Class(obo:CHEBI_15956))
 Declaration(Class(obo:CHEBI_16236))
 Declaration(Class(obo:CHEBI_164200))
@@ -60,7 +61,6 @@ Declaration(Class(obo:CHEBI_64909))
 Declaration(Class(obo:CHEBI_76989))
 Declaration(Class(obo:CHEBI_79314))
 Declaration(Class(obo:CHEBI_9513))
-Declaration(Class(obo:CHEBI_C15354))
 Declaration(Class(obo:DISDRIV_0000000))
 Declaration(Class(obo:DISDRIV_0000001))
 Declaration(Class(obo:DISDRIV_0000002))
@@ -203,6 +203,13 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov
 AnnotationAssertion(oboInOwl:id obo:CHEBI_138015 "CHEBI:138015")
 AnnotationAssertion(rdfs:label obo:CHEBI_138015 "endochrine disruptor")
 SubClassOf(obo:CHEBI_138015 obo:DISDRIV_0000006)
+
+# Class: obo:CHEBI_15354 (choline)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/") obo:IAO_0000115 obo:CHEBI_15354 "A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_15354 "CHEBI:15354")
+AnnotationAssertion(rdfs:label obo:CHEBI_15354 "choline")
+SubClassOf(obo:CHEBI_15354 obo:CHEBI_33284)
 
 # Class: obo:CHEBI_15956 (biotin)
 
@@ -507,13 +514,6 @@ of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes an
 AnnotationAssertion(oboInOwl:id obo:CHEBI_9513 "CHEBI:9513")
 AnnotationAssertion(rdfs:label obo:CHEBI_9513 "thalidomide")
 SubClassOf(obo:CHEBI_9513 obo:DISDRIV_0000006)
-
-# Class: obo:CHEBI_C15354 (choline)
-
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/") obo:IAO_0000115 obo:CHEBI_C15354 "A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.")
-AnnotationAssertion(oboInOwl:id obo:CHEBI_C15354 "CHEBI:15354")
-AnnotationAssertion(rdfs:label obo:CHEBI_C15354 "choline")
-SubClassOf(obo:CHEBI_C15354 obo:CHEBI_33284)
 
 # Class: obo:DISDRIV_0000000 (disease driver)
 
