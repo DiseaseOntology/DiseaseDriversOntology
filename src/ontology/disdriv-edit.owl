@@ -80,6 +80,7 @@ Declaration(Class(obo:FOODON_00001579))
 Declaration(Class(obo:FOODON_03413761))
 Declaration(Class(obo:NCBITaxon_6954))
 Declaration(Class(obo:NCBITaxon_6956))
+Declaration(Class(obo:NCIT_C13234))
 Declaration(Class(obo:NCIT_C14329))
 Declaration(Class(obo:NCIT_C163032))
 Declaration(Class(obo:NCIT_C28266))
@@ -98,7 +99,6 @@ Declaration(Class(obo:OMIT_0001823))
 Declaration(Class(obo:OMIT_0004368))
 Declaration(Class(obo:OMIT_0005411))
 Declaration(Class(obo:OMIT_0028282))
-Declaration(Class(obo:NCIT:C13234))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:RO_0000087))
@@ -653,6 +653,13 @@ AnnotationAssertion(oboInOwl:id obo:NCBITaxon_6956 "NCBITaxon:6956")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_6956 "European house dust mite")
 SubClassOf(obo:NCBITaxon_6956 obo:CHEBI_50904)
 
+# Class: obo:NCIT_C13234 (feces)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://nchh.org/information-and-evidence/learn-about-healthy-housing/health-hazards-prevention-and-solutions/rodents/") obo:IAO_0000115 obo:NCIT_C13234 "The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.")
+AnnotationAssertion(oboInOwl:id obo:NCIT_C13234 "NCIT:C13234")
+AnnotationAssertion(rdfs:label obo:NCIT_C13234 "feces")
+SubClassOf(obo:NCIT_C13234 obo:ENVO_00002003)
+
 # Class: obo:NCIT_C14329 (microorganism)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/biological-agents") obo:IAO_0000115 obo:NCIT_C14329 "A biological agent that is a microorganism, including bacteria, viruses, or fungi. A microscopic organism. The term microorganism may refer to a prokaryote or eukaryote, and may be a unicellular or multicellular organism. All taxonomic kingdoms contain microorganisms.")
@@ -789,13 +796,6 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov
 AnnotationAssertion(oboInOwl:id obo:OMIT_0028282 "OMIT:0028282")
 AnnotationAssertion(rdfs:label obo:OMIT_0028282 "dander")
 SubClassOf(obo:OMIT_0028282 obo:CHEBI_50904)
-
-# Class: obo:C13234 (feces)
-
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://nchh.org/information-and-evidence/learn-about-healthy-housing/health-hazards-prevention-and-solutions/rodents/") obo:IAO_0000115 obo:NCIT:C13234 "The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.")
-AnnotationAssertion(oboInOwl:id obo:NCIT:C13234 "NCIT:C13234")
-AnnotationAssertion(rdfs:label obo:NCIT:C13234 "feces")
-SubClassOf(obo:NCIT:C13234 obo:ENVO_00002003)
 
 
 )
