@@ -60,6 +60,7 @@ Declaration(Class(obo:CHEBI_64909))
 Declaration(Class(obo:CHEBI_76989))
 Declaration(Class(obo:CHEBI_79314))
 Declaration(Class(obo:CHEBI_9513))
+Declaration(Class(obo:CHEBI_C15354))
 Declaration(Class(obo:DISDRIV_0000000))
 Declaration(Class(obo:DISDRIV_0000001))
 Declaration(Class(obo:DISDRIV_0000002))
@@ -80,7 +81,6 @@ Declaration(Class(obo:FOODON_03413761))
 Declaration(Class(obo:NCBITaxon_6954))
 Declaration(Class(obo:NCBITaxon_6956))
 Declaration(Class(obo:NCIT_C14329))
-Declaration(Class(obo:NCIT_C15354))
 Declaration(Class(obo:NCIT_C163032))
 Declaration(Class(obo:NCIT_C28266))
 Declaration(Class(obo:NCIT_C391))
@@ -174,7 +174,7 @@ AnnotationAssertion(rdfs:label obo:RO_0000087 "has role")
 # Object Property: obo:RO_0007000 (has_driver)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://purl.obolibrary.org/obo/RO_0007000") obo:IAO_0000115 obo:RO_0007000 "A relation between two entities, in which one of the entities is any natural or human-influenced factor that directly or indirectly causes a change in the other entity.")
-AnnotationAssertion(rdfs:label obo:RO_0007000 "has_driver"@en)
+AnnotationAssertion(rdfs:label obo:RO_0007000 "has_driver")
 
 
 
@@ -300,7 +300,7 @@ SubClassOf(obo:CHEBI_23888 obo:DISDRIV_0000006)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/lead") obo:IAO_0000115 obo:CHEBI_25016 "A chemical driver that is composed of lead, which is found primarily in old paint, old paint dust, contaminated soil or contaminated drinking water.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_25016 "CHEBI:25016")
-AnnotationAssertion(rdfs:label obo:CHEBI_25016 "lead"@en)
+AnnotationAssertion(rdfs:label obo:CHEBI_25016 "lead")
 SubClassOf(obo:CHEBI_25016 obo:CHEBI_5631)
 
 # Class: obo:CHEBI_25195 (mercury)
@@ -505,8 +505,15 @@ SubClassOf(obo:CHEBI_79314 obo:DISDRIV_0000006)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Thalidomide") obo:IAO_0000115 obo:CHEBI_9513 "A chemical driver that acts primarily by inhibiting both the production 
 of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes and the activities of interleukins and interferons and also inhibits polymorphonuclear chemotaxis and monocyte phagocytosis.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_9513 "CHEBI:9513")
-AnnotationAssertion(rdfs:label obo:CHEBI_9513 "thalidomide"@en)
+AnnotationAssertion(rdfs:label obo:CHEBI_9513 "thalidomide")
 SubClassOf(obo:CHEBI_9513 obo:DISDRIV_0000006)
+
+# Class: obo:CHEBI_C15354 (choline)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/") obo:IAO_0000115 obo:CHEBI_C15354 "A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.")
+AnnotationAssertion(oboInOwl:id obo:CHEBI_C15354 "CHEBI:15354")
+AnnotationAssertion(rdfs:label obo:CHEBI_C15354 "choline")
+SubClassOf(obo:CHEBI_C15354 obo:CHEBI_33284)
 
 # Class: obo:DISDRIV_0000000 (disease driver)
 
@@ -544,7 +551,7 @@ SubClassOf(obo:DISDRIV_0000004 obo:DISDRIV_0000001)
 
 # Class: obo:DISDRIV_0000005 (deficiency of choline)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Choline-Consumer/") Annotation(oboInOwl:hasDbXref "url:url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/") obo:IAO_0000115 obo:DISDRIV_0000005 "A nutrient deficiency.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Choline-Consumer/") Annotation(oboInOwl:hasDbXref "url:url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/") obo:IAO_0000115 obo:DISDRIV_0000005 "A nutrient deficiency of choline.")
 AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000005 "DISDRIV:0000005")
 AnnotationAssertion(rdfs:label obo:DISDRIV_0000005 "deficiency of choline")
 SubClassOf(obo:DISDRIV_0000005 obo:DISDRIV_0000001)
@@ -558,8 +565,9 @@ SubClassOf(obo:DISDRIV_0000006 obo:DISDRIV_0000000)
 
 # Class: obo:DISDRIV_0000007 (deficiency of vitamin C)
 
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.merckmanuals.com/home/disorders-of-nutrition/vitamins/vitamin-c-deficiency") obo:IAO_0000115 obo:DISDRIV_0000007 "A nutrient deficiency of vitamin C.")
 AnnotationAssertion(oboInOwl:id obo:DISDRIV_0000007 "DISDRIV:0000007")
-AnnotationAssertion(rdfs:label obo:DISDRIV_0000007 "deficiency of vitamin C"@en)
+AnnotationAssertion(rdfs:label obo:DISDRIV_0000007 "deficiency of vitamin C")
 SubClassOf(obo:DISDRIV_0000007 obo:DISDRIV_0000001)
 
 # Class: obo:ENVO_00002003 (fecal material)
@@ -651,13 +659,6 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/biol
 AnnotationAssertion(oboInOwl:id obo:NCIT_C14329 "NCIT:C14329")
 AnnotationAssertion(rdfs:label obo:NCIT_C14329 "microorganism")
 SubClassOf(obo:NCIT_C14329 obo:DISDRIV_0000003)
-
-# Class: obo:NCIT_C15354 (choline)
-
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/") obo:IAO_0000115 obo:NCIT_C15354 "A choline that is the parent compound of the cholines class, consisting of ethanolamine having three methyl substituents attached to the amino function.")
-AnnotationAssertion(oboInOwl:id obo:NCIT_C15354 "CHEBI:15354")
-AnnotationAssertion(rdfs:label obo:NCIT_C15354 "choline")
-SubClassOf(obo:NCIT_C15354 obo:CHEBI_33284)
 
 # Class: obo:NCIT_C163032 (botulinum toxin)
 
