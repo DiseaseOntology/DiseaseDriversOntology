@@ -171,10 +171,10 @@ AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part")
 
 AnnotationAssertion(rdfs:label obo:RO_0000087 "has role")
 
-# Object Property: obo:RO_0007000 (has_driver)
+# Object Property: obo:RO_0007000 (has driver)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:http://purl.obolibrary.org/obo/RO_0007000") obo:IAO_0000115 obo:RO_0007000 "A relation between two entities, in which one of the entities is any natural or human-influenced factor that directly or indirectly causes a change in the other entity.")
-AnnotationAssertion(rdfs:label obo:RO_0007000 "has_driver")
+AnnotationAssertion(rdfs:label obo:RO_0007000 "has driver")
 
 
 
