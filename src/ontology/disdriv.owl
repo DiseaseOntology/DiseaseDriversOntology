@@ -15,7 +15,7 @@
         <dc:description xml:lang="en">Drivers of human diseases including environmental, maternal and social exposures.</dc:description>
         <dc:title>Disease Drivers</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <oboInOwl:date>31:03:2026 14:27</oboInOwl:date>
+        <oboInOwl:date>31:03:2026 15:08</oboInOwl:date>
         <owl:versionInfo>2026-03-31</owl:versionInfo>
     </owl:Ontology>
     
@@ -190,7 +190,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0007000">
         <obo:IAO_0000115>A relation between two entities, in which one of the entities is any natural or human-influenced factor that directly or indirectly causes a change in the other entity.</obo:IAO_0000115>
-        <rdfs:label>has_driver</rdfs:label>
+        <rdfs:label>has driver</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0007000"/>
