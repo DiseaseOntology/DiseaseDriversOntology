@@ -197,11 +197,11 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_134063 "CHEBI:134063")
 AnnotationAssertion(rdfs:label obo:CHEBI_134063 "1,2,5,6,9,10-hexabromocyclododecane")
 SubClassOf(obo:CHEBI_134063 obo:CHEBI_79314)
 
-# Class: obo:CHEBI_138015 (endochrine disruptor)
+# Class: obo:CHEBI_138015 (endocrine disruptor)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cf") obo:IAO_0000115 obo:CHEBI_138015 "Any compound that can disrupt the functions of the endocrine (hormone) system.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_138015 "CHEBI:138015")
-AnnotationAssertion(rdfs:label obo:CHEBI_138015 "endochrine disruptor")
+AnnotationAssertion(rdfs:label obo:CHEBI_138015 "endocrine disruptor")
 SubClassOf(obo:CHEBI_138015 obo:DISDRIV_0000006)
 
 # Class: obo:CHEBI_15354 (choline)
@@ -289,11 +289,11 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_22271 "CHEBI:22271")
 AnnotationAssertion(rdfs:label obo:CHEBI_22271 "aflatoxin")
 SubClassOf(obo:CHEBI_22271 obo:CHEBI_27026)
 
-# Class: obo:CHEBI_22977 (cadmium)
+# Class: obo:CHEBI_22977 (cadmium atom)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/cadmium") obo:IAO_0000115 obo:CHEBI_22977 "A heavy metal that is cadmium, a soft, malleable, bluish white metal found in zinc ores.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_22977 "CHEBI:22977")
-AnnotationAssertion(rdfs:label obo:CHEBI_22977 "cadmium")
+AnnotationAssertion(rdfs:label obo:CHEBI_22977 "cadmium atom")
 SubClassOf(obo:CHEBI_22977 obo:CHEBI_5631)
 
 # Class: obo:CHEBI_23888 (drug)
@@ -303,18 +303,18 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_23888 "CHEBI:23888")
 AnnotationAssertion(rdfs:label obo:CHEBI_23888 "drug")
 SubClassOf(obo:CHEBI_23888 obo:DISDRIV_0000006)
 
-# Class: obo:CHEBI_25016 (lead)
+# Class: obo:CHEBI_25016 (lead atom)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/lead") obo:IAO_0000115 obo:CHEBI_25016 "A chemical driver that is composed of lead, which is found primarily in old paint, old paint dust, contaminated soil or contaminated drinking water.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_25016 "CHEBI:25016")
-AnnotationAssertion(rdfs:label obo:CHEBI_25016 "lead")
+AnnotationAssertion(rdfs:label obo:CHEBI_25016 "lead atom")
 SubClassOf(obo:CHEBI_25016 obo:CHEBI_5631)
 
-# Class: obo:CHEBI_25195 (mercury)
+# Class: obo:CHEBI_25195 (mercury atom)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/mercury/index.cfm") obo:IAO_0000115 obo:CHEBI_25195 "A heavy metal that is mercury, is toxic to living organisms, is an odorless, shiny, silver-white liquid that is commonly used in thermometers, barometers and fluorescent light bulbs.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_25195 "CHEBI:25195")
-AnnotationAssertion(rdfs:label obo:CHEBI_25195 "mercury")
+AnnotationAssertion(rdfs:label obo:CHEBI_25195 "mercury atom")
 SubClassOf(obo:CHEBI_25195 obo:CHEBI_5631)
 
 # Class: obo:CHEBI_26092 (phthalate)
@@ -338,12 +338,12 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_27470 "CHEBI:27470")
 AnnotationAssertion(rdfs:label obo:CHEBI_27470 "folic acid")
 SubClassOf(obo:CHEBI_27470 obo:CHEBI_33284)
 
-# Class: obo:CHEBI_27563 (arsenic)
+# Class: obo:CHEBI_27563 (arsenic atom)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/arsenic/index.cfm") obo:IAO_0000115 obo:CHEBI_27563 "A heavy metal that is arsenic, a heavy metal that is poisonous at low concentrations.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_27563 "NCIT:C28131")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_27563 "CHEBI:27563")
-AnnotationAssertion(rdfs:label obo:CHEBI_27563 "arsenic")
+AnnotationAssertion(rdfs:label obo:CHEBI_27563 "arsenic atom")
 SubClassOf(obo:CHEBI_27563 obo:CHEBI_5631)
 
 # Class: obo:CHEBI_27638 (cobalt atom)
@@ -353,11 +353,11 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_27638 "CHEBI:27638")
 AnnotationAssertion(rdfs:label obo:CHEBI_27638 "cobalt atom")
 SubClassOf(obo:CHEBI_27638 obo:DISDRIV_0000006)
 
-# Class: obo:CHEBI_28073 (chromium)
+# Class: obo:CHEBI_28073 (chromium atom)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Chromium") obo:IAO_0000115 obo:CHEBI_28073 "A heavy metal that is chromium, a chromium group element atom that has atomic number 24.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_28073 "CHEBI:28073")
-AnnotationAssertion(rdfs:label obo:CHEBI_28073 "chromium")
+AnnotationAssertion(rdfs:label obo:CHEBI_28073 "chromium atom")
 SubClassOf(obo:CHEBI_28073 obo:CHEBI_5631)
 
 # Class: obo:CHEBI_28619 (acrylamide)
@@ -370,18 +370,18 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_28619 "CHEBI:28619")
 AnnotationAssertion(rdfs:label obo:CHEBI_28619 "acrylamide")
 SubClassOf(obo:CHEBI_28619 obo:DISDRIV_0000006)
 
-# Class: obo:CHEBI_30440 (thalium)
+# Class: obo:CHEBI_30440 (thallium atom)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Thallium") Annotation(oboInOwl:hasDbXref "url:https://www.cdc.gov/niosh/ershdb/emergencyresponsecard_29750026.html") obo:IAO_0000115 obo:CHEBI_30440 "A metallic element first identified and named from the brilliant green line in its flame spectrum (from Greek thetaalphalambdalambdaomicronsigma, a green shoot).")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_30440 "CHEBI:30440")
-AnnotationAssertion(rdfs:label obo:CHEBI_30440 "thalium")
+AnnotationAssertion(rdfs:label obo:CHEBI_30440 "thallium atom")
 SubClassOf(obo:CHEBI_30440 obo:CHEBI_5631)
 
-# Class: obo:CHEBI_30785 (methylmercury)
+# Class: obo:CHEBI_30785 (methylmercury(.))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.epa.gov/mercury/how-people-are-exposed-mercury#methylmercury") obo:IAO_0000115 obo:CHEBI_30785 "A poison that is methylmercury.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_30785 "CHEBI:30785")
-AnnotationAssertion(rdfs:label obo:CHEBI_30785 "methylmercury")
+AnnotationAssertion(rdfs:label obo:CHEBI_30785 "methylmercury(.)")
 SubClassOf(obo:CHEBI_30785 obo:CHEBI_64909)
 
 # Class: obo:CHEBI_30879 (alcohol)
@@ -406,11 +406,11 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_33217 "CHEBI:33217")
 AnnotationAssertion(rdfs:label obo:CHEBI_33217 "3,3',5,5'-tetrabromobisphenol A")
 SubClassOf(obo:CHEBI_33217 obo:CHEBI_79314)
 
-# Class: obo:CHEBI_33229 (vitamin)
+# Class: obo:CHEBI_33229 (vitamin (role))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Vitamin") obo:IAO_0000115 obo:CHEBI_33229 "A biochemical role played by any micronutrient that is an organic compound. Vitamins are present in foods in small amounts and are essential to normal metabolism and biochemical functions, usually as coenzymes.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_33229 "CHEBI:33229")
-AnnotationAssertion(rdfs:label obo:CHEBI_33229 "vitamin")
+AnnotationAssertion(rdfs:label obo:CHEBI_33229 "vitamin (role)")
 SubClassOf(obo:CHEBI_33229 obo:CHEBI_33284)
 
 # Class: obo:CHEBI_33284 (nutrient)
@@ -450,11 +450,11 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_46661 "CHEBI:46661")
 AnnotationAssertion(rdfs:label obo:CHEBI_46661 "asbestos")
 SubClassOf(obo:CHEBI_46661 obo:DISDRIV_0000006)
 
-# Class: obo:CHEBI_49706 (percholrate)
+# Class: obo:CHEBI_49706 (perchlorate)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cfm") obo:IAO_0000115 obo:CHEBI_49706 "A monovalent inorganic anion obtained by deprotonation of perchloric acid.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_49706 "CHEBI:49706")
-AnnotationAssertion(rdfs:label obo:CHEBI_49706 "percholrate")
+AnnotationAssertion(rdfs:label obo:CHEBI_49706 "perchlorate")
 SubClassOf(obo:CHEBI_49706 obo:CHEBI_138015)
 
 # Class: obo:CHEBI_50904 (allergen)
@@ -471,11 +471,11 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_53212 "CHEBI:53212")
 AnnotationAssertion(rdfs:label obo:CHEBI_53212 "isocyanates")
 SubClassOf(obo:CHEBI_53212 obo:DISDRIV_0000006)
 
-# Class: obo:CHEBI_53218 (diphenylmethane-4,4-diisocyanate)
+# Class: obo:CHEBI_53218 (diphenylmethane-4,4'-diisocyanate)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Methylene_diphenyl_diisocyanate") obo:IAO_0000115 obo:CHEBI_53218 "A diisocyanate consisting of diphenylmethane with two isocyanate groups at the 4- and 4'-positions.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_53218 "CHEBI:53218")
-AnnotationAssertion(rdfs:label obo:CHEBI_53218 "diphenylmethane-4,4-diisocyanate")
+AnnotationAssertion(rdfs:label obo:CHEBI_53218 "diphenylmethane-4,4'-diisocyanate")
 SubClassOf(obo:CHEBI_53218 obo:DISDRIV_0000006)
 
 # Class: obo:CHEBI_5631 (heavy metal)
@@ -509,8 +509,7 @@ SubClassOf(obo:CHEBI_79314 obo:DISDRIV_0000006)
 
 # Class: obo:CHEBI_9513 (thalidomide)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Thalidomide") obo:IAO_0000115 obo:CHEBI_9513 "A chemical driver that acts primarily by inhibiting both the production 
-of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes and the activities of interleukins and interferons and also inhibits polymorphonuclear chemotaxis and monocyte phagocytosis.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://en.wikipedia.org/wiki/Thalidomide") obo:IAO_0000115 obo:CHEBI_9513 "A chemical driver that acts primarily by inhibiting both the production of tumor necrosis factor alpha (TNF-alpha) in stimulated peripheral monocytes and the activities of interleukins and interferons and also inhibits polymorphonuclear chemotaxis and monocyte phagocytosis.")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_9513 "CHEBI:9513")
 AnnotationAssertion(rdfs:label obo:CHEBI_9513 "thalidomide")
 SubClassOf(obo:CHEBI_9513 obo:DISDRIV_0000006)
@@ -592,11 +591,11 @@ AnnotationAssertion(oboInOwl:id obo:ENVO_2000004 "ENVO:2000004")
 AnnotationAssertion(rdfs:label obo:ENVO_2000004 "algal bloom")
 SubClassOf(obo:ENVO_2000004 obo:DISDRIV_0000006)
 
-# Class: obo:ExO_0000007 (ecological perturbations)
+# Class: obo:ExO_0000007 (ecological perturbation)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://pubmed.ncbi.nlm.nih.gov/29351546/") obo:IAO_0000115 obo:ExO_0000007 "An exposure stressor that is a change in the distributions, abundance and relations of organisms and their interactions with the environment.")
 AnnotationAssertion(oboInOwl:id obo:ExO_0000007 "ExO:0000007")
-AnnotationAssertion(rdfs:label obo:ExO_0000007 "ecological perturbations")
+AnnotationAssertion(rdfs:label obo:ExO_0000007 "ecological perturbation")
 SubClassOf(obo:ExO_0000007 obo:DISDRIV_0000000)
 
 # Class: obo:ExO_0000013 (acid rain)
@@ -637,164 +636,165 @@ AnnotationAssertion(oboInOwl:id obo:FOODON_03413761 "FOODON:03413761")
 AnnotationAssertion(rdfs:label obo:FOODON_03413761 "vitamin B12")
 SubClassOf(obo:FOODON_03413761 obo:CHEBI_33229)
 
-# Class: obo:NCBITaxon_6954 (American house dust mite)
+# Class: obo:NCBITaxon_6954 (Dermatophagoides farinae)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/dustmites/index.cfm") obo:IAO_0000115 obo:NCBITaxon_6954 "An allergen that is an American house dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_6954 "OMIT:0022964")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_6954 "Dermatophagoides farinae")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_6954 "American house dust mite")
 AnnotationAssertion(oboInOwl:id obo:NCBITaxon_6954 "NCBITaxon:6954")
-AnnotationAssertion(rdfs:label obo:NCBITaxon_6954 "American house dust mite")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_6954 "Dermatophagoides farinae")
 SubClassOf(obo:NCBITaxon_6954 obo:CHEBI_50904)
 
-# Class: obo:NCBITaxon_6956 (European house dust mite)
+# Class: obo:NCBITaxon_6956 (Dermatophagoides pteronyssinus)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/dustmites/index.cfm") obo:IAO_0000115 obo:NCBITaxon_6956 "An allergen that is an European house dust mite, microscopic, insect-like pests that commonly live in house dust. They feed on flakes of dead skin, or dander, that are shed by people and pets. These tiny creatures are a big source of allergens and can worsen allergies and asthma. Dust mites can live in mattresses, bedding, upholstered furniture, carpets, and curtains in your home.")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_6956 "European house dust mite")
 AnnotationAssertion(oboInOwl:id obo:NCBITaxon_6956 "NCBITaxon:6956")
-AnnotationAssertion(rdfs:label obo:NCBITaxon_6956 "European house dust mite")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_6956 "Dermatophagoides pteronyssinus")
 SubClassOf(obo:NCBITaxon_6956 obo:CHEBI_50904)
 
-# Class: obo:NCIT_C13234 (feces)
+# Class: obo:NCIT_C13234 (Feces)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://nchh.org/information-and-evidence/learn-about-healthy-housing/health-hazards-prevention-and-solutions/rodents/") obo:IAO_0000115 obo:NCIT_C13234 "The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C13234 "NCIT:C13234")
-AnnotationAssertion(rdfs:label obo:NCIT_C13234 "feces")
+AnnotationAssertion(rdfs:label obo:NCIT_C13234 "Feces")
 SubClassOf(obo:NCIT_C13234 obo:ENVO_00002003)
 
-# Class: obo:NCIT_C14329 (microorganism)
+# Class: obo:NCIT_C14329 (Microorganism)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/biological-agents") obo:IAO_0000115 obo:NCIT_C14329 "A biological agent that is a microorganism, including bacteria, viruses, or fungi. A microscopic organism. The term microorganism may refer to a prokaryote or eukaryote, and may be a unicellular or multicellular organism. All taxonomic kingdoms contain microorganisms.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C14329 "NCIT:C14329")
-AnnotationAssertion(rdfs:label obo:NCIT_C14329 "microorganism")
+AnnotationAssertion(rdfs:label obo:NCIT_C14329 "Microorganism")
 SubClassOf(obo:NCIT_C14329 obo:DISDRIV_0000003)
 
-# Class: obo:NCIT_C163032 (botulinum toxin)
+# Class: obo:NCIT_C163032 (Botulinum Toxin)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/botulism") obo:IAO_0000115 obo:NCIT_C163032 "A biological toxin that is botulinum toxin, caused by a toxin made by a bacterium called Clostridium botulinum.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C163032 "FBbi:00000465")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C163032 "NCIT:C163032")
-AnnotationAssertion(rdfs:label obo:NCIT_C163032 "botulinum toxin")
+AnnotationAssertion(rdfs:label obo:NCIT_C163032 "Botulinum Toxin")
 SubClassOf(obo:NCIT_C163032 obo:CHEBI_27026)
 
-# Class: obo:NCIT_C28266 (mold)
+# Class: obo:NCIT_C28266 (Mold)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/mold/index.cfm") obo:IAO_0000115 obo:NCIT_C28266 "A very large group of microscopic fungi that live on plant or animal matter. Most are filamentous organisms and produce spores that can be air-, water-, or insect-borne.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C28266 "NCIT:C28266")
-AnnotationAssertion(rdfs:label obo:NCIT_C28266 "mold")
+AnnotationAssertion(rdfs:label obo:NCIT_C28266 "Mold")
 SubClassOf(obo:NCIT_C28266 obo:NCIT_C14329)
 
-# Class: obo:NCIT_C391 (copper)
+# Class: obo:NCIT_C391 (Copper)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637704/") obo:IAO_0000115 obo:NCIT_C391 "An element with atomic symbol Cu, atomic number 29, and atomic weight 63.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C391 "NCIT:C391")
-AnnotationAssertion(rdfs:label obo:NCIT_C391 "copper")
+AnnotationAssertion(rdfs:label obo:NCIT_C391 "Copper")
 SubClassOf(obo:NCIT_C391 obo:CHEBI_33284)
 
-# Class: obo:NCIT_C44357 (chromium hexavalent compound)
+# Class: obo:NCIT_C44357 (Chromium Hexavalent Compound)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/hex-chromium/index.cf") obo:IAO_0000115 obo:NCIT_C44357 "A highly corrosive, inorganic substance that contains the metallic element chromium in its positive-6 valence state. Chromium hexavalent compounds are used in stainless steel production, in chrome plating, in the manufacture of dyes and pigments, in leather tanning, in wood preservation and are used as corrosion inhibitors. Inhalation exposure of these compounds mainly affects the respiratory tract causing shortness of breath, nasal itching, asthma, coughing, bronchitis and pneumonia, but can also affect the liver, kidneys, gastrointestinal tract and the immune system. Chromium hexavalent compounds are carcinogenic in humans and are associated with an increased risk of developing lung cancer and cancer of the sinonasal cavity.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C44357 "NCIT:C44357")
-AnnotationAssertion(rdfs:label obo:NCIT_C44357 "chromium hexavalent compound")
+AnnotationAssertion(rdfs:label obo:NCIT_C44357 "Chromium Hexavalent Compound")
 SubClassOf(obo:NCIT_C44357 obo:DISDRIV_0000006)
 
-# Class: obo:NCIT_C594 (iodine)
+# Class: obo:NCIT_C594 (Iodine)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/") obo:IAO_0000115 obo:NCIT_C594 "An element that is necessary for the body to make thyroid hormone. It is found in shellfish and iodized salt.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C594 "CHEBI:24859")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C594 "NCIT:C594")
-AnnotationAssertion(rdfs:label obo:NCIT_C594 "iodine")
+AnnotationAssertion(rdfs:label obo:NCIT_C594 "Iodine")
 SubClassOf(obo:NCIT_C594 obo:CHEBI_33284)
 
-# Class: obo:NCIT_C598 (iron)
+# Class: obo:NCIT_C598 (Iron)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/iron-deficiency-adults") obo:IAO_0000115 obo:NCIT_C598 "An important mineral the body needs to make hemoglobin, a substance in the blood that carries oxygen from the lungs to tissues throughout the body. Iron is also an important part of many other proteins and enzymes needed by the body for normal growth and development. It is found in red meat, fish, poultry, lentils, beans, and foods with iron added, such as cereal.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C598 "CHEBI:18248")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C598 "NCIT:C598")
-AnnotationAssertion(rdfs:label obo:NCIT_C598 "iron")
+AnnotationAssertion(rdfs:label obo:NCIT_C598 "Iron")
 SubClassOf(obo:NCIT_C598 obo:CHEBI_33284)
 
-# Class: obo:NCIT_C603 (accutane)
+# Class: obo:NCIT_C603 (Isotretinoin)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.accessdata.fda.gov/drugsatfda_docs/label/2008/018662s059lbl.pdf") obo:IAO_0000115 obo:NCIT_C603 "A chemical driver that is accutane (retinoic acid), a medication primarily used to treat severe acne.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C603 "Isotretinoin")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C603 "accutane")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C603 "NCIT:C603")
-AnnotationAssertion(rdfs:label obo:NCIT_C603 "accutane")
+AnnotationAssertion(rdfs:label obo:NCIT_C603 "Isotretinoin")
 SubClassOf(obo:NCIT_C603 obo:DISDRIV_0000006)
 
-# Class: obo:NCIT_C689 (niacin)
+# Class: obo:NCIT_C689 (Niacin)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/books/NBK557728/") obo:IAO_0000115 obo:NCIT_C689 "A water-soluble vitamin belonging to the vitamin B family, which occurs in many animal and plant tissues, with antihyperlipidemic activity. Niacin is converted to its active form niacinamide, which is a component of the coenzymes nicotinamide adenine dinucleotide (NAD) and its phosphate form, NADP. These coenzymes play an important role in tissue respiration and in glycogen, lipid, amino acid, protein, and purine metabolism. Although the exact mechanism of action by which niacin lowers cholesterol is not fully understood, it may act by inhibiting the synthesis of very low density lipoproteins (VLDL), inhibiting the release of free fatty acids from adipose tissue, increasing lipoprotein lipase activity, and reducing the hepatic synthesis of VLDL-C and LDL-C.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C689 "NCIT:C689")
-AnnotationAssertion(rdfs:label obo:NCIT_C689 "niacin")
+AnnotationAssertion(rdfs:label obo:NCIT_C689 "Niacin")
 SubClassOf(obo:NCIT_C689 obo:CHEBI_33229)
 
-# Class: obo:NCIT_C79660 (pollen)
+# Class: obo:NCIT_C79660 (Pollen)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/pollen/index.cfm") obo:IAO_0000115 obo:NCIT_C79660 "The male genetic material of a seed plant contained in the anther, usually appearing as fine grains or dust.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C79660 "BTO:0001097")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C79660 "NCIT:C79660")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C79660 "NCIT:C79660")
-AnnotationAssertion(rdfs:label obo:NCIT_C79660 "pollen")
+AnnotationAssertion(rdfs:label obo:NCIT_C79660 "Pollen")
 SubClassOf(obo:NCIT_C79660 obo:CHEBI_50904)
 
-# Class: obo:NCIT_C809 (ricin toxin)
+# Class: obo:NCIT_C809 (Ricin)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.osha.gov/ricin") obo:IAO_0000115 obo:NCIT_C809 "A phytotoxin and lectin comprised of a homodimer of ricin toxin A and B chains derived from the seeds of Ricinus communis, the castor oil plant, with protein synthesis inhibitory activity and extremely high cytotoxicity. Following ingestion, inhalation or injection of ricin, the B chain binds to complex carbohydrates containing either terminal N-acetylgalactosamine or beta-1,4-linked galactose residues on the surface of cells. Subsequently, the ricin A/B heterodimer is internalized and undergoes retrograde transport to the endoplasmic reticulum (ER). In the ER, the A chain, which has enzymatic activity that is sterically hindered by the B chain, is proteolytically released from the heterodimer by protein disulfide isomerase. In the ER, the free A chain has N-glycosidase activity that cleaves 28S rRNA. This enzymatic cleavage disrupts the ribosome, halts protein synthesis, and can lead to cell death. The extreme cytotoxicity of ricin makes it an attractive candidate for artificial fusion with binding proteins to create cell-type-specific toxins.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C809 "OMIT:0013190")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C809 "NCIT:C809")
-AnnotationAssertion(rdfs:label obo:NCIT_C809 "ricin toxin")
+AnnotationAssertion(rdfs:label obo:NCIT_C809 "Ricin")
 SubClassOf(obo:NCIT_C809 obo:CHEBI_27026)
 
-# Class: obo:NCIT_C81304 (blood product)
+# Class: obo:NCIT_C81304 (Blood Product)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/books/NBK539826/") obo:IAO_0000115 obo:NCIT_C81304 "Any natural or synthetic composition that replicates the structure or function of a native component of blood.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C81304 "NCIT:C81304")
-AnnotationAssertion(rdfs:label obo:NCIT_C81304 "blood product")
+AnnotationAssertion(rdfs:label obo:NCIT_C81304 "Blood Product")
 SubClassOf(obo:NCIT_C81304 obo:DISDRIV_0000003)
 
-# Class: obo:NCIT_C829 (tobacco smoke)
+# Class: obo:NCIT_C829 (Tobacco Smoke)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/effects_cig_smoking/index.htm") Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/pubmed/26043318") Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/smoke/index.cfm") obo:IAO_0000115 obo:NCIT_C829 "Smoke from burning tobacco (cigarettes, cigars, or pipes) and exhaled by a smoker. Tobacco smoke contains nicotine, a stimulant, and other biologically active chemicals having carcinogenic properties.")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C829 "NCIT:C829")
-AnnotationAssertion(rdfs:label obo:NCIT_C829 "tobacco smoke")
+AnnotationAssertion(rdfs:label obo:NCIT_C829 "Tobacco Smoke")
 SubClassOf(obo:NCIT_C829 obo:DISDRIV_0000006)
 
-# Class: obo:NCIT_C943 (vitamin K)
+# Class: obo:NCIT_C943 (Vitamin K)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.ncbi.nlm.nih.gov/books/NBK536983/") obo:IAO_0000115 obo:NCIT_C943 "The term \"vitamin K\" refers to a group of chemically similar fat-soluble compounds called naphthoquinones: vitamin K1 (phytonadione) is found in plants and is the primary source of vitamin K for humans through dietary consumption, vitamin K2 compounds (menaquinones) are made by bacteria in the human gut, and vitamin K3 (menadione) is a water-soluble preparation available for adults only. Vitamin K is necessary for the liver to produce the coagulation factors II, VII, IX, and X, as well as the clotting factors protein C, protein S, and protein Z; vitamin K deficiency can result in deficiencies of these coagulation factors and excess bleeding. An injection of vitamin K is routinely given to newborn infants to prevent vitamin K deficiency bleeding, also known as hemorrhagic disease of the newborn. Vitamin K deficiency is rare in adults but may result from chronic malnutrition or an inability to absorb dietary vitamins.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCIT_C943 "CHEBI:28384")
 AnnotationAssertion(oboInOwl:id obo:NCIT_C943 "NCIT:C943")
-AnnotationAssertion(rdfs:label obo:NCIT_C943 "vitamin K")
+AnnotationAssertion(rdfs:label obo:NCIT_C943 "Vitamin K")
 SubClassOf(obo:NCIT_C943 obo:CHEBI_33229)
 
-# Class: obo:OMIT_0001823 (air pollution)
+# Class: obo:OMIT_0001823 (Air Pollution)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.epa.gov/clean-air-act-overview/air-pollution-current-and-future-challenges") Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/air-pollution/index.cfm") obo:IAO_0000115 obo:OMIT_0001823 "A chemical driver that is air pollution, that is composed of a mixture of chemical and particulate matter pollutants in outdoor air, including but not limited to carbon monoxide, ozone, sulfur dixoide, nitrogen dioxide, lead, and fine partiuculate matter. Vehicle emissions, fuel oils and natural gas to heat homes, by-products of manufacturing and power generation, particularly coal-fueled power plants, and fumes from chemical production are the primary sources of human-made air pollution. A pollution process during which particulates or other contaminants are released into a portion of air.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:OMIT_0001823 "ENVO:02500037")
 AnnotationAssertion(oboInOwl:id obo:OMIT_0001823 "OMIT:0001823")
-AnnotationAssertion(rdfs:label obo:OMIT_0001823 "air pollution")
+AnnotationAssertion(rdfs:label obo:OMIT_0001823 "Air Pollution")
 SubClassOf(obo:OMIT_0001823 obo:DISDRIV_0000006)
 
-# Class: obo:OMIT_0004368 (cockroaches)
+# Class: obo:OMIT_0004368 (Cockroaches)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/dustmites/index.cfm") obo:IAO_0000115 obo:OMIT_0004368 "An allergen that is a cockroach, a source of indoor allergens.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:OMIT_0004368 "NCBITaxon:85823")
 AnnotationAssertion(oboInOwl:id obo:OMIT_0004368 "OMIT:0004368")
-AnnotationAssertion(rdfs:label obo:OMIT_0004368 "cockroaches")
+AnnotationAssertion(rdfs:label obo:OMIT_0004368 "Cockroaches")
 SubClassOf(obo:OMIT_0004368 obo:CHEBI_50904)
 
-# Class: obo:OMIT_0005411 (dioxin)
+# Class: obo:OMIT_0005411 (Dioxins)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/dioxins/index.cfm") obo:IAO_0000115 obo:OMIT_0005411 "An endocrine disruptor that is dioxin, are mainly byproducts of industrial practices. They are produced through a variety of incineration processes, including improper municipal waste incineration and burning of trash, and can be released into the air during natural processes, such as forest fires and volcanoes.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:OMIT_0005411 "NCIT:C442")
 AnnotationAssertion(oboInOwl:id obo:OMIT_0005411 "OMIT:0005411")
-AnnotationAssertion(rdfs:label obo:OMIT_0005411 "dioxin")
+AnnotationAssertion(rdfs:label obo:OMIT_0005411 "Dioxins")
 SubClassOf(obo:OMIT_0005411 obo:CHEBI_138015)
 
-# Class: obo:OMIT_0028282 (dander)
+# Class: obo:OMIT_0028282 (Dander)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "url:https://www.niehs.nih.gov/health/topics/agents/allergens/pets/index.cfm") obo:IAO_0000115 obo:OMIT_0028282 "An allergen that is dander, may trigger allergy symptoms like sneezing or red, itchy eyes. Pet dander, the source of allergens, is composed of tiny, even microscopic, proteins from flecks of skin shed by pets.")
 AnnotationAssertion(oboInOwl:id obo:OMIT_0028282 "OMIT:0028282")
-AnnotationAssertion(rdfs:label obo:OMIT_0028282 "dander")
+AnnotationAssertion(rdfs:label obo:OMIT_0028282 "Dander")
 SubClassOf(obo:OMIT_0028282 obo:CHEBI_50904)
 
 
