@@ -1,4 +1,5 @@
 <!-- badges: start -->
+[![DOI](https://zenodo.org/badge/366791848.svg)](https://doi.org/10.5281/zenodo.23418077)
 [![Build Status](https://github.com/DiseaseOntology/DiseaseDriversOntology/workflows/Ontology%20CI/badge.svg)](https://github.com/DiseaseOntology/DiseaseDriversOntology/actions)
 <!-- badges: end -->
 
